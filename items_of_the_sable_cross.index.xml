@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <update version="1.0">
+      <file name="items_of_the_sable_cross.index" url="https://github.com/jchezum/items_of_the_sable_cross/blob/master/items_of_the_sable_cross.index" />
+    </update>
+  </info>
+  <files>
+    <file name="dm_custom_items.xml" url="https://github.com/jchezum/items_of_the_sable_cross/blob/master/dm_custom_items.xml" />
+  </files>
+</index>
