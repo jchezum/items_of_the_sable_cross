@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Custom Items</name>
+		<description>Items aded by the GM</description>
+		<author>DM</author>
+		<update version="0.0.6">
+			<file name="" url="" />
+		</update>		
+	</info>
+	<!-- ==================================================================================== -->
+	<!-- Weapons -->
+	<!-- ==================================================================================== -->
+	<element name="Whirling Iron Greatsword" type="Magic Item" source="DM" id="ID_DM_LOOT_01">
+		<description>
+			<p>Proficiency with a greatsword allows you to add your proficiency bonus to the attack roll for any attack you make with it.  </p>
+			<p>If you hit a target, you can roll again to hit a second target within 5 feet for 1d8+str damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">1235</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Greatsword</set>
+		</setters>
+	</element>
+	<!-- ==================================================================================== -->
+	<!-- Items -->
+	<!-- ==================================================================================== -->
+	<element name="Crude Map" type="Item" source="DM" id="ID_DM_ITEM_01">
+		<description>
+			<p>A rough scrap of leather with a crudely drawn map of a castle or camp on it.  There is no name or details on WHICH castle or camp it may be.</p>
+		</description>
+		<setters>
+			<set name="keywords">Crude Map</set>
+			<set name="category">Mundane Items</set>
+			<set name="cost" currency="cp">5</set>
+			<set name="type">Map</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">Crude Map</set>
+		</setters>
+	</element>	
+	<element name="Dirt of Disappearance" type="Magic Item" source="DM" id="ID_DM_LOOT_02">
+		<description>
+			<p>Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you and each creature and object within 10 feet of you become Invisible for 2d4 minutes. The Duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the Invisibility ends for that creature.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="keywords">Adventuring Gear</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Standard</set>
+		</setters>
+	</element>	
+	<element name="Miraculous Ingot" type="Magic Item" source="DM" id="ID_DM_LOOT_03">
+		<description>
+			<p>The bearer may cast Thaumaturgy once per day.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>	
+</elements>	
