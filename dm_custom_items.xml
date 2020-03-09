@@ -26,6 +26,53 @@
 		</setters>
 	</element>
 	<!-- ==================================================================================== -->
+	<!-- Armor -->
+	<!-- ==================================================================================== -->	
+	<element name="Sable Quality Half-Plate" type="Magic Item" source="DM" id="ID_DM_ARMOR_01">
+		<description>
+			<p>This armor was created by Order of the Sable Cross blacksmith Cole Bern.  </p>
+			<p>Due to the high-quility worksmanship, this armor grants a +1 to AC.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="armorClass">15 + Dex modifier (max 2)</set>
+			<set name="weight" lb="30">30 lb.</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HALF_PLATE</set>			
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+	<element name="Armor of the Mountain's Heart" type="Magic Item" source="DM" id="ID_DM_ARMOR_02">
+		<description>
+			<p>This armor was created as a personal project by Order of the Sable Cross blacksmith Cole Bern.</p>
+			It has been further enhanced by an enchantment from a powerful wizard.  The enchantment fused strips of stone to the armor, increasing it's AC by +2.
+			<p>In addition, once/day the wearer of this armor can use an action on their turn to transform into a Stone Atronach. 
+			This transformation lasts for 1 hour or until the wearer uses an action to turn back into their normal form.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="enhancement">2</set>
+			<set name="armorClass">15 + Dex modifier (max 2)</set>
+			<set name="weight" lb="30">30 lb.</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HALF_PLATE</set>			
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+		</rules>
+	</element>	
+	<!-- ==================================================================================== -->
 	<!-- Items -->
 	<!-- ==================================================================================== -->
 	<element name="Crude Map" type="Item" source="DM" id="ID_DM_ITEM_01">
