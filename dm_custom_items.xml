@@ -9,9 +9,75 @@
 		</update>		
 	</info>
 	<!-- ==================================================================================== -->
-	<!-- Weapons -->
+	<!-- Base Weapons -->
 	<!-- ==================================================================================== -->
-	<element name="Whirling Iron Greatsword" type="Magic Item" source="DM" id="ID_DM_LOOT_01">
+	<element name="Heavy Double Scimitar" type="Weapon" source="DM" id="ID_DM_BASE_WEAPONS_01">
+		<supports>
+			ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, 
+			ID_INTERNAL_DAMAGE_TYPE_SLASHING, 
+			ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, 
+			<!-- ID_INTERNAL_WEAPON_PROPERTY_SPECIAL,  -->
+			ID_DM_INTERNAL_WEAPON_PROPERTY_HEAVY_DOUBLE_SCIMITAR
+		</supports>		
+		<description>
+			Heavy Double Scimitar
+			<p>
+				When you take the attack action and make a two-handed attack with a double-bladed scimitar, you can use a bonus action to make a melee attack with the blade at the opposite end of the weapon. 
+				This attack uses the same ability modifier as the primary attack. The weapon’s damage die for this attack is a d6, and it deals slashing damage.
+			</p>			
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">157</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d6</set>
+			<set name="proficiency">ID_WOTC_WGTE_WEAPON_PROFICIENCY_DOUBLE_BLADED_SCIMITAR</set>
+		</setters>		
+	</element>
+	<element name="Special (Heavy Double Scimitar)" type="Weapon Property" source="DM" id="ID_DM_INTERNAL_WEAPON_PROPERTY_HEAVY_DOUBLE_SCIMITAR">
+		<description>
+			<p>
+				When you take the attack action and make a two-handed attack with a double-bladed scimitar, you can use a bonus action to make a melee attack with the blade at the opposite end of the weapon. 
+				This attack uses the same ability modifier as the primary attack. The weapon’s damage die for this attack is a d6, and it deals slashing damage.
+			</p>
+		</description>
+	</element>
+	<!-- <element name="Weapon Proficiency (Heavy Double Scimitar)" type="Proficiency" source="DM" id="ID_WOTC_WGTE_WEAPON_PROFICIENCY_DOUBLE_BLADED_SCIMITAR">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_WOTC_WGTE_INTERNAL_WEAPON_PROPERTY_SPECIAL_DOUBLE_BLADED_SCIMITAR</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_WGTE_WEAPON_PROFICIENCY_DOUBLE_BLADED_SCIMITAR" />
+		</rules>
+	</append>	 -->
+
+	<element name="Ultra-Greatsword" type="Weapon" source="DM" id="ID_DM_BASE_WEAPONS_02">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</set>
+		</setters>
+	</element>
+
+
+	<!-- ==================================================================================== -->
+	<!-- Base Armor -->
+	<!-- ==================================================================================== -->
+
+
+
+	<!-- ==================================================================================== -->
+	<!-- Magic Weapons -->
+	<!-- ==================================================================================== -->
+	<element name="Whirling Iron Greatsword" type="Magic Item" source="DM" id="ID_DM_WEAPONS_01">
 		<description>
 			<p>Proficiency with a greatsword allows you to add your proficiency bonus to the attack roll for any attack you make with it.  </p>
 			<p>If you hit a target, you can roll again to hit a second target within 5 feet for 1d8+str damage.</p>
@@ -23,32 +89,210 @@
 			<set name="type" addition="greatsword">Weapon</set>
 			<set name="rarity">Rare</set>
 			<set name="weapon">Greatsword</set>
+			<set name="damage" type="slashing">1d8</set>
 		</setters>
 	</element>
+	<element name="Gutrip" type="Magic Item" source="DM" id="ID_DM_WEAPONS_02">
+		<!-- <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_WOTC_ERLW_INTERNAL_WEAPON_PROPERTY_SPECIAL_DOUBLE_BLADED_SCIMITAR</supports>	 -->
+		<description>
+			<p>
+				This masterwork Double Scimitar has a hilt of sanded sumac wood, and two wickedly curved blades of folded iron. It is inset with a single shining ruby on the handle. 
+			</p>
+			<p>
+				When you take the attack action and make a two-handed attack with a double-bladed scimitar, you can use a bonus action to make a melee attack with the blade at the opposite end of the weapon. 
+				This attack uses the same ability modifier as the primary attack. The weapon’s damage die for this attack is a d6, and it deals slashing damage.
+			</p>			
+			<p>
+				Cyclone Attack: As an attack, you may move your full speed in a straight line through the spaces of any number of enemies, and make one attack roll against each that you pass by. 
+				You don't provoke OAs for this action. Recharge on a 5-6.
+			</p>
+			<p>
+				Ignition: Ignites target with magical fire on Crit, +1d10 fire damage, taken again at start of its turns unless it extinguishes the flames   
+			</p>
+		</description>
+		<setters>
+			<!-- <set name="keywords">Double-Bladed Scimitar</set> -->
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">4578</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="type" addition="Heavy Double Scimitar">Weapon</set>
+			<set name="weapon">Heavy Double Scimitar</set>			
+			<set name="rarity">Rare</set>
+			<set name="slot">twohand</set>
+			<!-- <set name="damage" type="slashing">2d6</set> -->
+			<set name="proficiency">ID_WOTC_ERLW_WEAPON_PROFICIENCY_DOUBLE_BLADED_SCIMITAR</set>
+			<set name="enhancement">2</set>
+		</setters>
+	</element>	
+	<element name="Frostpiercer" type="Magic Item" source="DM" id="ID_DM_WEAPONS_03">
+		<description>
+			<p>On hit, weapon deals 1d6 frost damage.</p>
+			<p>
+				When you hit a creature with a weapon attack, the creature must make a DC 15 Constitution saving throw or have their movement speed reduced by half until the end of their next turn. 
+			</p>
+			<p>
+				Weapon has 1d4 ice charges, recharge 1d4/day at dawn.
+				Each charge allows the user to cause Ice spikes to grow from the ground from a point within 60 feet.  
+				The spike growth has a radius of 10 ft.  Any hostile creature standing in the area takes 2d6 cold damage.  
+				Ice Spikes count as difficult terrain and last for 1 minute.
+			</p>
+		</description>
+		<short_description>test</short_description>
+		<setters>
+			<set name="keywords">rapier</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">3498</set>
+			<set name="type" addition="rapier">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">rapier</set>
+			<set name="enhancement">2</set>
+			<!-- <set name="proficiency">ID_WOTC_ERLW_WEAPON_PROFICIENCY_DOUBLE_BLADED_SCIMITAR</set> -->
+			<!-- <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" /> -->
+		</setters>
+	</element>
+	<element name="Anarcriss" type="Magic Item" source="DM" id="ID_DM_WEAPONS_04">
+		<description>
+			<p>Mithril blade once wielded by the fabled Order of the Sun Keepers.  Legend says their blades were so light and swift that they could slice the sunlight itself. </p>
+			<p>
+				[] You gain a +2 bonus to attack and damage rolls made with this magic weapon.  
+			</p>
+			<p>
+				[] As an action, you can leap to a point you can see within 15 ft.  Where you land, a column of radiant light blasts down.  
+				Each creature within 15 feet must make a dex saving throw against your spell save DC or be Blinded and takes 3d6 radiant damage. 
+				The creature can repeat the save at the start of it's turn to remove the condition.
+				On a sucessful save, the creature(s) takes only half damage and are not blinded.  
+			</p>
+			<p>
+				[] In addition, you can make one attack with this weapon as a bonus action on each of your turns.  
+				This attack deals radiant damage.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">Shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">7841</set>
+			<set name="type" addition="Shortsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Shortsword</set>
+		</setters>
+	</element>		
+	<element name="Stormcleaver" type="Magic Item" source="DM" id="ID_DM_WEAPONS_05">
+		<description>
+			<p>
+				Massive sword once wielded by a Demon Lord.		
+			</p>
+			<p>
+				The weapon is a giant-sized great sword that requires great strength to use effectively. Anyone with a Strength score of 14 or lower has disadvantage on all attack rolls made with Stormsplitter.		
+			</p>
+			<p>
+				On a successful hit, the target and up to 3 creatures of your choice within 15 feet must make a Dexterty saving throw against DC 10 + your Strength Modifier, or take 1d10 points of lightning damage.  
+				A sucessful save takes half damage.  			
+			</p>
+			<p>
+				Attacks with Stormsplitter score critical hits on a roll of 19 or 20.				
+			</p>			
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">5478</set>
+			<set name="type" addition="Ultra-Greatsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Ultra-Greatsword</set>	
+			<set name="enhancement">2</set>					
+		</setters>
+	</element>	
+    <element name="Dark Quasar Blade" type="Magic Item" source="DM" id="ID_DM_WEAPONS_06">
+        <description>
+            <p>
+				This blade has an unusual black circular guard.
+				When unsheathed, this sword absorbs light in a 10-foot sphere around it.  Bright light becomes dim light, and dim light becomes darkness.  
+			</p>
+            <p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon</p>
+            <p class="indent">This weapon has 5 charges, and it regains 1d4+1 expended charges daily at dawn.</p>
+            <p class="indent">
+				As an action, you can expend charges to release a beam of darkness. Each creature within a 5 ft. wide and 200 ft long line must make a DC 15 Constitution saving throw. 
+				On a failed save, a creature takes 2d8 necrotic damage for each charge expended and is blinded until the end of its next turn. 
+				On a successful save, it takes half as much damage and is not blinded.
+			</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="greatsword, longsword, rapier, or shortsword">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Greatsword||Longsword||Shortsword||Rapier</set>
+        </setters>
+    </element>
+	<element name="Mistral Blade" type="Magic Item" source="DM" id="ID_DM_WEAPONS_07">
+		<description>
+			<p>
+				When you hit with an attack using this magic sword, the target takes an extra 1d6 force damage. In addition, while you hold the sword, you have resistance to thunder damage.
+			</p>
+			<p class="indent">
+				When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">any sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+		</setters>
+	</element>
+	<element name="Improved Corpse Slayer" type="Magic Item" source="DM" id="ID_DM_WEAPONS_08">
+		<description>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">When you hit an undead creature with an attack using this weapon, the attack deals an extra 1d8 damage of the weapon’s type, and the creature has disadvantage on saving throws against effects that turn undead until the start of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">any</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Corpse Slayer {{parent}}, +{{enhancement}}</set>
+			<set name="charges">0</set>
+		</setters>
+	</element>		
+
+
 	<!-- ==================================================================================== -->
 	<!-- Armor -->
 	<!-- ==================================================================================== -->	
-	<element name="Sable Quality Half-Plate" type="Magic Item" source="DM" id="ID_DM_ARMOR_01">
+	<element name="Cole's Custom Cuirass" type="Magic Item" source="DM" id="ID_DM_ARMOR_01">
 		<description>
-			<p>This armor was created by Order of the Sable Cross blacksmith Cole Bern.  </p>
-			<p>Due to the high-quility worksmanship, this armor grants a +1 to AC.</p>
+			<p>
+				Cunningly crafted by expert smith Cole Bern for her personal use.
+				Armor is wrought of blackened mithril and leather, creating a dark and light, yet incredibly strong suit of armor.
+			</p>
 		</description>
 		<setters>
 			<set name="category">Magic Armor</set>
 			<set name="slot">body</set>
-			<set name="type" addition="medium">Armor</set>
-			<set name="rarity">Rare</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Unique</set>
 			<set name="enhancement">1</set>
-			<set name="armorClass">15 + Dex modifier (max 2)</set>
 			<set name="weight" lb="30">30 lb.</set>
-			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
-			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HALF_PLATE</set>			
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER</set>	
 		</setters>
 		<rules>
-			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
-			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
-		</rules>
+			<!-- Armor is supposed to have a base AC of 15, but was having trouble getting that working, so added +3 here as a hack over the armor's normal +1 -->
+			<stat name="ac:armored:enhancement" value="4" bonus="enhancement" />
+		</rules>	
 	</element>
+
 	<element name="Armor of the Mountain's Heart" type="Magic Item" source="DM" id="ID_DM_ARMOR_02">
 		<description>
 			<p>This armor was created as a personal project by Order of the Sable Cross blacksmith Cole Bern.</p>
@@ -71,7 +315,42 @@
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
 			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
 		</rules>
+	</element>
+	
+	<element name="Sable Shinobi Suit" type="Magic Item" source="DM" id="ID_DM_ARMOR_03">
+		<description>
+			<p>You gain a +1 bonus to AC while wearing this armor. In addition, your movements make no sound and shadows darken around you. You have advantage on Dexterity (Stealth) ability checks.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>		
 	</element>	
+	<element name="Sable Armor of Elemental Aura, Earth" type="Magic Item" source="DM" id="ID_DM_ARMOR_04">
+		<description>
+			<p>You have a +1 bonus to AC while wearing this armor.</p>
+			<p class="indent">In addition, you can use a bonus action on your turn to activate this armor’s elemental aura for 1 minute. While the elemental aura is active, you gain its benefits. Once you activate the elemental aura, it can’t be used again until the next dawn.</p>
+			<p class="indent"><strong><em>Elemental Aura.</em></strong> You gain resistance to all damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>			
+	</element>		
 	<!-- ==================================================================================== -->
 	<!-- Items -->
 	<!-- ==================================================================================== -->
@@ -111,4 +390,45 @@
 			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>	
+	<element name="Amulet of the Crescent Hills" type="Magic Item" source="DM" id="ID_DM_LOOT_04">
+		<description>
+			<p>
+				Small amulet made of obsidion carefully crafted into the shape of a crescent.  Given as a keepsake to a young Tabaxi when they left home to find their own story.
+			</p>
+			<p>
+				Has 3 charges, which refresh each day at dawn.  As an action, one charge can be consumed to cast the Invisibility spell.
+			</p>
+			<p class="indent"> 
+				<b>Invisibility</b>
+				<ul>
+					<li>Casting Time: 1 action</li>
+					<li>Range: Touch</li>
+					<li>Components: V S M (An eyelash encased in gum arabic)</li>
+					<li>Duration: Up to 1 hour</li>
+				</ul> 
+				A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person. The spell ends for a target that attacks or casts a spell.
+				At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Pipe of Rememberance" type="Magic Item" source="DM" id="ID_DM_LOOT_05">
+		<description>
+			<p>
+				This finely crafted lead pipe has ancient runes said to aid in recollection and memory engraved on the sides.
+				Rumors suggest that a good whack with this pipe will help bring surpressed and buried memories to mind.
+				Deals 1d4 blugeoning damage to target.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>			
 </elements>	
