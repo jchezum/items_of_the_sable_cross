@@ -366,7 +366,28 @@
 		</setters>
 		<rules>
 		</rules>			
-	</element>			
+	</element>	
+	<element name="Heavy Toilet Plate" type="Magic Item" source="DM" id="ID_DM_ARMOR_06">
+		<description>
+			<p>
+				Toilet Plate is made from light, flexible Porcelain. A Toliet Plate chain shirt or breastplate can be worn under normal clothes. 
+				If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.
+				While wearing Toilet Plate, you don't have to use the bathroom - the armor handles the collection, disposal, and cleanup for you.
+			</p>		
+			<p>This armor counts as heavy armor for the purposes of any effects/actions/spells.  </p>
+
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="heavy">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+			<!-- ID_INTERNAL_ARMOR_GROUP_HEAVY -->
+		</setters>
+		<rules>
+		</rules>			
+	</element>				
 	<!-- ==================================================================================== -->
 	<!-- Items -->
 	<!-- ==================================================================================== -->
