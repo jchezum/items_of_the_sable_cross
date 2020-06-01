@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>DM</author>
-		<update version="0.2.2">
+		<update version="0.2.3">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -473,11 +473,10 @@
 			<p>Shows the location of any existing toliets in a 10 mile radius from the user.</p>
 		</description>
 		<setters>
-			<set name="keywords">Toilet Map</set>
-			<set name="category">Wonderous Items</set>
-			<set name="cost" currency="cp">5</set>
-			<set name="type">Map</set>
-			<set name="rarity">Common</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
 		</setters>
 	</element>			
 </elements>	
