@@ -467,5 +467,17 @@
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Very Rare</set>
 		</setters>
+	</element>		
+	<element name="Toilet Map" type="Magic Item" source="DM" id="ID_DM_LOOT_06">
+		<description>
+			<p>Shows the location of any existing toliets in a 10 mile radius from the user.</p>
+		</description>
+		<setters>
+			<set name="keywords">Toilet Map</set>
+			<set name="category">Wonderous Items</set>
+			<set name="cost" currency="cp">5</set>
+			<set name="type">Map</set>
+			<set name="rarity">Common</set>
+		</setters>
 	</element>			
 </elements>	
