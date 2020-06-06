@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>DM</author>
-		<update version="0.2.3">
+		<update version="0.2.4">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -264,7 +264,29 @@
 			<set name="name-format">Corpse Slayer {{parent}}, +{{enhancement}}</set>
 			<set name="charges">0</set>
 		</setters>
-	</element>		
+	</element>
+	<element name="Whip of Proximity" type="Magic Item" source="DM" id="ID_DM_WEAPONS_09">
+		<description>
+			<p class="indent">
+				When you attack with this weapon, you can use your spellcasting ability modifier, instead of Strength or Dexterity, for the attack and damage rolls.
+			</p>
+			<p>
+				This whip has a 4 charges and regains 1d4 charges daily at dawn. When you hit with an attack using this whip, 
+				you can expend a charge and choose to forego the damage and instead cast a touch spell you know with a 
+				casting time of 1 action on the target as if you had touched it. Otherwise the spell functions as if you had cast it normally.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">whip</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Whip</set>
+			<set name="charges">4</set>
+		</setters>
+	</element>			
 
 
 	<!-- ==================================================================================== -->
@@ -478,5 +500,44 @@
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Very Rare</set>
 		</setters>
+	</element>
+	<element name="Gorgon Knapsack" type="Magic Item" source="DM" id="ID_DM_LOOT_07">
+		<description>
+			<p>
+				This bag was created by a tabaxi who wanted to take fresh fish with her on her travels without it spoiling. 
+				The knapsack can either be carried on its own or clipped to a larger backpack or saddle. It is roughly 1 foot in diameter at the mouth and 3 feet deep. 
+				Its weight never exceeds 20 pounds. Any non magical objects placed in their entirety within the knapsack turn to stone until they are taken out again.  
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>		
+	<element name="Battlebutter" type="Magic Item" source="DM" id="ID_DM_LOOT_08">
+		<description>
+			<p>
+				This stick of wonderfully golden butter has been adorned with glowing arcane symbols on two sides. 				
+			</p>
+			<p>
+				As a bonus action you can use the butter to grease the bottoms of your feet.
+				While your feet are greased in this way your walking speed is doubled for the next movement you make. This does not work on rough terrain.
+
+				If on your turn you do not move up to your full movement or do not move in a straight line, you must make a DC15 Dexterity saving throw. 
+				On a successful save you continue your movement as normal. On a failed save you keep sliding in the direction you were originally heading for the duration of your movement.
+
+				If as a result of this you collide with a solid object or creature you take 1d4 damage per 10 feet of movement taken up until the point of collision.
+				The stick of butter can be used 3 times in this way before it is used up. If not utilized in this manner the butter acts as regular butter. 
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
 	</element>			
+
 </elements>	
