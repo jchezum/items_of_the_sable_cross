@@ -1,0 +1,35 @@
+Creation Checklist
+The list of things you need to do to create a file, index, item, etc for aurora builder
+
+=================================================================================================
+        Files
+=================================================================================================
+To create a new item file, the following need to be completed:
+ 1.) Create the file
+ 2.) Add xml header
+ <?xml version="1.0" encoding="utf-8" ?>
+ 3.) Add elements tags and versioning info
+ <elements>
+	<info>
+		<name>Sable Weapons</name>
+		<description>Weapons created or found by members of the Sable Cross</description>
+		<author>JCDM</author>
+		<update version="0.2.5">
+			<file name="sable_weapons.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_weapons.xml" />
+		</update>		
+	</info>
+</elements>
+
+Update:
+Name - name of the file
+Description - details on contents of file
+Author - your name (JCDM)
+Update Version - used to track updates to the file.  Match the current index version for simplicity.
+File Name - file name
+URL - raw git url for file (will need to push to git in order to obtain this from gitlab)
+4.) add items as desired
+
+
+=================================================================================================
+        
+=================================================================================================
