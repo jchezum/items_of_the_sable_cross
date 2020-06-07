@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>DM</author>
-		<update version="0.2.4">
+		<update version="0.2.5">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -373,7 +373,7 @@
 			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
 		</rules>			
 	</element>	
-	<element name="Heavy Mithral Plate" type="Magic Item" source="DM" id="ID_DM_ARMOR_05">
+	<element name="Sestri's Mithral Plate" type="Magic Item" source="DM" id="ID_DM_ARMOR_05">
 		<description>
 			<p>Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.</p>		
 			<p>This armor counts as heavy armor for the purposes of any effects/actions/spells.  </p>
@@ -387,6 +387,7 @@
 			<!-- ID_INTERNAL_ARMOR_GROUP_HEAVY -->
 		</setters>
 		<rules>
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />		
 		</rules>			
 	</element>	
 	<element name="Heavy Toilet Plate" type="Magic Item" source="DM" id="ID_DM_ARMOR_06">
