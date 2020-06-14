@@ -4,7 +4,7 @@
 		<name>Sable Weapons</name>
 		<description>Weapons created or found by members of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.2.5">
+		<update version="0.2.6">
 			<file name="sable_weapons.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_weapons.xml" />
 		</update>		
 	</info>

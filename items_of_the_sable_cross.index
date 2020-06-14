@@ -4,7 +4,7 @@
 		<name>Sable Items</name>
 		<description>Items found or created by members of the Sable Cross</description>
 		<author url="https://viciousmockery.herokuapp.com/">Sable DM</author>
-		<update version="0.2.5">
+		<update version="0.2.6">
 			<file name="items_of_the_sable_cross.index" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items_of_the_sable_cross.index" />
 		</update>
 	</info>
