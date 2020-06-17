@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Path of the Wild Sould Homebrew</name>
+        <description>Fixes issues with path of the wild soul barbarian</description>
+        <author url="https://viciousmockery.herokuapp.com/">JCDM</author>
+        <update version="0.2.8">
+            <file name="path_of_the_wild_soul_homebrew.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/path_of_the_wild_soul_homebrew.xml" />
+        </update>
+    </info>
+
+    <element name="Path of the Wild Soul v2" type="Archetype" source="JCDM" id="ID_WOTC_UA_ARCHETYPE_PATH_OF_THE_WILD_SOUL_HB">
+        <supports>Primal Path</supports>
+        <description>
+            <p>The realm of the Feywild abounds with beauty, unpredictable emotion, and rampant magic. A barbarian exposed to this realm feels emotions powerfully and magic saturates their body. When a barbarian who follows this path rages, it is a bellowing roar for freedom, an explosion of expression, manifesting in unpredictable ways.</p>
+            <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_LINGERING_MAGIC" />
+            <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_WILD_SURGE" />
+            <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_MAGIC_RESERVE_HB" />
+            <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_ARCANE_REBUKE" />
+            <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_CHAOTIC_FURY_HB" />
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_LINGERING_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_WILD_SURGE" level="3" />
+            <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_MAGIC_RESERVE_HB" level="6" />
+            <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_ARCANE_REBUKE" level="10" />
+            <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_CHAOTIC_FURY_HB" level="14" />
+        </rules>
+    </element>
+    <element name="Lingering Magic" type="Archetype Feature" source="Unearthed Arcana: Barbarian and Monk" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_LINGERING_MAGIC">
+        <description>
+            <p>At 3rd level, your body reacts to the presence of magic. You can cast the detect magic spell without using a spell slot or components. Constitution is your spellcasting ability for this spell. You faintly glow a color corresponding to the school of magic you detect (you choose the colors).</p>
+            <p class="indent">You can use this feature a number of times equal to your Constitution modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{constitution:modifier}}/Long Rest">
+            <description>You can cast Detect Magic. Spellcasting: Constitution.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+        </rules>
+    </element>
+    <element name="Wild Surge" type="Archetype Feature" source="Unearthed Arcana: Barbarian and Monk" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_WILD_SURGE">
+        <description>
+            <p>Starting at 3rd level, magic erupts from you as you rage. When you enter your rage, roll on the Wild Surge table to determine the magical effect produced.</p>
+            <p class="indent">If the wild surge requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.</p>
+            <p><b><i>Duration. </i></b>
+                Some surge effects are persistent; they are active for as long as you are raging, and end once your rage ends. You can only have one persistent effect active at a time; if you trigger another wild surge and roll a new persistent effect, the new effect replaces the old one.            
+            </p>
+            <p><b><i>Unstable Rage. </i></b>
+                Whenever you take damage, roll a d20. You trigger a wild surge if the result of the roll is equal to or less than half the damage you took. Once you trigger a wild surge in this way, you cannot trigger another one until the start of your next turn.
+            </p>        
+            <p><b><i>Directed Chaos. </i></b>
+                When you roll on the Wild Surge table, you can change the result of the d20 roll by 1 in either direction, changing which effect is produced. Once you do, you can't do so again until you finish a short or long rest.
+            </p>                
+            <h6>WILD SURGE</h6>
+            <table>
+				<thead><tr><td>d20</td><td>Effect</td></tr></thead>
+                    <tr><td>1</td><td>You unleash an explosion in a 20-foot radius centered on yourself. Creatures in the area, including you, must make a Dexterity saving throw, and you roll a number of d10s equal to your Rage Damage. A creature takes fire damage equal to the total on a failed save, or half as much damage on a successful one.</td></tr>
+                    <tr><td>2</td><td>(Persistent) You teleport up to 20 feet to an unoccupied space you can see. Until your rage ends, you can activate this effect again on each of your turns as a bonus action.</td></tr>
+                    <tr><td>3</td><td>Energy floods into your body. You can immediately take one additional action, which can only be used to take the Attack or Dash action.</td></tr>
+                    <tr><td>4</td><td>(Persistent) Plant life temporarily grows around you: the ground within 10 feet of you is difficult terrain, and you do not suffer penalties to your movement to move through it.</td></tr>
+                    <tr><td>5</td><td>Healing energy radiates from you. Roll a number of d12s equal to your Rage Damage. You restore up to the total as hit points, divided as you choose among any number of creatures that you can see within 30 feet of you.</td></tr>
+                    <tr><td>6</td><td>(Persistent) You are borne aloft. You gain a flying speed equal to your walking speed.</td></tr>
+                    <tr><td>7</td><td>You conjure 1d4 intangible spirits in unoccupied spaces within 30 feet of you. Each spirit immediately flies 30 feet in a random direction. At the end of your turn, all spirits explode. Roll a number of d8s equal to your Rage Damage. Each creature within 5 feet of one or more of the spirits must succeed on a Dexterity saving throw or take force damage equal to the total.</td></tr>
+                    <tr><td>8</td><td>(Persistent) Light bends around you. You and anything you are wearing or carrying becomes invisible. This effect ends early when you attack.</td></tr>
+                    <tr><td>9</td><td>A beam of brilliant light lances from your chest in a line 5-feet-wide and 60-feet-long. Roll a number of d8s equal to your Rage Damage. Each creature in the line must succeed on a Constitution saving throw or take radiant damage equal to the total and be blinded until the start of your next turn.</td></tr>
+                    <tr><td>10</td><td>(Persistent) Shadows weave around a weapon of your choice you are holding. Until your rage ends, your weapon deals psychic damage instead of its bludgeoning, slashing, or piercing damage, and it gains the light and thrown properties with a normal range of 20 feet and a long range of 60 feet. If you drop the weapon or throw it, the weapon dissipates and reappears in your hand at the end of your turn.</td></tr>
+                    <tr><td>11</td><td>Necrotic energy bursts from you. Roll a number of d6s equal to your Rage Damage. Each other creature within 30 feet of you takes necrotic damage equal to the total, and you gain temporary hit points equal to the sum of the necrotic damage dealt to the creatures.</td></tr>
+                    <tr><td>12</td><td>(Persistent) Arcane energy enshrouds you. Until your rage ends, you gain a +2 bonus to AC, and whenever a creature within 10 feet of you hits you with an attack, that creature takes force damage equal to two times your Rage Damage.</td></tr>
+                    <tr><td>13</td><td>Strong winds blast out from you. Each creature within 10 feet of you must succeed on a Strength saving throw or be pushed away from you a number of feet equal to five times your Rage Damage, and then fall prone.</td></tr>
+                    <tr><td>14</td><td>(Persistent) Your body becomes wreathed in flames. You shed bright light in a 30-foot radius and dim light for an additional 30 feet, and your melee attacks deal an additional amount of fire damage equal to your Rage Damage. If another creature touches you or hits you with a melee attack while within 5 feet of you, roll a number of d4s equal to your Rage Damage. That creature takes fire damage equal to the total.</td></tr>
+                    <tr><td>15</td><td>Your visage becomes terrifying. Creatures within 30 feet of you must succeed on a Wisdom saving throw or become frightened of you until the end of your next turn.</td></tr>
+                    <tr><td>16</td><td>(Persistent) Your eyes can pierce through illusions. You gain truesight to a range of 60 feet.</td></tr>
+                    <tr><td>17</td><td>Arcane energy taps into the minds of those around you. Each creature within 30 feet of you must succeed on a Wisdom saving throw, or you see a glimpse of the creature’s thoughts, learning how it plans to attack you. As a result, the creature has disadvantage on attack rolls against you until the start of your next turn.</td></tr>
+                    <tr><td>18</td><td>(Persistent) Your body can move much faster than usual. Your movement speed increases by 10 feet, and your movement doesn't provoke opportunity attacks.</td></tr>
+                    <tr><td>19</td><td>You disrupt magic around you. Creatures within 30 feet of you that are concentrating on a spell must succeed on a Constitution saving throw or lose concentration on the spell. The DC is equal to 10 + the spell's level.</td></tr>
+                    <tr><td>20</td><td>(Persistent) Your become the center of a storm. Once per turn, when you successfully hit a creature with a melee attack, lightning leaps from your weapon to another creature of your choice within 30 feet. Roll a number of d6s equal to your Rage Damage. The target creature must succeed on a Dexterity saving throw or suffer lightning damage equal to the total.</td></tr>
+			</table>
+        </description>
+        <sheet>
+            <description>When you rage, roll on the Wild Surge Table. The save DC is {{wild surge:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="wild surge:dc" value="8" />
+            <stat name="wild surge:dc" value="proficiency" />
+            <stat name="wild surge:dc" value="constitution:modifier" />
+        </rules>
+    </element>
+    <element name="Magic Reserve" type="Archetype Feature" source="Unearthed Arcana: Barbarian and Monk" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_MAGIC_RESERVE_HB">
+        <description>
+            <p>
+                At 6th level, you can channel the magic surging inside you into other creatures. You have a pool of magical energy that replenishes when you take a long rest. The amount of energy in the pool is equal to half your barbarian level (rounded up).            
+            </p>
+            <p class="indent">
+                As an action, you can touch a creature and expend energy from the pool to restore one of the creature's expended spell slots, expending an amount of energy equal to the slot level. You can restore multiple spell slots with a single touch, expending the appropriate amount of energy for each. You cannot restore a spell slot of 6th level or higher.            
+            </p>
+            <p class="indent">
+                Alternatively, when you use this feature and expend energy, the creature instead gains temporary hit points equal to five times the amount of energy expended, up to a maximum of 30 temporary hit points.            
+            </p>
+            <p> Aditionally, you can cast spells that do not require concentration while raging. </p>            
+        </description>
+        <sheet action="Action">
+            <description>
+                Touch a creature and expend energy from the pool to restore one or more of the creature's expended spell slots, expending an amount of energy equal to the slot level(s). You cannot restore a spell slot of 6th level or higher.
+                Alternatively, when you use this feature, the creature gains temporary hit points equal to five times the amount of energy expended, up to a maximum of 30 temporary hit points.
+            </description>
+        </sheet>
+        <!-- <sheet>
+            <description>You can cast spells that do not require concentration while raging. </description>
+        </sheet> -->
+    </element>
+    <element name="Arcane Rebuke" type="Archetype Feature" source="Unearthed Arcana: Barbarian and Monk" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_ARCANE_REBUKE">
+        <description>
+            <p>At 10th level, the magic crackling within your soul lashes out. When a creature forces you to make a saving throw while you are raging, you can use your reaction to deal 3d6 force damage to that creature.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When you are forced to make a saving throw while you are raging, deal 3d6 force damage against the creature.</description>
+        </sheet>
+    </element>
+    <element name="Chaotic Fury" type="Archetype Feature" source="Unearthed Arcana: Barbarian and Monk" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_CHAOTIC_FURY_HB">
+        <description>
+            <p>At 14th level, you become a wellspring of wild magic while you are raging. As a bonus action, you can trigger a wild surge and roll on the Wild Surge table.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>While raging, you can reroll on the Wild Surge Table replacing your current effect with the new one.</description>
+        </sheet>
+    </element>
+
+</elements>    
