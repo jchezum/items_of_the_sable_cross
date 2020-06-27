@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>DM</author>
-		<update version="0.2.9">
+		<update version="0.3.0">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -291,12 +291,12 @@
 	</element>			
 	<element name="Alstroemeria" type="Magic Item" source="DM" id="ID_DM_WEAPONS_10">
 		<description>
-			<p class="indent">
+			<p>
 				On a hit, weapon deals an additional 1d6 poison damage.
 			</p>
 			<p class="indent">
 				<b>Entangling Arrow</b>
-				Alstroemeria has 3 charges.  As a bonus action, when a target is hit, the user can choose to cause the arrow to explode into writhing vines.  
+				Alstroemeria has 4 charges.  As a bonus action, when a target is hit, the user can choose to cause the arrow to explode into writhing vines.  
 				All creatures of the caster's choice within 10 feet of the target must succeed on a Strength saving throw or be restrained by the entangling 
 				vines until the spell ends (1 minute). If a creature is restrained by the vines, it takes 2d8 poison damage.  
 				A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself. When the spell ends, the conjured plants wilt away.
@@ -310,13 +310,13 @@
 			</p>			
 		</description>
 		<setters>
-			<set name="keywords">whip</set>
+			<set name="keywords">Longbow</set>
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="any">Weapon</set>
-			<set name="attunement">true</set>
-			<set name="rarity">Uncommon</set>
-			<set name="weapon">Whip</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Longbow</set>
 			<set name="charges">4</set>
 		</setters>
 	</element>		
