@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>DM</author>
-		<update version="0.2.6">
+		<update version="0.2.9">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -131,10 +131,12 @@
 				When you hit a creature with a weapon attack, the creature must make a DC 15 Constitution saving throw or have their movement speed reduced by half until the end of their next turn. 
 			</p>
 			<p>
-				Weapon has 1d4 ice charges, recharge 1d4/day at dawn.
-				Each charge allows the user to cause Ice spikes to grow from the ground from a point within 60 feet.  
-				The spike growth has a radius of 10 ft.  Any hostile creature standing in the area takes 2d6 cold damage.  
-				Ice Spikes count as difficult terrain and last for 1 minute.
+				Weapon has 4 ice charges, recharge 1d4/day at dawn.  Consuming a charge causes rending ice spikes to thrust out of the ground in a 10ft diameter area within 60 feet.
+				Any creature standing in that area or that enters the area must make a dex saving throw against the wielder's spell save DC or take 2d6 piercing damage and 1d8 cold damage, or half as much 
+				on a successful save.  Any creature that fails their save is impaled on the spikes and is Restrained.  A creature so impaled can make a strength or dex saving throw at the start of it's turn 
+				to break free.  
+
+				The Ice Spikes count as difficult terrain and last for 1 minute.
 			</p>
 		</description>
 		<short_description>test</short_description>
@@ -287,6 +289,37 @@
 			<set name="charges">4</set>
 		</setters>
 	</element>			
+	<element name="Alstroemeria" type="Magic Item" source="DM" id="ID_DM_WEAPONS_10">
+		<description>
+			<p class="indent">
+				On a hit, weapon deals an additional 1d6 poison damage.
+			</p>
+			<p class="indent">
+				<b>Entangling Arrow</b>
+				Alstroemeria has 3 charges.  As a bonus action, when a target is hit, the user can choose to cause the arrow to explode into writhing vines.  
+				All creatures of the caster's choice within 10 feet of the target must succeed on a Strength saving throw or be restrained by the entangling 
+				vines until the spell ends (1 minute). If a creature is restrained by the vines, it takes 2d8 poison damage.  
+				A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself. When the spell ends, the conjured plants wilt away.
+				Alstroemeria regains 1d4 charges each day at dawn.				
+			</p>
+			<p class="indent">
+				<b>Thornstorm</b>
+				An arrow fired using this effect emits a brief green glow, before exploding into several fragments and a shaft.  
+				On a hit, the shaft deals 2d8 piercing damage, while each fragment deals 1d4+1 force damage.   
+				Arrows fired this way are not recoverable, but still apply any effects.  This feature can be used twice per short or long rest.
+			</p>			
+		</description>
+		<setters>
+			<set name="keywords">whip</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Whip</set>
+			<set name="charges">4</set>
+		</setters>
+	</element>		
 
 
 	<!-- ==================================================================================== -->
