@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>DM</author>
-		<update version="0.3.0">
+		<update version="0.3.1">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -289,7 +289,7 @@
 			<set name="charges">4</set>
 		</setters>
 	</element>			
-	<element name="Alstroemeria" type="Magic Item" source="DM" id="ID_DM_WEAPONS_10">
+	<element name="Alstroemeria" type="Magic Item" source="JCDM" id="ID_DM_WEAPONS_10">
 		<description>
 			<p>
 				On a hit, weapon deals an additional 1d6 poison damage.
@@ -318,6 +318,7 @@
 			<set name="rarity">Very Rare</set>
 			<set name="weapon">Longbow</set>
 			<set name="charges">4</set>
+			<set name="enhancement">2</set>			
 		</setters>
 	</element>		
 
