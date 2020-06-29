@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>DM</author>
-		<update version="0.3.1">
+		<update version="0.3.3">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -132,7 +132,7 @@
 			</p>
 			<p>
 				Weapon has 4 ice charges, recharge 1d4/day at dawn.  Consuming a charge causes rending ice spikes to thrust out of the ground in a 10ft diameter area within 60 feet.
-				Any creature standing in that area or that enters the area must make a dex saving throw against the wielder's spell save DC or take 2d6 piercing damage and 1d8 cold damage, or half as much 
+				Any creature of the wielder's choice standing in that area or that enters the area must make a dex saving throw against the wielder's spell save DC or take 2d6 piercing damage and 1d8 cold damage, or half as much 
 				on a successful save.  Any creature that fails their save is impaled on the spikes and is Restrained.  A creature so impaled can make a strength or dex saving throw at the start of it's turn 
 				to break free.  
 
@@ -174,7 +174,7 @@
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">7841</set>
 			<set name="type" addition="Shortsword">Weapon</set>
-			<set name="attunement">true</set>
+			<set name="attunement">false</set>
 			<set name="rarity">Very Rare</set>
 			<set name="enhancement">2</set>
 			<set name="weapon">Shortsword</set>
@@ -320,7 +320,30 @@
 			<set name="charges">4</set>
 			<set name="enhancement">2</set>			
 		</setters>
-	</element>		
+	</element>	
+    <element name="Fiendslayer" type="Magic Item" source="JCDM" id="ID_DM_WEAPONS_11">
+        <description>
+            <p>
+				When unsheathed, this blade glows softly with a pure white light (5 ft radius).
+				Any fiend or devil within than radius has disadvantage on attack rolls and saving throws.  
+				As a bonus action, the wielder can cause the sword to emit this light in a 30-foot radius for one minute.
+				The wielder can extinguish the light as a bonus action.
+			</p>
+            <p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon</p>
+            <p class="indent">
+				When a fiend or devil is hit with this blade, they take an extra 2d8 radiant damage. 
+			</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">6205</set>
+            <set name="weight" lb="0">4 lb.</set>
+            <set name="type" addition="greatsword, longsword">Weapon</set>
+            <set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Greatsword||Longsword</set>
+        </setters>
+    </element>		
 
 
 	<!-- ==================================================================================== -->
