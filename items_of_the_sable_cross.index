@@ -11,5 +11,6 @@
 	<files>
 		<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		<file name="path_of_the_wild_soul_homebrew.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/path_of_the_wild_soul_homebrew.xml" />
+		<file name="sable_armor.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_armor.xml" />
 	</files>
 </index>
