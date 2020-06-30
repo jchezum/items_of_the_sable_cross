@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sable Armor</name>
+		<description>Armor made by or for the members of the Order of the Sable Cross</description>
+		<author>JCDM</author>
+		<update version="0.3.4">
+			<file name="sable_armor.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_armor.xml" />
+		</update>		
+	</info>
+
+    <!-- ==================================================================================== -->
+	<!-- Armor -->
+	<!-- ==================================================================================== -->	
+	<element name="Cole's Custom Cuirass" type="Magic Item" source="DM" id="ID_DM_ARMOR_01">
+		<description>
+			<p>
+				Cunningly crafted by expert smith Cole Bern for her personal use.
+				Armor is wrought of blackened mithril and leather, creating a dark and light, yet incredibly strong suit of armor.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="enhancement">1</set>
+			<set name="weight" lb="30">30 lb.</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER</set>	
+		</setters>
+		<rules>
+			<!-- Armor is supposed to have a base AC of 15, but was having trouble getting that working, so added +3 here as a hack over the armor's normal +1 -->
+            <!-- Armor should be medium armor that doesn't stop the dex scaling at +2, but thats hard to do in aurora so made it a custom light armor. -->
+			<stat name="ac:armored:enhancement" value="4" bonus="enhancement" />
+		</rules>	
+	</element>
+
+	<element name="Armor of the Mountain's Heart" type="Magic Item" source="DM" id="ID_DM_ARMOR_02">
+        <!-- TDOD: this needs to be reworked as its not even close to correct or done in it's current state -->
+		<description>
+			<p>This armor was created as a personal project by Order of the Sable Cross blacksmith Cole Bern.</p>
+			It has been further enhanced by an enchantment from a powerful wizard.  The enchantment fused strips of stone to the armor, increasing it's AC by +2.
+			<p>In addition, once/day the wearer of this armor can use an action on their turn to transform into a Stone Atronach. 
+			This transformation lasts for 1 hour or until the wearer uses an action to turn back into their normal form.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="enhancement">2</set>
+			<set name="armorClass">15 + Dex modifier (max 2)</set>
+			<set name="weight" lb="30">30 lb.</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HALF_PLATE</set>			
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+		</rules>
+	</element>
+	
+	<element name="Sable Shinobi Suit" type="Magic Item" source="DM" id="ID_DM_ARMOR_03">
+		<description>
+			<p>You gain a +1 bonus to AC while wearing this armor. In addition, your movements make no sound and shadows darken around you. You have advantage on Dexterity (Stealth) ability checks.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>		
+	</element>	
+	<element name="Sable Armor of Elemental Aura, Earth" type="Magic Item" source="DM" id="ID_DM_ARMOR_04">
+		<description>
+			<p>You have a +1 bonus to AC while wearing this armor.</p>
+			<p class="indent">In addition, you can use a bonus action on your turn to activate this armor’s elemental aura for 1 minute. While the elemental aura is active, you gain its benefits. Once you activate the elemental aura, it can’t be used again until the next dawn.</p>
+			<p class="indent"><strong><em>Elemental Aura.</em></strong> You gain resistance to all damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>			
+	</element>	
+	<element name="Sestri's Mithral Plate" type="Magic Item" source="DM" id="ID_DM_ARMOR_05">
+		<description>
+			<p>Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.</p>		
+			<p>This armor counts as heavy armor for the purposes of any effects/actions/spells.  </p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="heavy">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+			<!-- ID_INTERNAL_ARMOR_GROUP_HEAVY -->
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />		
+		</rules>			
+	</element>	
+	<element name="Heavy Toilet Plate" type="Magic Item" source="DM" id="ID_DM_ARMOR_06">
+		<description>
+			<p>
+				Toilet Plate is made from light, flexible Porcelain. A Toliet Plate chain shirt or breastplate can be worn under normal clothes. 
+				If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the Toilet Plate version of the armor doesn't.
+				While wearing Toilet Plate, you don't have to use the bathroom - the armor handles the collection, disposal, and cleanup for you.
+			</p>		
+			<p>This armor counts as heavy armor for the purposes of any effects/actions/spells.  </p>
+
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="heavy">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM, ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<!-- ID_INTERNAL_ARMOR_GROUP_HEAVY -->
+		</setters>
+		<rules>
+		</rules>			
+	</element>
+	<element name="Sable Obsidian Flint Dragon Plate" type="Magic Item" source="JCDM" id="ID_DM_ARMOR_07">
+		<description>
+			<p>
+				You gain a +2 to AC and resistance to poison damage while you wear this armor.  
+				In addition, you can add 1d4 to ability checks and saving throws made to avoid or end the grappled condition on yourself.
+			</p>		
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="heavy">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />			
+		</rules>			
+	</element>	
+
+	<element name="Cole's Reddard-Scale Half-Plate" type="Magic Item" source="JCDM" id="ID_DM_ARMOR_08">
+		<description>
+			<p>
+				This armor is made from the set of scaled armor taken off the corpse of the Uruk Warlord Reddard.
+            </p>
+            <p>    
+                While wearing this armor, you gain a +1 to AC.  
+            </p>
+            <p>
+                This armor is padded to prevent it from making extra noise when the wearer is attempting to be stealthy (no disadvantage on stealth checks).
+			</p>		
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">3500</set>
+			<set name="type" addition="medium">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="armorClass">15 + Dex modifier (max 2)</set>
+			<set name="weight" lb="20">30 lb.</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />			
+		</rules>			
+	</element>	    	
+</elements>    
