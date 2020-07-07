@@ -4,7 +4,7 @@
         <name>Path of the Wild Sould Homebrew</name>
         <description>Fixes issues with path of the wild soul barbarian</description>
         <author url="https://viciousmockery.herokuapp.com/">JCDM</author>
-        <update version="0.2.8">
+        <update version="0.3.5">
             <file name="path_of_the_wild_soul_homebrew.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/path_of_the_wild_soul_homebrew.xml" />
         </update>
     </info>
@@ -13,27 +13,32 @@
         <supports>Primal Path</supports>
         <description>
             <p>The realm of the Feywild abounds with beauty, unpredictable emotion, and rampant magic. A barbarian exposed to this realm feels emotions powerfully and magic saturates their body. When a barbarian who follows this path rages, it is a bellowing roar for freedom, an explosion of expression, manifesting in unpredictable ways.</p>
-            <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_LINGERING_MAGIC" />
-            <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_WILD_SURGE" />
+            <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_LINGERING_MAGIC_HB" />
+            <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_WILD_SURGE_HB" />
             <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_MAGIC_RESERVE_HB" />
-            <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_ARCANE_REBUKE" />
+            <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_ARCANE_REBUKE_HB" />
             <div element="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_CHAOTIC_FURY_HB" />
         </description>
         <sheet>
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_LINGERING_MAGIC" level="3" />
-            <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_WILD_SURGE" level="3" />
+            <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_LINGERING_MAGIC_HB" level="3" />
+            <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_WILD_SURGE_HB" level="3" />
             <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_MAGIC_RESERVE_HB" level="6" />
-            <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_ARCANE_REBUKE" level="10" />
+            <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_ARCANE_REBUKE_HB" level="10" />
             <grant type="Archetype Feature" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_CHAOTIC_FURY_HB" level="14" />
         </rules>
     </element>
-    <element name="Lingering Magic" type="Archetype Feature" source="Unearthed Arcana: Barbarian and Monk" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_LINGERING_MAGIC">
+    <element name="Lingering Magic" type="Archetype Feature" source="JCDM" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_LINGERING_MAGIC_HB">
         <description>
-            <p>At 3rd level, your body reacts to the presence of magic. You can cast the detect magic spell without using a spell slot or components. Constitution is your spellcasting ability for this spell. You faintly glow a color corresponding to the school of magic you detect (you choose the colors).</p>
-            <p class="indent">You can use this feature a number of times equal to your Constitution modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+            <p>
+                At 3rd level, your body reacts to the presence of magic. You can cast the detect magic spell without using a spell slot or components. 
+                Constitution is your spellcasting ability for this spell. You faintly glow a color corresponding to the school of magic you detect (you choose the colors).
+            </p>
+            <p class="indent">
+                You can use this feature a number of times equal to your Constitution modifier (minimum of once). You regain all expended uses when you finish a long rest.
+            </p>
         </description>
         <sheet usage="{{constitution:modifier}}/Long Rest">
             <description>You can cast Detect Magic. Spellcasting: Constitution.</description>
@@ -42,18 +47,25 @@
             <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
         </rules>
     </element>
-    <element name="Wild Surge" type="Archetype Feature" source="Unearthed Arcana: Barbarian and Monk" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_WILD_SURGE">
+    <element name="Wild Surge" type="Archetype Feature" source="JCDM" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_WILD_SURGE_HB">
         <description>
-            <p>Starting at 3rd level, magic erupts from you as you rage. When you enter your rage, roll on the Wild Surge table to determine the magical effect produced.</p>
-            <p class="indent">If the wild surge requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.</p>
+            <p>
+                Starting at 3rd level, magic erupts from you as you rage. When you enter your rage, roll on the Wild Surge table to determine the magical effect produced.
+            </p>
+            <p class="indent">
+                If the wild surge requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.
+            </p>
             <p><b><i>Duration. </i></b>
-                Some surge effects are persistent; they are active for as long as you are raging, and end once your rage ends. You can only have one persistent effect active at a time; if you trigger another wild surge and roll a new persistent effect, the new effect replaces the old one.            
+                Some surge effects are persistent; they are active for as long as you are raging, and end once your rage ends. 
+                You can only have one persistent effect active at a time; if you trigger another wild surge and roll a new persistent effect, the new effect replaces the old one.            
             </p>
             <p><b><i>Unstable Rage. </i></b>
-                Whenever you take damage, roll a d20. You trigger a wild surge if the result of the roll is equal to or less than half the damage you took. Once you trigger a wild surge in this way, you cannot trigger another one until the start of your next turn.
+                Whenever you take damage, roll a d20. You trigger a wild surge if the result of the roll is equal to or less than half the damage you took. 
+                <!-- Once you trigger a wild surge in this way, you cannot trigger another one until the start of your next turn. -->
             </p>        
             <p><b><i>Directed Chaos. </i></b>
-                When you roll on the Wild Surge table, you can change the result of the d20 roll by 1 in either direction, changing which effect is produced. Once you do, you can't do so again until you finish a short or long rest.
+                When you roll on the Wild Surge table, you can change the result of the d20 roll by up to 1/2 your proficiency bonus (rounded down) in either direction, changing which effect is produced. 
+                Once you do, you can't do so again until you finish a short or long rest.
             </p>                
             <h6>WILD SURGE</h6>
             <table>
@@ -89,10 +101,11 @@
             <stat name="wild surge:dc" value="constitution:modifier" />
         </rules>
     </element>
-    <element name="Magic Reserve" type="Archetype Feature" source="Unearthed Arcana: Barbarian and Monk" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_MAGIC_RESERVE_HB">
+    <element name="Magic Reserve" type="Archetype Feature" source="JCDM" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_MAGIC_RESERVE_HB">
         <description>
             <p>
-                At 6th level, you can channel the magic surging inside you into other creatures. You have a pool of magical energy that replenishes when you take a long rest. The amount of energy in the pool is equal to half your barbarian level (rounded up).            
+                At 6th level, you can channel the magic surging inside you into other creatures. You have a pool of magical energy that replenishes when you take a long rest. 
+                The amount of energy in the pool is equal to half your barbarian level (rounded up).            
             </p>
             <p class="indent">
                 As an action, you can touch a creature and expend energy from the pool to restore one of the creature's expended spell slots, expending an amount of energy equal to the slot level. You can restore multiple spell slots with a single touch, expending the appropriate amount of energy for each. You cannot restore a spell slot of 6th level or higher.            
@@ -104,15 +117,19 @@
         </description>
         <sheet action="Action">
             <description>
-                Touch a creature and expend energy from the pool to restore one or more of the creature's expended spell slots, expending an amount of energy equal to the slot level(s). You cannot restore a spell slot of 6th level or higher.
+                Touch a creature and expend energy from the pool to restore one or more of the creature's expended spell slots, expending an amount of energy equal to the slot level(s). 
+                You cannot restore a spell slot of 6th level or higher.
                 Alternatively, when you use this feature, the creature gains temporary hit points equal to five times the amount of energy expended, up to a maximum of 30 temporary hit points.
             </description>
         </sheet>
+        <rules>
+            <stat name="barbarian:reserve" value="level:barbarian:half" />
+        </rules>
         <!-- <sheet>
             <description>You can cast spells that do not require concentration while raging. </description>
         </sheet> -->
     </element>
-    <element name="Arcane Rebuke" type="Archetype Feature" source="Unearthed Arcana: Barbarian and Monk" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_ARCANE_REBUKE">
+    <element name="Arcane Rebuke" type="Archetype Feature" source="Unearthed Arcana: Barbarian and Monk" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_ARCANE_REBUKE_HB">
         <description>
             <p>At 10th level, the magic crackling within your soul lashes out. When a creature forces you to make a saving throw while you are raging, you can use your reaction to deal 3d6 force damage to that creature.</p>
         </description>
