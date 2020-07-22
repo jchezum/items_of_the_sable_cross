@@ -4,7 +4,7 @@
 		<name>Sable Weapons</name>
 		<description>Weapons created or found by members of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.3.7">
+		<update version="0.3.8">
 			<file name="sable_weapons.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_weapons.xml" />
 		</update>		
 	</info>
@@ -35,7 +35,7 @@
 	<!-- ==================================================================================== -->			
 	<element name="Dragonsteel Longsword" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_01">
 		<description>
-			<p>This longsword is made of an unusual blackened metal with a faint, poison-green iridescence. <p>
+			<p>This longsword is made of an unusual blackened metal with a faint, poison-green iridescence. </p>
 			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d8 acid damage. </p>
 		</description>
 		<setters>
@@ -51,7 +51,7 @@
 	</element>	
 	<element name="Dragonsteel Shortsword" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_02">
 		<description>
-			<p>This shortsword is made of an unusual blackened metal with a faint, poison-green iridescence. <p>
+			<p>This shortsword is made of an unusual blackened metal with a faint, poison-green iridescence. </p>
 			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d8 acid damage. </p>
 		</description>
 		<setters>
@@ -67,7 +67,7 @@
 	</element>
 	<element name="Dragonsteel Dagger" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_02">
 		<description>
-			<p>This shortsword is made of an unusual blackened metal with a faint, poison-green iridescence. <p>
+			<p>This shortsword is made of an unusual blackened metal with a faint, poison-green iridescence. </p>
 			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d6 acid damage. </p>
 		</description>
 		<setters>
@@ -83,7 +83,7 @@
 	</element>	
 	<element name="Dragonsteel Heavy Crossbow" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_03">
 		<description>
-			<p>This Heavy Crossbow is made of an unusual blackened metal with a faint, poison-green iridescence. <p>
+			<p>This Heavy Crossbow is made of an unusual blackened metal with a faint, poison-green iridescence. </p>
 			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d6 acid damage. </p>
 		</description>
 		<setters>
