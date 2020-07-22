@@ -4,7 +4,7 @@
 		<name>Sable Weapons</name>
 		<description>Weapons created or found by members of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.2.6">
+		<update version="0.3.6">
 			<file name="sable_weapons.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_weapons.xml" />
 		</update>		
 	</info>
@@ -27,6 +27,94 @@
 			<set name="rarity">Very Rare</set>
 			<set name="weapon">Greatsword</set>
 			<set name="attunement">true</set>
+		</setters>
+	</element>	
+
+	<!-- ==================================================================================== -->
+	<!-- Dragonsteel Weapons -->
+	<!-- ==================================================================================== -->			
+	<element name="Dragonsteel Longsword" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_01">
+		<description>
+			<p>This longsword is made of an unusual blackened metal with a faint, poison-green iridescence. <p>
+			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d8 acid damage. </p>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Longsword</set>
+			<set name="attunement">false</set>
+			<set name="enhancement">1</set>
+		</setters>		
+	</element>	
+	<element name="Dragonsteel Shortsword" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_02">
+		<description>
+			<p>This shortsword is made of an unusual blackened metal with a faint, poison-green iridescence. <p>
+			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d8 acid damage. </p>
+		</description>
+		<setters>
+			<set name="keywords">shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">shortsword</set>
+			<set name="attunement">false</set>
+			<set name="enhancement">1</set>
+		</setters>		
+	</element>
+	<element name="Dragonsteel Dagger" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_02">
+		<description>
+			<p>This shortsword is made of an unusual blackened metal with a faint, poison-green iridescence. <p>
+			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d6 acid damage. </p>
+		</description>
+		<setters>
+			<set name="keywords">dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">dagger</set>
+			<set name="attunement">false</set>
+			<set name="enhancement">1</set>
+		</setters>		
+	</element>	
+	<element name="Dragonsteel Heavy Crossbow" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_03">
+		<description>
+			<p>This Heavy Crossbow is made of an unusual blackened metal with a faint, poison-green iridescence. <p>
+			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d6 acid damage. </p>
+		</description>
+		<setters>
+			<set name="keywords">crossbow</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="type" addition="crossbow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">crossbow</set>
+			<set name="attunement">false</set>
+			<set name="enhancement">1</set>
+		</setters>		
+	</element>			
+
+
+	<!-- ==================================================================================== -->
+	<!-- Dragonsteel Ammunition -->
+	<!-- ==================================================================================== -->	
+	<element name="Dragonsteel Bolt" type="Magic Item" source="Xanathar’s Guide to Everything" id="JCDM_Dragonsteel_Ammo_01">		
+		<description>
+			<p>This crossbow bolt is constructed from a thick shaft of dark, hard wood, with a tip made of an unusual blackened metal with a faint, poison-green iridescence and fletched with black feathers. </p>
+			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d4 acid damage. </p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">rare</set>
+			<set name="stackable">true</set>
+			<set name="enhancement">1</set>
 		</setters>
 	</element>			
 

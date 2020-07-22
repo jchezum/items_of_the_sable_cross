@@ -4,7 +4,7 @@
 		<name>Sable Armor</name>
 		<description>Armor made by or for the members of the Order of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.3.4">
+		<update version="0.3.6">
 			<file name="sable_armor.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_armor.xml" />
 		</update>		
 	</info>
@@ -177,5 +177,45 @@
 		<rules>
 			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />			
 		</rules>			
-	</element>	    	
+	</element>	  
+
+	<element name="Dragonsteel Plate" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Armor_01">
+		<description>
+			<p>This plate armor is made of an unusual blackened metal with a faint, poison-green iridescence. </p>
+            <p>While wearing this armor, you gain a +1 to AC and are resistant to acid damage.  </p>	
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">4500</set>
+			<set name="type" addition="medium">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weight" lb="20">25 lb.</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />	
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />					
+		</rules>			
+	</element>	 
+
+	<element name="Armored Dragonsteel Robe" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Armor_02">
+		<description>
+			<p>This robe is made of an unusual woven material, laced with a blackened metal with a faint, poison-green iridescence. </p>
+            <p>While wearing this armor, you gain a +1 to AC and are resistant to acid damage.  </p>	
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">4500</set>
+			<set name="type" addition="medium">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weight" lb="20">7 lb.</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="3" bonus="enhancement" />	
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />					
+		</rules>			
+	</element>		 	
 </elements>    
