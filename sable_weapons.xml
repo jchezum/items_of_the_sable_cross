@@ -4,7 +4,7 @@
 		<name>Sable Weapons</name>
 		<description>Weapons created or found by members of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.3.9">
+		<update version="0.3.10">
 			<file name="sable_weapons.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_weapons.xml" />
 		</update>		
 	</info>
@@ -87,12 +87,12 @@
 			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d6 acid damage. </p>
 		</description>
 		<setters>
-			<set name="keywords">crossbow, heavy</set>
+			<set name="keywords">crossbow</set>
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">1000</set>
-			<set name="type" addition="crossbow, heavy">Weapon</set>
+			<set name="type" addition="crossbow">Weapon</set>
 			<set name="rarity">Rare</set>
-			<set name="weapon">crossbow, heavy</set>
+			<set name="weapon">crossbow</set>
 			<set name="attunement">false</set>
 			<set name="enhancement">1</set>
 		</setters>		
