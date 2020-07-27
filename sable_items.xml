@@ -4,11 +4,43 @@
 		<name>Sable Armor</name>
 		<description>Armor made by or for the members of the Order of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.3.9">
+		<update version="0.3.12">
 			<file name="sable_armor.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_armor.xml" />
 		</update>		
 	</info>
 
-    <!-- <element>
-    </element> -->
+	<element name="Orb of Scrying" type="Item" source="DM" id="ID_JCDM_MAGIC_ITEM_001">
+		<description>
+			<p>
+				A small clear crystal orb the size of a man's fist.  Has 1d4 charges (max 4), and regains a charge when set under the light of the moon for 1 hour.
+				Spending a charge allows the user to cast the <b>Scry</b> spell.  
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">Orb of Scrying</set>
+			<set name="category">Wonderous Items</set>
+			<set name="cost" currency="cp">2500</set>
+			<set name="type">Orb</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Alluring Ruby Amulet" type="Item" source="DM" id="ID_JCDM_MAGIC_ITEM_002">
+		<description>
+			<p>
+				A small, well-crafted amulet that when worn causes heads to turn and suggestions to be more impactful.
+				Gives a +1 to Charisma and proficiency wtih Persuasion checks where the target can see you.  
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">Alluring Ruby Amulet</set>
+			<set name="category">Wonderous Items</set>
+			<set name="cost" currency="cp">2500</set>
+			<set name="type">Orb</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>			
 </elements>    
