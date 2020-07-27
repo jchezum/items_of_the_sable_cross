@@ -14,6 +14,6 @@
 		<file name="sable_armor.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_armor.xml" />
 		<file name="sable_weapons.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_weapons.xml" />
 		<file name="sable_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_items.xml" />
-		<file name="sable_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_spells.xml" />
+		<file name="sable_spells.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_spells.xml" />
 	</files>
 </index>
