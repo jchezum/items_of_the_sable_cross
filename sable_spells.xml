@@ -4,7 +4,7 @@
 		<name>Sable Spells</name>
 		<description>Spells created by or for the members of the Order of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.3.13">
+		<update version="0.3.17">
 			<file name="sable_spells.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_spells.xml" />
 		</update>		
 	</info>
@@ -35,5 +35,131 @@
         <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Ground Pound" type="Spell" source="JCDM" id="ID_JCDM_EARTH_02">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>
+                You slam the ground (with fists/feet/weapon/etc), sending out a shockwave in a 15 foot cone in front of you.
+                Creatures in the cone must make a Dexterity saving throw or take 1d4 force damage and 1d4 bludgeoning damage (half on save).
+            </p>
+            <p>
+                This spell's damage increases by 1d4 force and 1d4 bludgeoning damage when you reach level 5, 2d4 force/bludgeoning damage at level 11, and 3d4 force/bludgeoning damage at level 17.
+            </p>
+        </description>
+        <setters>
+        <set name="keywords"></set>
+        <set name="level">0</set>
+        <set name="school">Evocation</set>
+        <set name="time">1 Action</set>
+        <set name="duration">1 round</set>
+        <set name="range">Self</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">false</set>
+        <set name="materialComponent" />
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+        </setters>
+    </element>    
+    <element name="Earth Spikes" type="Spell" source="JCDM" id="ID_JCDM_EARTH_03">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>
+                You create blunt spikes of earth on the ground that you can see within range. The spikes fill a 5-foot cube. 
+                Any creature in the spikes' space when you cast this spell must succeed on a Dexterity saving throw or take 1d8 bludgeoning damage. 
+                The spikes cause that area to be difficult terrain. You can create an extra instance of the spell at 5th level, 11th level, and 17th level. 
+                All instances must be connect to at least one other instance. Multiple instances may be placed in the same area to stack their damage, but only one Dexterity save is done by any creature.
+            </p>
+        </description>
+        <setters>
+        <set name="keywords"></set>
+        <set name="level">0</set>
+        <set name="school">Transmutation</set>
+        <set name="time">1 Action</set>
+        <set name="duration">1 round</set>
+        <set name="range">60 ft</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">false</set>
+        <set name="materialComponent" />
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+        </setters>
+    </element>       
+    <element name="Earthern Grasp" type="Spell" source="JCDM" id="ID_JCDM_EARTH_04">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>
+                You target one creature you can see within range. The target must make a strength saving throw. 
+                On a failed save the target is encased in earth or stone, depending on your surrounding. They are encased for the next minute. 
+                At the beginning of their turn for the next minute they may repeat the saving throw. On a successful save the spell breaks.
+                At higher levels you may select an additional creature for each level above the 1st.
+            </p>
+        </description>
+        <setters>
+        <set name="keywords"></set>
+        <set name="level">1</set>
+        <set name="school">Evocation</set>
+        <set name="time">1 Action</set>
+        <set name="duration">1 minute</set>
+        <set name="range">60 ft</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">true</set>
+        <set name="materialComponent">A rock or chunk of earth infused with magic.</set>
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+        </setters>
+    </element>      
+    <element name="Stone Bolt" type="Spell" source="JCDM" id="ID_JCDM_EARTH_05">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>
+                You fire a piece of stone at an enemy, much harder than normally possible. You make a ranged spell attack at a creature or object within range. 
+                On a hit, the target takes 3d8 bludgeoning damage. The bolt deals double damage to objects and structures.
+                <b><i>At Higher Levels:</i></b> When you cast this spell using a spell slot of 2nd or higher, increase the damage by 1d8 for each slot level above 1st.
+            </p>
+        </description>
+        <setters>
+        <set name="keywords"></set>
+        <set name="level">1</set>
+        <set name="school">Evocation</set>
+        <set name="time">1 Action</set>
+        <set name="duration">1 round</set>
+        <set name="range">30 ft</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">true</set>
+        <set name="materialComponent">A small rock</set>
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+        </setters>
+    </element>       
+    <element name="Earth Barrier" type="Spell" source="JCDM" id="ID_JCDM_EARTH_06">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>
+                Reaction trigger: You or a target of your choice within 30 feet are hit by an attack or targeted by the magic missile spell.
+            </p>
+            <p>
+                You call forth a pillar of earth or stone in an unoccupied space within range. The earth barrier is large enough to provide you with full cover. 
+                The earth barrier is immobile and has an AC of 10 and 27 hit points.
+            </p>
+        </description>
+        <setters>
+        <set name="keywords"></set>
+        <set name="level">1</set>
+        <set name="school">Abjuration</set>
+        <set name="time">1 reaction</set>
+        <set name="duration">1 minute</set>
+        <set name="range">10 feet</set>
+        <set name="hasVerbalComponent">true</set>
+        <set name="hasSomaticComponent">true</set>
+        <set name="hasMaterialComponent">false</set>
+        <set name="materialComponent" />
+        <set name="isConcentration">false</set>
+        <set name="isRitual">false</set>
+        </setters>
+    </element>      
 
 </elements>    
