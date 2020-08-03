@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>brig_test</name>
+		<description>Armor made by or for the members of the Order of the Sable Cross</description>
+		<author>JCDM</author>
+		<update version="0.3.17">
+			<file name="armor_brigandine.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/armor_brigandine.xml" />
+		</update>		
+	</info>
+
+	<element name="Full Brigandine Plate" type="Armor" source="JCDM" id="ID_JCDM_ARMOR_BRIG_01">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>Heavy Brigandine Cuirass + pauldrons and bracers</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="40">30 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="armorClass">16 + Dex modifier (max 2)</set>
+			<!-- <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HALF_PLATE</set> -->
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="16" />
+		</rules>
+	</element>		
+
+	<element name="Partial Brigandine Plate" type="Armor" source="JCDM" id="ID_JCDM_ARMOR_BRIG_02">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>Heavy Brigandine Cuirass</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="40">20 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="armorClass">15 + Dex modifier (max 2)</set>
+			<!-- <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HALF_PLATE</set> -->
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="15" />
+		</rules>
+	</element>	
+
+</elements>   

@@ -16,5 +16,6 @@
 		<file name="sable_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_items.xml" />
 		<file name="sable_spells.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_spells.xml" />
 		<file name="revised_ranger_beta.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/revised_ranger_beta.xml" />		
+		<file name="armor_brigandine.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/armor_brigandine.xml" />		
 	</files>
 </index>

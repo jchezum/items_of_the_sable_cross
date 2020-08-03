@@ -4,7 +4,7 @@
 		<name>Unearthed Arcana: Revised Ranger Beta</name>
 		<description>Over the past year, you’ve seen us try a number of new approaches to the ranger, all aimed at addressing the class’s high levels of player dissatisfaction and its ranking as D&amp;D’s weakest class by a significant margin.</description>
 		<author url="http://dnd.wizards.com/articles/features/unearthed-arcana-ranger-revised">JCDM/WOTC</author>
-		<update version="0.3.17">
+		<update version="0.3.18">
 			<file name="revised_ranger_beta.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/revised_ranger_beta.xml" />
 		</update>
 	</info>
@@ -86,7 +86,7 @@
             <div element="ID_WOTC_UA20160912_CLASSFEATURE_RANGER_FERAL_SENSES" />
             <div element="ID_WOTC_UA20160912_CLASSFEATURE_RANGER_FOE_SLAYER" />
         </description>
-        <sheet alt="Ranger" />
+        <!-- <sheet alt="Ranger" /> -->
             <!-- previous unused desc. -->
             <!-- description>An alternative to the original Ranger class.</description -->
         <setters>
@@ -146,7 +146,7 @@
             <p class="indent">When you gain this feature, you also learn one language of your choice, typically one spoken by your favored enemies or creatures associated with it. However, you are free to pick any language you wish to learn.</p>
         </description>
         <sheet>
-            <description>You gain a +2 bonus to damage rolls with weapon attacks against creatures of the chosen type. You also have advantage on Survival checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</description>
+            <description><u>You gain a +2 bonus to damage rolls with weapon attacks against creatures of the chosen type.</u> You also have advantage on Survival checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</description>
 			<description level="6">You gain a +4 bonus to damage rolls with weapon attacks against creatures of the chosen type. You also have advantage on Survival checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</description>
         </sheet>
         <rules>
@@ -237,8 +237,9 @@
             </ul>
         </description>
         <sheet>
-            <description>You ignore difficult terrain and have advantage on initiative rolls. On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted. You gain following benefits when traveling for an hour of more: Difficult terrain doesn’t slow your group’s travel and group can’t become lost except by magical means. Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger. If you are traveling alone, you can move stealthily at a normal pace. When you forage, you find twice as much food as you normally would. While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</description>
+            <description>You ignore difficult terrain and have advantage on initiative rolls. On your first turn during combat, <b>you have advantage on attack rolls against creatures that have not yet acted.</b> You gain following benefits when traveling for an hour of more: Difficult terrain doesn’t slow your group’s travel and group can’t become lost except by magical means. Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger. If you are traveling alone, you can move stealthily at a normal pace. When you forage, you find twice as much food as you normally would. While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</description>
         </sheet>
+        <!-- TODO - Add advantage on inititive -->
         <rules />
     </element>
     <element name="Fighting Style" type="Class Feature" source="Unearthed Arcana: Revised Ranger" id="ID_WOTC_UA20160912_CLASSFEATURE_RANGER_FIGHTING_STYLE">
@@ -483,11 +484,18 @@
             <stat name="foe slayer:damage" value="Wisdom Modifier" />
         </rules>
     </element>
-  <!-- Deep Stalker -->
+
+
+    <!-- ================================================================================================================================================================================     -->
+    <!-- Deep Stalker -->
+    <!-- ================================================================================================================================================================================     -->
     <element name="Deep Stalker Conclave" type="Archetype" source="Unearthed Arcana: Revised Ranger" id="ID_WOTC_UA20160912_ARCHETYPE_RANGER_DEEP_STALKER">
         <supports>Ranger Conclave</supports>
         <description>
-            <p>Most folk descend into the depths of the Underdark only under the most pressing conditions, undertaking some desperate quest or following the promise of vast riches. All too often, evel festers beneath the earth unnoticed, and rangers of Deep Stalker Conclave strive to uncover and defeat such threats before they can reach the surface.</p>
+            <p>
+                Most folk descend into the depths of the Underdark only under the most pressing conditions, undertaking some desperate quest or following the promise of vast riches. 
+                All too often, evel festers beneath the earth unnoticed, and rangers of Deep Stalker Conclave strive to uncover and defeat such threats before they can reach the surface.
+            </p>
             <div element="ID_WOTC_UA20160912_ARCHETYPE_FEATURE_RANGER_DEEP_STALKER_UNDERDARK_SCOUT" />
             <div element="ID_WOTC_UA20160912_ARCHETYPE_FEATURE_RANGER_DEEP_STALKER_DEEP_STALKER_MAGIC" />
             <div element="ID_WOTC_UA20160912_ARCHETYPE_FEATURE_RANGER_DEEP_STALKER_EXTRA_ATTACK" />
@@ -510,7 +518,10 @@
     <element name="Deep Stalker Magic" type="Archetype Feature" source="Unearthed Arcana: Revised Ranger" id="ID_WOTC_UA20160912_ARCHETYPE_FEATURE_RANGER_DEEP_STALKER_DEEP_STALKER_MAGIC">
         <description>
             <p>At 3rd level, you gain darkvision out to range of 90 feet. If you already have darkvision, you increase its range by 30 feet. </p>
-            <p class="indent">You also gain access to additional spells when you reach certain levels in this class, as shown in the Deep Stalker Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.</p>       
+            <p class="indent">
+                You also gain access to additional spells when you reach certain levels in this class, as shown in the Deep Stalker Spells table. 
+                The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.
+            </p>       
             <h5>DEEP STALKER SPELLS</h5>
             <table>
                 <thead>
@@ -535,8 +546,10 @@
     </element>
     <element name="Underdark Scout" type="Archetype Feature" source="Unearthed Arcana: Revised Ranger" id="ID_WOTC_UA20160912_ARCHETYPE_FEATURE_RANGER_DEEP_STALKER_UNDERDARK_SCOUT">
         <description>
-            <p>At 3rd level, you master the art of the ambush. At the start of your first turn of each combat, your walking speed increases by 10 feet, which lasts until the end of that turn. If you take the Attack action on that turn, you can make one additional weapon attack as part of that action.</p>
-            <p class="indent">You are also adept at evading creatures that rely on darkvision. Such creatures gain no benefit when attempting to detect you in dark and dim conditions. Additionally, when the DM determines if you can hide from a creature, that creature gains no benefit from its darkvision.</p>
+            <p>At 3rd level, you master the art of the ambush. At the start of your first turn of each combat, your walking speed increases by 10 feet, which lasts until the end of that turn. 
+            If you take the Attack action on that turn, you can make one additional weapon attack as part of that action.</p>
+            <p class="indent">You are also adept at evading creatures that rely on darkvision. Such creatures gain no benefit when attempting to detect you in dark and dim conditions. 
+            Additionally, when the DM determines if you can hide from a creature, that creature gains no benefit from its darkvision.</p>
         </description>
         <sheet>
             <description>At the start of your first combat turn, your walking speed increases by 10ft until the end of that turn. If you attack that turn, make one additional weapon attack. Creatures that rely on darkvision don't get benefit trying to detect you in dim or dark conditions and if you trying to hide.</description>
@@ -550,11 +563,16 @@
         <sheet>
             <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
         </sheet>
-        <rules />
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
     </element>
     <element name="Iron Mind" type="Archetype Feature" source="Unearthed Arcana: Revised Ranger" id="ID_WOTC_UA20160912_ARCHETYPE_FEATURE_RANGER_DEEP_STALKER_IRON_MIND">
         <description>
-            <p>By 7th level, you have honed your ability to resist the mind—altering powers of your prey. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).</p>
+            <p>
+                By 7th level, you have honed your ability to resist the mind—altering powers of your prey. You gain proficiency in Wisdom saving throws. 
+                If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).
+            </p>
         </description>
         <sheet display="false"/>
         <rules>
@@ -563,23 +581,37 @@
     </element>
     <element name="Stalker's Flurry" type="Archetype Feature" source="Unearthed Arcana: Revised Ranger" id="ID_WOTC_UA20160912_ARCHETYPE_FEATURE_RANGER_DEEP_STALKER_STALKERS_FURY">
         <description>
-            <p>At 11th level, you learn to attack with such unexpected speed that you can turn a miss into another strike. Once on each of your turns when you miss with a weapon attack, you can make another weapon attack as part of the same action.</p>
+            <p>
+                At 11th level, you learn to attack with such unexpected speed that you can turn a miss into another strike. 
+                Once on each of your turns when you miss with a weapon attack, you can make another weapon attack as part of the same action.
+            </p>
         </description>
         <sheet>
-            <description>1/turn when you miss with a weapon attack, make another weapon attack as part of the same action.</description>
+            <!-- TODO - fix 1/turn text -->
+            <description> Once per turn when you miss with a weapon attack, make another weapon attack as part of the same action.</description>
         </sheet>
         <rules />
     </element>
     <element name="Stalkers Dodge" type="Archetype Feature" source="Unearthed Arcana: Revised Ranger" id="ID_WOTC_UA20160912_ARCHETYPE_FEATURE_RANGER_DEEP_STALKER_STALKERS_DODGE">
         <description>
-            <p>Starting at 15th level, you can dodge in unforeseen ways, with wisps of supernatural shadow around you. Whenever a creature makes an attack roll against you and doesn’t have advantage on the roll, you can use your reaction to impose disadvantage on it. You must use this feature before you know the outcome of the attack roll.</p>
+            <p>
+                Starting at 15th level, you can dodge in unforeseen ways, with wisps of supernatural shadow around you. 
+                Whenever a creature makes an attack roll against you and doesn’t have advantage on the roll, you can use your reaction to impose disadvantage on it. 
+                You must use this feature before you know the outcome of the attack roll.
+            </p>
         </description>
         <sheet>
+            <!-- TODO - fix header -->
             <description>Reaction: When a creature makes an attack roll against you and doesn’t have advantage on the roll, impose disadvantage on it (before knowing the outcome of the attack roll).</description>
         </sheet>
         <rules />
     </element>
-  <!-- Hunter -->
+
+
+    <!-- TODO - Verify Hunter Subclass -->
+    <!-- ================================================================================================================================================================================     -->    
+    <!-- Hunter -->
+    <!-- ================================================================================================================================================================================     -->    
     <element name="Hunter Conclave" type="Archetype" source="Unearthed Arcana: Revised Ranger" id="ID_WOTC_UA20160912_ARCHETYPE_RANGER_HUNTER">
         <supports>Ranger Conclave</supports>
         <description>
@@ -731,10 +763,12 @@
     <element name="Volley" type="Archetype Feature" source="Unearthed Arcana: Revised Ranger" id="ID_WOTC_UA20160912_ARCHETYPE_FEATURE_RANGER_HUNTER_MULTIATTACK_VOLLEY">
         <supports>Revised Multiattack</supports>
         <description>
-            <p>You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</p>
+            <p>You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. 
+            You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</p>
         </description>
         <sheet>
-            <description>You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</description>
+            <description>You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. 
+            You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</description>
         </sheet>
         <rules></rules>
     </element>
@@ -798,7 +832,12 @@
         </sheet>
         <rules></rules>
     </element>
-  <!-- Beast -->
+
+
+    <!-- TODO - Verify Beast Subclass -->
+    <!-- ================================================================================================================================================================================     -->    
+    <!-- Beast -->
+    <!-- ================================================================================================================================================================================     -->    
     <element name="Beast Conclave" type="Archetype" source="Unearthed Arcana: Revised Ranger" id="ID_WOTC_UA20160912_ARCHETYPE_RANGER_BEAST">
         <supports>Ranger Conclave</supports>
         <description>
