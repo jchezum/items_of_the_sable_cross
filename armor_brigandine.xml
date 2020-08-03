@@ -4,7 +4,7 @@
 		<name>brig_test</name>
 		<description>Armor made by or for the members of the Order of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.3.17">
+		<update version="0.3.18">
 			<file name="armor_brigandine.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/armor_brigandine.xml" />
 		</update>		
 	</info>
