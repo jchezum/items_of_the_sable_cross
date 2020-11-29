@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sable Ammunition</name>
+		<description>Ammunition created or found by members of the Sable Cross</description>
+		<author>JCDM</author>
+		<update version="0.4">
+			<file name="sable_ammunition.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_ammunition.xml" />
+		</update>		
+	</info>
+	<element name="Dragonsteel Bolt" type="Magic Item" source="JCDM" id="JCDM_Ammo_01">		
+		<description>
+			<p>This crossbow bolt is constructed from a thick shaft of dark, hard wood, with a tip made of an unusual blackened metal with a faint, poison-green iridescence and fletched with black feathers. </p>
+			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d4 acid damage. </p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="Bolt">Weapon</set>
+			<set name="rarity">rare</set>
+			<set name="stackable">true</set>
+			<set name="enhancement">1</set>
+		</setters>
+	</element>		
+	<element name="Trap Bolt" type="Magic Item" source="JCDM" id="JCDM_Ammo_02">		
+		<description>
+			<p>This crossbow bolt is constructed from a thick shaft of dark, hard wood, with a tip that triggers a net trap that entagles the target.</p>
+			<p class="indent">On hit, target must make a DC 15 dex saving throw or be restrained.</p>
+            <p>The range of this Bolt is reduced by 50% due to the added weight of the Bolt.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">1 lb.</set>
+			<set name="type" addition="Bolt">Weapon</set>
+			<set name="rarity">rare</set>
+			<set name="stackable">true</set>
+			<!-- <set name="enhancement">1</set> -->
+		</setters>
+	</element>	    
+	<element name="Fire Bolt" type="Magic Item" source="JCDM" id="JCDM_Ammo_03">		
+		<description>
+			<p>On hit, deals an additional 1d4 fire damage. </p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">.2 lb.</set>
+			<set name="type" addition="Bolt">Weapon</set>
+			<set name="rarity">rare</set>
+			<set name="stackable">true</set>
+			<!-- <set name="enhancement">1</set> -->
+		</setters>
+	</element>	 
+	<element name="Poison Bolt" type="Magic Item" source="JCDM" id="JCDM_Ammo_04">		
+		<description>
+			<p>On hit, deals an additional 1d4 poison damage.  Target must make a DC 13 CON save or be poisoned.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">.2 lb.</set>
+			<set name="type" addition="Bolt">Weapon</set>
+			<set name="rarity">rare</set>
+			<set name="stackable">true</set>
+			<!-- <set name="enhancement">1</set> -->
+		</setters>
+	</element>	
+	<element name="Rope Bolt" type="Magic Item" source="JCDM" id="JCDM_Ammo_05">		
+		<description>
+			<p>This crossbow bolt is constructed from a thick shaft of dark, hard wood.  The bolt has 100ft of thin elven rope attached.</p>
+            <p>The range of this Bolt is reduced by 50% due to the added weight of the Bolt.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0">1 lb.</set>
+			<set name="type" addition="Bolt">Weapon</set>
+			<set name="rarity">rare</set>
+			<set name="stackable">true</set>
+			<!-- <set name="enhancement">1</set> -->
+		</setters>
+	</element>	               
+</elements>

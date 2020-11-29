@@ -3,8 +3,8 @@
 	<info>
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
-		<author>DM</author>
-		<update version="0.3.13">
+		<author>JCDM</author>
+		<update version="0.4">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>

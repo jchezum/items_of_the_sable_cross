@@ -4,7 +4,7 @@
 		<name>Sable Armor</name>
 		<description>Armor made by or for the members of the Order of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.3.17">
+		<update version="0.4">
 			<file name="sable_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_items.xml" />
 		</update>		
 	</info>
@@ -34,11 +34,60 @@
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="cp">2500</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">Very Rare</set>
+			<set name="rarity">Rare</set>
 		</setters>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
 			<stat name="charisma" value="1" />
 		</rules>
-	</element>			
+	</element>	
+	<element name="Quill of Illumination" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_003">
+		<description>
+			<p>
+				Any text the quill is traced over will glow a fluorescent tone of yellow. 
+				A character attuned to the quill can study, translate, or interpret texts (including spellbooks) which have been illuminated in half the time.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="cp">2500</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>			
+		</setters>
+		<rules>
+		</rules>
+	</element>		
+	<element name="Amulet of Minor Truesight" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_004">
+		<description>
+			<p>
+				A clear purple gem is set into an engraved stone oval, which is in turn attached to a simple leather thread.  When worn, this amulet grants the wearer 10 feet of truesight (10 ft radius).  
+				Does not require attunement, but if the wearer is not accustomed to truesight, will cause 1d12 hours of disoritenation after being put on.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="cp">589</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_VISION_TRUESIGHT" />
+		</rules>
+	</element>	
+	<element name="Cloak of the Underdark" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_005">
+		<description>
+			<p>
+				A drow-crafted cloak that protects the wearer from sunlight.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="cp">589</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+		</rules>
+	</element>					
 </elements>    
