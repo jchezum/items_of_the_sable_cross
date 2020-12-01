@@ -4,7 +4,7 @@
         <name>Planeshift Vampire</name>
         <description>Custom Vampire Race</description>
         <author>JCDM</author>
-        <update version="0.4.1">
+        <update version="0.4.2">
             <file name="planeshift_vampire.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/planeshift_vampire.xml" />
         </update>
     </info>
@@ -137,7 +137,7 @@
                 They tend to be smaller and thinner than most elves.
             </p>
 			<p class="indent">Drow adventurers are rare, and the race does not exist in all worlds. Check with your Dungeon Master to see if you can play a drow character.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
 			<p class="indent"><strong><em>Superior Darkvision.</em></strong> Your darkvision has a radius of 120 feet.</p>
 			<p class="indent"><strong><em>Sunlight Sensitivity.</em></strong> You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
 			<p class="indent"><strong><em>Drow Magic.</em></strong> You know the dancing lights cantrip. When you reach 3rd level, you can cast the faerie fire spell once per day. When you reach 5th level, you can also cast the darkness spell once per day. Charisma is your spellcasting ability for these spells.</p>
@@ -145,7 +145,7 @@
             <p class="indent"><b><i>Feast of Blood.</i></b>When you drain blood with your Bloodthirst ability, you experience a surge of vitality. Your speed increases by 10 feet, and you gain advantage on Strength and Dexterity checks and saving throws for 1 minute.</p>
         </description>
 		<rules>
-			<stat name="charisma" value="1" />
+			<stat name="Dexterity" value="1" />
 			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SUNLIGHT_SENSITIVITY" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DROW_MAGIC" />
