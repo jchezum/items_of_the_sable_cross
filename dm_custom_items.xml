@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>JCDM</author>
-		<update version="0.4">
+		<update version="0.4.1">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -235,6 +235,7 @@
 			<p>
 				When you hit with an attack using this magic sword, the target takes an extra 1d6 force damage. In addition, while you hold the sword, you have resistance to thunder damage.
 			</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon</p>
 			<p class="indent">
 				When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour.
 			</p>
@@ -246,6 +247,7 @@
 			<set name="type" addition="any sword">Weapon</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
 		</setters>
 	</element>
