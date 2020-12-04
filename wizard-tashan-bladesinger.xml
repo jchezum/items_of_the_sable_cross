@@ -4,7 +4,7 @@
 		<name>Tashan Bladesinger</name>
 		<description>Bladesinger updated with rules from TCoE</description>
 		<author>JCDM</author>
-		<update version="0.4.3">
+		<update version="0.4.4">
 			<file name="wizard-tashan-bladesinger.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/wizard-tashan-bladesinger.xml" />
 		</update>		
 	</info>
@@ -21,7 +21,7 @@
 		</setters>
 	</element>
 
-	<element name="Bladesinging" type="Archetype" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_ARCHETYPE_BLADESINGING">
+	<element name="Tashan Bladesinger" type="Archetype" source="JCDM" id="ID_JCDM_ARCHETYPE_TASHAN_BLADESINGING">
 		<supports>Arcane Tradition</supports>
 		<requirements>ID_RACE_ELF||ID_RACE_HALFELF||ID_JCDM_TCoE_BLADESINGER</requirements>
 		<description>
@@ -29,27 +29,27 @@
             Originally created by elves, this tradition has been adopted by non-elf practitioners, who honor and expand on the elven ways.  
             In combat, a bladesinger uses a series of intricate, elegant maneuvers that fend off harm and allow the bladesinger to channel magic into devastating attacks and a cunning defense. 
             Many who have observed a bladesinger at work remember the display as one of the more beautiful experiences in their life, a glorious dance accompanied by a singing blade. </p>
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_TRAINING_IN_WAR_AND_SONG" />
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_BLADESONG" />
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_EXTRA_ATTACK" />
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_SONG_OF_DEFENSE" />
-			<div element="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_SONG_OF_VICTORY" />
+			<div element="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_TRAINING_IN_WAR_AND_SONG" />
+			<div element="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_BLADESONG" />
+			<div element="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_EXTRA_ATTACK" />
+			<div element="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_SONG_OF_DEFENSE" />
+			<div element="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_SONG_OF_VICTORY" />
 		</description>
 		<sheet display="false">
 			<description>Bladesingers are elves who bravely defend their people and lands.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_TRAINING_IN_WAR_AND_SONG" level="2" />
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_BLADESONG" level="2" />
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_EXTRA_ATTACK" level="6" />
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_SONG_OF_DEFENSE" level="10" />
-			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_SONG_OF_VICTORY" level="14" />
+			<grant type="Archetype Feature" id="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_TRAINING_IN_WAR_AND_SONG" level="2" />
+			<grant type="Archetype Feature" id="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_BLADESONG" level="2" />
+			<grant type="Archetype Feature" id="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_EXTRA_ATTACK" level="6" />
+			<grant type="Archetype Feature" id="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_SONG_OF_DEFENSE" level="10" />
+			<grant type="Archetype Feature" id="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_SONG_OF_VICTORY" level="14" />
 		</rules>
 	</element>
-	<element name="Training in War and Song" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_TRAINING_IN_WAR_AND_SONG">
+	<element name="Training in War and Song" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_TRAINING_IN_WAR_AND_SONG">
 		<description>
 			<p>When you adopt this tradition at 2nd level, you gain proficiency with light armor, and you gain proficiency with one type of one-handed melee weapon of your choice.</p>
-			<p class="indent">You also gain proficiency in the Performance skill if you don’t already have it.</p>
+			<p>You also gain proficiency in the Performance skill if you don’t already have it.</p>
 		</description>
 		<sheet display="false">
 			<description>You gain proficiency with light armor, and you gain proficiency with one type of one-handed melee weapon of your choice. You also gain proficiency in the Performance skill if you don’t already have it.</description>
@@ -60,11 +60,11 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
 		</rules>
 	</element>
-	<element name="Bladesong" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_BLADESONG">
+	<element name="Bladesong" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_BLADESONG">
 		<description>
 			<p>Starting at 2nd level, you can invoke a secret elven magic called the Bladesong, provided that you aren’t wearing medium or heavy armor or using a shield. It graces you with supernatural speed, agility, and focus.</p>
 			<p class="indent">You can use a bonus action to start the Bladesong, which lasts for 1 minute. It ends early if you are incapacitated, if you don medium or heavy armor or a shield, or if you use two hands to make an attack with a weapon. You can also dismiss the Bladesong at any time you choose (no action required).</p>
-			<p class="indent">While your Bladesong is active, you gain the following benefits:</p>
+			<p>While your Bladesong is active, you gain the following benefits:</p>
 			<ul>
 				<li>You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1).</li>
 				<li>Your walking speed increases by 10 feet.</li>
@@ -82,11 +82,9 @@
 			<stat name="bladesong:intelligence" value="intelligence:modifier" bonus="bladesong" />
 		</rules>
 	</element>
-	<element name="Extra Attack" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_EXTRA_ATTACK">
+	<element name="Extra Attack" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_EXTRA_ATTACK">
 		<description>
-			<p>Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
-                Moreover, you can cast one of your cantrips in place of one of those attacks.
-            </p>
+			<p>Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.  Moreover, you can cast one of your cantrips in place of one of those attacks.</p>
 		</description>
 		<sheet>
 			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.  Moreover, you can cast one of your cantrips in place of one of those attacks.</description>
@@ -95,7 +93,7 @@
 			<stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
 		</rules>
 	</element>
-	<element name="Song of Defense" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_SONG_OF_DEFENSE">
+	<element name="Song of Defense" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_SONG_OF_DEFENSE">
 		<description>
 			<p>Beginning at 10th level, you can direct your magic to absorb damage while your Bladesong is active. 
             When you take damage, you can use your reaction to expend one spell slot and reduce that damage to you by an amount equal to five times the spell slot’s level.</p>
@@ -104,7 +102,7 @@
 			<description>When you take damage, you can use your reaction to expend one spell slot and reduce that damage to you by an amount equal to five times the spell slot’s level.</description>
 		</sheet>
 	</element>
-	<element name="Song of Victory" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_BLADESINGING_SONG_OF_VICTORY">
+	<element name="Song of Victory" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_JCDM_ARCHETYPE_FEATURE_BLADESINGING_SONG_OF_VICTORY">
 		<description>
 			<p>Starting at 14th level, you add your Intelligence modifier (minimum of +1) to the damage of your melee weapon attacks while your Bladesong is active.</p>
 		</description>

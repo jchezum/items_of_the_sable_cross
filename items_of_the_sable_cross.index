@@ -4,7 +4,7 @@
 		<name>Sable Items</name>
 		<description>Lore, Classes, and/or Items found or created by members of the Sable Cross</description>
 		<author url="https://viciousmockery.herokuapp.com/">JCDM</author>
-		<update version="0.4.3">
+		<update version="0.4.4">
 			<file name="items_of_the_sable_cross.index" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items_of_the_sable_cross.index" />
 		</update>
 	</info>
