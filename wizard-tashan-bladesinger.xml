@@ -4,12 +4,12 @@
 		<name>Tashan Bladesinger</name>
 		<description>Bladesinger updated with rules from TCoE</description>
 		<author>JCDM</author>
-		<update version="0.4.4">
+		<update version="0.4.5">
 			<file name="wizard-tashan-bladesinger.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/wizard-tashan-bladesinger.xml" />
 		</update>		
 	</info>
 
-	<element name="Tashan Bladesinger" type="Option" source="JCDM" id="ID_JCDM_TCoE_BLADESINGER">
+	<element name="Tashan Bladesinger" type="Option" source="JCDM" id="ID_JCDM_TASHAN_BLADESINGER">
 		<description>
 			<p>Bladesingers master a tradition of wizardry that incorporates swordplay and dance. 
             Originally created by elves, this tradition has been adopted by non-elf practitioners, who honor and expand on the elven ways.  
@@ -23,7 +23,7 @@
 
 	<element name="Tashan Bladesinger" type="Archetype" source="JCDM" id="ID_JCDM_ARCHETYPE_TASHAN_BLADESINGING">
 		<supports>Arcane Tradition</supports>
-		<requirements>ID_RACE_ELF||ID_RACE_HALFELF||ID_JCDM_TCoE_BLADESINGER</requirements>
+		<requirements>ID_RACE_ELF||ID_RACE_HALFELF||ID_JCDM_TASHAN_BLADESINGER</requirements>
 		<description>
 			<p>Bladesingers master a tradition of wizardry that incorporates swordplay and dance. 
             Originally created by elves, this tradition has been adopted by non-elf practitioners, who honor and expand on the elven ways.  

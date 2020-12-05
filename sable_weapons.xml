@@ -4,7 +4,7 @@
 		<name>Sable Weapons</name>
 		<description>Weapons created or found by members of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.3.13">
+		<update version="0.4.5">
 			<file name="sable_weapons.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_weapons.xml" />
 		</update>		
 	</info>
@@ -49,6 +49,7 @@
 			<set name="enhancement">1</set>
 		</setters>		
 	</element>	
+
 	<element name="Dragonsteel Shortsword" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_02">
 		<description>
 			<p>This shortsword is made of an unusual blackened metal with a faint, poison-green iridescence. </p>
@@ -60,11 +61,27 @@
 			<set name="cost" currency="gp">1000</set>
 			<set name="type" addition="shortsword">Weapon</set>
 			<set name="rarity">Rare</set>
-			<set name="weapon">shortsword</set>
+			<set name="weapon">shortsword</set>	<element name="Dragonsteel Heavy Crossbow" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_04">
+		<description>
+			<p>This Heavy Crossbow is made of an unusual blackened metal with a faint, poison-green iridescence. </p>
+			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d6 acid damage. </p>
+		</description>
+		<setters>
+			<set name="keywords">crossbow</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="type" addition="crossbow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
 			<set name="attunement">false</set>
 			<set name="enhancement">1</set>
 		</setters>		
 	</element>
+			<set name="attunement">false</set>
+			<set name="enhancement">1</set>
+		</setters>		
+	</element>
+
 	<element name="Dragonsteel Dagger" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_03">
 		<description>
 			<p>This dagger is made of an unusual blackened metal with a faint, poison-green iridescence. </p>
@@ -81,6 +98,7 @@
 			<set name="enhancement">1</set>
 		</setters>		
 	</element>	
+
 	<element name="Dragonsteel Heavy Crossbow" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_04">
 		<description>
 			<p>This Heavy Crossbow is made of an unusual blackened metal with a faint, poison-green iridescence. </p>
@@ -116,6 +134,30 @@
 			<set name="stackable">true</set>
 			<set name="enhancement">1</set>
 		</setters>
-	</element>			
+	</element>	
+
+	<!-- ==================================================================================== -->
+	<!-- Plot Weapons -->
+	<!-- ==================================================================================== -->				
+	<element name="Lunar Crescent Dagger" type="Magic Item" source="JCDM" id="JCDM_Weapon_02">
+		<description>
+			<p>
+				This dagger is shaped like a crescent moon.  The wickedly curved blade is made of mithril and sharpened on both sides.
+				The hilt is shaped like a monstrosity from the depths; stylized tentacles reach out from the handle and run along the flat of the blade.
+				The pommel is shaped like a ravening maw.  The hilt is wrapped in a deep blue/near black leather.
+			</p>
+			<p class="indent"> TBD</p>
+		</description>
+		<setters>
+			<set name="keywords">Dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="type" addition="Dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Dagger</set>
+			<set name="attunement">false</set>
+			<set name="enhancement">1</set>
+		</setters>		
+	</element>
 
 </elements>
