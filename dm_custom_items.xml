@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>JCDM</author>
-		<update version="0.4.1">
+		<update version="0.4.8">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -250,6 +250,9 @@
 			<set name="enhancement">2</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
 		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />	
+		</rules>
 	</element>
 	<element name="Improved Corpse Slayer" type="Magic Item" source="DM" id="ID_DM_WEAPONS_08">
 		<description>
