@@ -4,7 +4,7 @@
 		<name>Unearthed Arcana: Revised Ranger Beta</name>
 		<description>Over the past year, you’ve seen us try a number of new approaches to the ranger, all aimed at addressing the class’s high levels of player dissatisfaction and its ranking as D&amp;D’s weakest class by a significant margin.</description>
 		<author url="http://dnd.wizards.com/articles/features/unearthed-arcana-ranger-revised">JCDM/WOTC</author>
-		<update version="0.4">
+		<update version="0.4.7">
 			<file name="revised_ranger_beta.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/revised_ranger_beta.xml" />
 		</update>
 	</info>
@@ -537,7 +537,9 @@
         <sheet display="false" />
         <rules>
             <grant type="Vision" id="ID_VISION_DARKVISION" />
-            <grant type="Grants" id="ID_INTERNAL_GRANTS_DARKVISION_INCREASE_30_DARKVISION_INCREASE" requirements="ID_VISION_DARKVISION" />
+            <!-- TODO: this doesnt grant darkvision correctly and pops an error message
+            Unable to find ID_INTERNAL_GRANTS_DARKVISION_INCREASE_30_DARKVISION_INCREASE of type Grants that was set as grant in Deep Stalker Magic (Archetype Feature). -->
+            <!-- <grant type="Grants" id="ID_INTERNAL_GRANTS_DARKVISION_INCREASE_30_DARKVISION_INCREASE" requirements="ID_VISION_DARKVISION" /> -->
             <grant type="Spell" name="ID_PHB_SPELL_DISGUISE_SELF" level="3" spellcasting="Ranger"/>
             <grant type="Spell" name="ID_PHB_SPELL_ROPE_TRICK" level="5" spellcasting="Ranger" />
             <grant type="Spell" name="ID_PHB_SPELL_GLYPH_OF_WARDING" level="9" spellcasting="Ranger" />
