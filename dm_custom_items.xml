@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>JCDM</author>
-		<update version="0.4.8">
+		<update version="0.4.9">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -233,10 +233,20 @@
 	<element name="Mistral Blade" type="Magic Item" source="DM" id="ID_DM_WEAPONS_07">
 		<description>
 			<p>
-				When you hit with an attack using this magic sword, the target takes an extra 1d6 force damage. In addition, while you hold the sword, you have resistance to thunder damage.
+				This elegant sword is forged of pure mithral.  It has a deceptively thin - but incredibly sharp - blade.
+				You gain a +2 bonus to attack and damage rolls made with this magic weapon.
+				In addition, when you hit with an attack, you deal and extra 1d6 Force damage and can choose to channel The Essence of the Wind through the blade into your target.
 			</p>
-			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon</p>
+			<p><b>Essence of the Wind  </b>You can choose one of the following effects:
+			<ul>
+			<li>Deal an extra 1d8 piercing damage</li>
+			<li>Release the air in a strong gust, dealing 1d4 force damage. Opponent must make a dc 15 strength or dex save or be pushed back 10 feet </li>
+			<li>Cause the air to become momentarily charged with static, dealing 1d8 lightning damage to the target</li>
+			</ul>
+			</p>
+			
 			<p class="indent">
+
 				When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour.
 			</p>
 		</description>

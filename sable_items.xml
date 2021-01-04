@@ -4,7 +4,7 @@
 		<name>Sable Armor</name>
 		<description>Armor made by or for the members of the Order of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.4.1">
+		<update version="0.4.9">
 			<file name="sable_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_items.xml" />
 		</update>		
 	</info>
@@ -93,5 +93,44 @@
 		</setters>
 		<rules>
 		</rules>
-	</element>					
+	</element>	
+	<element name="Ring of Vitality" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_006">
+		<description>
+			<p>
+				This white gold ring is set with a large, heart shaped ruby. While wearing the ring, you gain:
+				<ul>
+				<li>+2 to Constitution</li>
+				<li>If you roll a 1 or 2 on a healing roll, it becomes a 3</li>
+				</ul>
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="cp">1874</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>	
+		</setters>
+		<rules>
+			<stat name="constitution" value="2" />
+		</rules>
+	</element>	
+	<element name="Ring of Lesser Blade Turning" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_007">
+		<description>
+			<p>
+				This plain steel ring is engraved with a symbol of a greatshield.  Has 2 charges, and regains all charges at dawn.
+				As a bonus action, the wearer can speak a commad phrase and gain the effects of Lesser Blade Ward.  When Lesser Blade Ward is active, 
+				the wearer has resistance to piercing and slashing damage. 
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="cp">874</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>	
+		</setters>
+		<rules>
+		</rules>
+	</element>							
 </elements>    
