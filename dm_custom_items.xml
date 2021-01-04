@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>JCDM</author>
-		<update version="0.4.15">
+		<update version="0.4.16">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -241,9 +241,9 @@
 			<p class="indent">Essence of the Wind
 				When you hit with an attack, choose one of the following enhacements:
 			</p>
-			<p>[1] Deal an extra 1d8 piercing damage</p>
-			<p>[2] Release the air in a strong gust, dealing 1d4 force damage. Opponent must make a dc 15 strength or dex save or be pushed back 10 feet</p>
-			<p>[3] Cause the air to become momentarily charged with static, dealing 1d8 lightning damage to the target</p>
+			<p>1.) Deal an extra 1d8 piercing damage</p>
+			<p>2.) Release the air in a strong gust, dealing 1d4 force damage. Opponent must make a dc 15 strength or dex save or be pushed back 10 feet</p>
+			<p>3.) Cause the air to become momentarily charged with static, dealing 1d8 lightning damage to the target</p>
 		</description>
 		<setters>
 			<set name="keywords">any sword</set>
