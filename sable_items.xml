@@ -4,7 +4,7 @@
 		<name>Sable Armor</name>
 		<description>Armor made by or for the members of the Order of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.4.9">
+		<update version="0.4.10">
 			<file name="sable_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_items.xml" />
 		</update>		
 	</info>
@@ -97,11 +97,8 @@
 	<element name="Ring of Vitality" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_006">
 		<description>
 			<p>
-				This white gold ring is set with a large, heart shaped ruby. While wearing the ring, you gain:
-				<ul>
-				<li>+2 to Constitution</li>
-				<li>If you roll a 1 or 2 on a healing roll, it becomes a 3</li>
-				</ul>
+				This white gold ring is set with a large, heart shaped ruby. While wearing the ring, you gain +2 to Constitution.
+				When using healing magic or items, if you roll a 1 or 2 on a healing roll, it becomes a 3.
 			</p>
 		</description>
 		<setters>
