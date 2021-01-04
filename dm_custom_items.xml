@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>JCDM</author>
-		<update version="0.4.10">
+		<update version="0.4.12">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -236,14 +236,13 @@
 				This elegant sword is forged of pure mithral.  It has a deceptively thin - but incredibly sharp - blade.
 				You gain a +2 bonus to attack and damage rolls made with this magic weapon.
 				In addition, when you hit with an attack, you deal and extra 1d6 Force damage and can choose to channel The Essence of the Wind through the blade into your target.
-			</p>
-			<p class="indent">Essence of the Wind</p>
-			Deal an extra 1d8 piercing damage
-			Release the air in a strong gust, dealing 1d4 force damage. Opponent must make a dc 15 strength or dex save or be pushed back 10 feet
-			Cause the air to become momentarily charged with static, dealing 1d8 lightning damage to the target
-
-			<p class="indent">
 				When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour.
+			</p>
+			<p class="indent">Essence of the Wind
+				When you hit with an attack, choose one of the following enhacements:
+				 - Deal an extra 1d8 piercing damage
+				 - Release the air in a strong gust, dealing 1d4 force damage. Opponent must make a dc 15 strength or dex save or be pushed back 10 feet
+				 - Cause the air to become momentarily charged with static, dealing 1d8 lightning damage to the target
 			</p>
 		</description>
 		<setters>

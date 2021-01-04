@@ -4,12 +4,12 @@
 		<name>Sable Armor</name>
 		<description>Armor made by or for the members of the Order of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.4.10">
+		<update version="0.4.12">
 			<file name="sable_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_items.xml" />
 		</update>		
 	</info>
 
-	<element name="Orb of Scrying" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_001">
+	<element name="Orb of Scrying" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_001">
 		<description>
 			<p>
 				A small clear crystal orb the size of a man's fist.  Has 1d4 charges (max 4), and regains a charge when set under the light of the moon for 1 hour.
@@ -23,7 +23,7 @@
 			<set name="rarity">Very Rare</set>
 		</setters>
 	</element>
-	<element name="Alluring Ruby Amulet" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_002">
+	<element name="Alluring Ruby Amulet" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_002">
 		<description>
 			<p>
 				A small, well-crafted amulet that when worn causes heads to turn and suggestions to be more impactful.
@@ -41,7 +41,7 @@
 			<stat name="charisma" value="1" />
 		</rules>
 	</element>	
-	<element name="Quill of Illumination" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_003">
+	<element name="Quill of Illumination" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_003">
 		<description>
 			<p>
 				Any text the quill is traced over will glow a fluorescent tone of yellow. 
@@ -58,7 +58,7 @@
 		<rules>
 		</rules>
 	</element>		
-	<element name="Amulet of Minor Truesight" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_004">
+	<element name="Amulet of Minor Truesight" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_004">
 		<description>
 			<p>
 				A clear purple gem is set into an engraved stone oval, which is in turn attached to a simple leather thread.  When worn, this amulet grants the wearer 10 feet of truesight (10 ft radius).  
@@ -75,7 +75,7 @@
 			<grant type="Vision" id="ID_VISION_TRUESIGHT" />
 		</rules>
 	</element>	
-	<element name="Warded Cloak of the Underdark" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_005">
+	<element name="Warded Cloak of the Underdark" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_005">
 		<description>
 			<p>
 				A drow-crafted cloak that protects the wearer from the effects of sunlight.  
@@ -94,7 +94,7 @@
 		<rules>
 		</rules>
 	</element>	
-	<element name="Ring of Vitality" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_006">
+	<element name="Ring of Vitality" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_006">
 		<description>
 			<p>
 				This white gold ring is set with a large, heart shaped ruby. While wearing the ring, you gain +2 to Constitution.
@@ -102,8 +102,9 @@
 			</p>
 		</description>
 		<setters>
-			<set name="category">Wondrous Items</set>
+			<set name="category">Rings</set>
 			<set name="cost" currency="cp">1874</set>
+			<set name="slot">ring</set>
 			<set name="type">Ring</set>
 			<set name="rarity">Rare</set>
 			<set name="attunement">true</set>	
@@ -112,7 +113,7 @@
 			<stat name="constitution" value="2" />
 		</rules>
 	</element>	
-	<element name="Ring of Lesser Blade Turning" type="Magic Item" source="DM" id="ID_JCDM_MAGIC_ITEM_007">
+	<element name="Ring of Lesser Blade Turning" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_007">
 		<description>
 			<p>
 				This plain steel ring is engraved with a symbol of a greatshield.  Has 2 charges, and regains all charges at dawn.
@@ -121,13 +122,89 @@
 			</p>
 		</description>
 		<setters>
-			<set name="category">Wondrous Items</set>
+			<set name="category">Rings</set>
 			<set name="cost" currency="cp">874</set>
+			<set name="slot">ring</set>
 			<set name="type">Ring</set>
 			<set name="rarity">Rare</set>
 			<set name="attunement">true</set>	
 		</setters>
 		<rules>
 		</rules>
-	</element>							
+	</element>	
+	<element name="Montrell Signet" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_008">
+		<description>
+			<p>
+				This simple silver band has a crest shaped like a hawk carrying a fox-like creature in it's talons.
+				This is a signet ring of House Montrell from the city of Honk in the kingdom of K'Varn.
+
+				Allows the user to cast the <i>Entangle</i> spell once/day.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="cost" currency="cp">874</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>	
+		</setters>
+		<rules>
+		</rules>
+	</element>	
+	<element name="Wand of Tricks and Treats" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_009">
+		<description>
+			<p>
+				This wand has 5 charges.  While holding it, you can use an action to expend 1 charge and speak the word "Trick" or the word "Treat" while pointing it at a target within 90 ft.
+				If the word "Trick" was spoken, roll a d6 and consult the Trick table.  If the word "Treat" was spoken, roll a d6 and consult the Treat table.
+				The user is unaware of which result was cast unless immediately obvious.
+				The wand regains 1d4+1 expended charges each day at dawn and always fully recharges after a full moon.
+			</p>
+			<p class="indent">
+				Trick
+				1.)  A ferret shows up on the next night and steals 1d4 gold from the target and brings it to you. The ferret then disappears.
+				2.)  The target is cursed for the next 24 hours. While under this curse, the target is charged twice as much for alcoholic beverages.
+				3.)  The target is cursed for the next 24 hours. While under this curse, the target somehow manages to burn any food they try to cook.
+				4.)  The target is cursed for the next 24 hours. While under this curse, small wildlife creatures are afraid of the target.
+				5.)  The target is cursed for the next 24 hours. While under this curse, all coins look like copper to the target.
+				6.)  The target is cursed for the next 24 hours. While under this curse, the target is struck by the overwhelming need to itch in locations that are unreachable by them.
+			</p>
+			<p class="indent">
+				Treat
+				1.)  The target is blessed for the next 24 hours. While under this blessing, a small sprite follows the target and will occasionally point out hidden objects.
+				2.)  Five pieces of chocolate appear in the target's bags.  When eaten they restore 1 hit point.  
+				3.)  The target is blessed for the next 24 hours. While under this blessing, the target has battle music that accompanies them in any conflict.
+				4.)  The target is blessed for the next 24 hours. While under this blessing, they smells great to members of the opposite sex.
+				5.)  The target is blessed for the next 24 hours. While under this blessing, whenever the target deals a killing blow against an enemy, 10 silver pieces explode from the body.
+				6.)  The target is blessed for the next 24 hours. While under this blessing, rain cannot fall on the target, it simply glances down alongside an invisible shield and they stay nice and dry.
+			</p>			
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="cost" currency="gp">174</set>
+			<set name="type">Wand</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">False</set>	
+		</setters>
+		<rules>
+		</rules>
+	</element>
+	<element name="Mask of Holiday Sprits" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_010">
+		<description>
+			<p>
+				This item is carved from a piece of wood to give the wearer the appearance of a frog. 
+				While attuned to this item, you find a bag containing 2d4 + 2 chocolates under your pillow every morning when you wake up. 
+				These restore 1 hit point when eaten. Additionally, fireflies are drawn to you at night and will light your camps and flash brightly when potentially dangerous creatures approach.
+			</p>		
+		</description>
+		<setters>
+			<set name="category">Wonderous Items</set>
+			<set name="cost" currency="gp">174</set>
+			<set name="type">Wonderous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">True</set>	
+		</setters>
+		<rules>
+		</rules>
+	</element>												
 </elements>    
