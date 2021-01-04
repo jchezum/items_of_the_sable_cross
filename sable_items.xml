@@ -4,7 +4,7 @@
 		<name>Sable Armor</name>
 		<description>Armor made by or for the members of the Order of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.4.12">
+		<update version="0.4.14">
 			<file name="sable_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_items.xml" />
 		</update>		
 	</info>
@@ -160,24 +160,6 @@
 				The user is unaware of which result was cast unless immediately obvious.
 				The wand regains 1d4+1 expended charges each day at dawn and always fully recharges after a full moon.
 			</p>
-			<p class="indent">
-				Trick
-				1.)  A ferret shows up on the next night and steals 1d4 gold from the target and brings it to you. The ferret then disappears.
-				2.)  The target is cursed for the next 24 hours. While under this curse, the target is charged twice as much for alcoholic beverages.
-				3.)  The target is cursed for the next 24 hours. While under this curse, the target somehow manages to burn any food they try to cook.
-				4.)  The target is cursed for the next 24 hours. While under this curse, small wildlife creatures are afraid of the target.
-				5.)  The target is cursed for the next 24 hours. While under this curse, all coins look like copper to the target.
-				6.)  The target is cursed for the next 24 hours. While under this curse, the target is struck by the overwhelming need to itch in locations that are unreachable by them.
-			</p>
-			<p class="indent">
-				Treat
-				1.)  The target is blessed for the next 24 hours. While under this blessing, a small sprite follows the target and will occasionally point out hidden objects.
-				2.)  Five pieces of chocolate appear in the target's bags.  When eaten they restore 1 hit point.  
-				3.)  The target is blessed for the next 24 hours. While under this blessing, the target has battle music that accompanies them in any conflict.
-				4.)  The target is blessed for the next 24 hours. While under this blessing, they smells great to members of the opposite sex.
-				5.)  The target is blessed for the next 24 hours. While under this blessing, whenever the target deals a killing blow against an enemy, 10 silver pieces explode from the body.
-				6.)  The target is blessed for the next 24 hours. While under this blessing, rain cannot fall on the target, it simply glances down alongside an invisible shield and they stay nice and dry.
-			</p>			
 		</description>
 		<setters>
 			<set name="category">Wands</set>
@@ -198,9 +180,9 @@
 			</p>		
 		</description>
 		<setters>
-			<set name="category">Wonderous Items</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">174</set>
-			<set name="type">Wonderous Item</set>
+			<set name="type">Wondrous Item</set>
 			<set name="rarity">Uncommon</set>
 			<set name="attunement">True</set>	
 		</setters>
