@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dragonguard Gear</name>
+		<description>Armor and items worn by members of the Imperial Dragonguard remnants</description>
+		<author>JCDM</author>
+		<update version="0.4.17">
+			<file name="dragonguard_gear.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dragonguard_gear.xml" />
+		</update>		
+	</info>
+
+	<!-- ==================================================================================== -->
+	<!-- Armor -->
+	<!-- ==================================================================================== -->
+	<element name="Mirror Plate" type="Magic Item" source="DM" id="ID_JCDM_DRAGONGUARD_ITEM_001">
+		<description>
+			<p>
+                When activated by a Bonus Action, this armor casts Mirror Image on the wearer for 1 minute.
+            </p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Medium">Armor</set>
+			<set name="rarity">Very Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HALF_PLATE</set>	
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>		
+	</element>	
+</elements>        

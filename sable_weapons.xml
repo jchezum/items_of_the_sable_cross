@@ -4,7 +4,7 @@
 		<name>Sable Weapons</name>
 		<description>Weapons created or found by members of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.4.5">
+		<update version="0.4.17">
 			<file name="sable_weapons.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_weapons.xml" />
 		</update>		
 	</info>
@@ -137,7 +137,7 @@
 	</element>	
 
 	<!-- ==================================================================================== -->
-	<!-- Plot Weapons -->
+	<!-- Character Plot Weapons -->
 	<!-- ==================================================================================== -->				
 	<element name="Lunar Crescent Dagger" type="Magic Item" source="JCDM" id="JCDM_Weapon_02">
 		<description>
@@ -160,4 +160,25 @@
 		</setters>		
 	</element>
 
+	<!-- ==================================================================================== -->
+	<!-- Weapons -->
+	<!-- ==================================================================================== -->				
+	<element name="Gol'Goroth Tentacle Whip" type="Magic Item" source="JCDM" id="JCDM_Weapon_03">
+		<description>
+			<p>
+				Whenever you land a critical strike while holding this weapon, you deal an extra 1d10 Psychic damage.
+				Additionally, on a critical hit, roll 3d6.  If the total equals or exceeds the target's Intelligence score, that target is 
+				affected by a random short term madness effect (DMG pg. 259).  While holding this whip your irises turn solid black.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">Whip</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">1800</set>
+			<set name="type" addition="Dagger">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Whip</set>
+			<set name="attunement">true</set>
+		</setters>		
+	</element>
 </elements>

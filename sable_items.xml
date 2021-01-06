@@ -4,7 +4,7 @@
 		<name>Sable Armor</name>
 		<description>Armor made by or for the members of the Order of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.4.14">
+		<update version="0.4.17">
 			<file name="sable_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_items.xml" />
 		</update>		
 	</info>
@@ -98,7 +98,7 @@
 		<description>
 			<p>
 				This white gold ring is set with a large, heart shaped ruby. While wearing the ring, you gain +2 to Constitution.
-				When using healing magic or items, if you roll a 1 or 2 on a healing roll, it becomes a 3.
+				When using healing spells, if you roll a 1 or 2 on a healing roll, it becomes a 3.
 			</p>
 		</description>
 		<setters>
@@ -135,7 +135,7 @@
 	<element name="Montrell Signet" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_008">
 		<description>
 			<p>
-				This simple silver band has a crest shaped like a hawk carrying a fox-like creature in it's talons.
+				This simple silver band has a crest shaped like a hawk carrying a fox-like creature in it's talons.  The hawk's eyes are made of diamond.
 				This is a signet ring of House Montrell from the city of Honk in the kingdom of K'Varn.
 
 				Allows the user to cast the <i>Entangle</i> spell once/day.
