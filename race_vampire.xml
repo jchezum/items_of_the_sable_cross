@@ -4,7 +4,7 @@
         <name>Vampire</name>
         <description>Custom Vampire Race</description>
         <author>JCDM</author>
-        <update version="0.4.18">
+        <update version="0.4.19">
             <file name="race_vampire.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/race_vampire.xml" />
         </update>
     </info>
@@ -46,19 +46,19 @@
             <p class="indent"><b><i>Blighted Ground. </i></b>Plants within 500 feet of the lair wither, and their stems and branches become twisted and thorny. </p>
             <p class="indent"><b><i>Ravenous Shadows. </i></b>Shadows cast within 500 feet of the lair seem abnormally gaunt and sometimes move as though alive. </p>
             <p class="indent"><b><i>Grasping Fog. </i></b>A creeping fog clings to the ground within 500 feet of the vampire's lair. The fog occasionally takes eerie forms, such as grasping claws and writhing serpents.</p>
-            <p class="indent"><b><i>Gaian Recovery. </i></b>If you are destroyed, or you move your coffinlike structure to elsewhere these effects end after 2d6 days. </p>        
+            <p class="indent"><b><i>Gaian Recovery. </i></b>If you are destroyed, or you move your coffinlike structure to elsewhere these effects end after 2d6 days. </p>           
 
             <h4>Vampire Weaknesses</h4>
             <p>
                 Although vampires can be incredibly strong, their curse still comes with several notable drawbacks. Regardless of if you are a vampire spawn or a true vampire, you are affected by the following 
                 weakness unless specified otherwise:
             </p>
-            <p class="indent"><b><i>Forbiddance: </i></b>You can't enter a residence without an invitation from one of the occupants. <p/>
-            <p class="indent"><b><i>Running Water: </i></b>Your flesh is torn apart in the presence of water, you take 20 acid damage when you end your turn in running water. This damage may not be reduced in any way.<p/>
+            <p class="indent"><b><i>Forbiddance: </i></b>You can't enter a residence without an invitation from one of the occupants. </p>
+            <p class="indent"><b><i>Running Water: </i></b>Your flesh is torn apart in the presence of water, you take 20 acid damage when you end your turn in running water. This damage may not be reduced in any way.</p>
             <p class="indent"><b><i>Stake to the Heart: </i></b>If a piercing weapon made of wood is driven into your heart while incapacitated, you become paralyzed until the stake is removed if you are a true vampire. 
-            However, if you are a vampire spawn, you are instead destroyed.<p/>
+            However, if you are a vampire spawn, you are instead destroyed.</p>
             <p class="indent"><b><i>Sunlight Hypersensitivity: </i></b>You sear and burn in the light of the sun, your flesh immolating. If you end your turn in direct sunlight, you take 20 radiant damage. 
-            You also have disadvantage on any attack rolls and ability checks when in direct sunlight.<p/>
+            You also have disadvantage on any attack rolls and ability checks when in direct sunlight.</p>
 
             <h4>VAMPIRE TRAITS</h4>
             <p>Your vampire character has the following traits.</p>
@@ -98,10 +98,10 @@
                 The knowing perversion of such a command though will often lead to your destruction if their master believes it to be so.
                 Any attempt to go against you masters will or pervert their command requires you to make a DC17 Charisma saving throw at disadvantage.
             </p>
-            <p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common, as well as one other language of your choice, that you knew in life.</p>
+            <p class="indent"><b><i>Languages. </i></b>
+                You can speak, read, and write Common, as well as one other language of your choice, that you knew in life. 
+            </p>
 
-
- 
         </description>
         <sheet display="false" />
         <rules>
