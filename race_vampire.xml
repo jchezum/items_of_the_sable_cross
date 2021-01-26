@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Vampire</name>
-        <description>Custom Vampire Race</description>
+        <name>Revenant Vampire</name>
+        <description>Revenant  Vampire Race</description>
         <author>JCDM</author>
-        <update version="0.4.19">
+        <update version="0.4.20">
             <file name="race_vampire.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/race_vampire.xml" />
         </update>
     </info>
 
-    <element name="Vampire" type="Race" source="JCDM" id="ID_JCDM_RACE_VAMPIRE">
+    <element name="Revenant Vampire" type="Race" source="JCDM" id="ID_JCDM_RACE_VAMPIRE">
         <description>
             <p> 
                 Tall, pale and gaunt humanoids, their otherworldly presence and stillness make a vampire stand out among the warm bodied living. 
