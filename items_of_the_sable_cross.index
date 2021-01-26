@@ -4,7 +4,7 @@
 		<name>Sable Items</name>
 		<description>Lore, Classes, and/or Items found or created by members of the Sable Cross</description>
 		<author url="https://viciousmockery.herokuapp.com/">JCDM</author>
-		<update version="0.4.17">
+		<update version="0.4.18">
 			<file name="items_of_the_sable_cross.index" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items_of_the_sable_cross.index" />
 		</update>
 	</info>
@@ -22,5 +22,6 @@
 		<file name="planeshift_vampire.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/planeshift_vampire.xml" />
 		<file name="wizard-tashan-bladesinger.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/wizard-tashan-bladesinger.xml" />
 		<file name="dragonguard_gear.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dragonguard_gear.xml" />
+		<file name="race_vampire.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/race_vampire.xml" />		
 	</files>
 </index>
