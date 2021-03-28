@@ -4,7 +4,7 @@
 		<name>Sable Ammunition</name>
 		<description>Ammunition created or found by members of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.4">
+		<update version="0.4.21">
 			<file name="sable_ammunition.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_ammunition.xml" />
 		</update>		
 	</info>
@@ -15,7 +15,7 @@
 		</description>
 		<setters>
 			<set name="category">Ammunition</set>
-			<set name="cost" currency="gp">100</set>
+			<set name="cost" currency="gp">20</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="Bolt">Weapon</set>
 			<set name="rarity">rare</set>
@@ -31,10 +31,10 @@
 		</description>
 		<setters>
 			<set name="category">Ammunition</set>
-			<set name="cost" currency="gp">100</set>
+			<set name="cost" currency="gp">12</set>
 			<set name="weight" lb="0">1 lb.</set>
 			<set name="type" addition="Bolt">Weapon</set>
-			<set name="rarity">rare</set>
+			<set name="rarity">uncommon</set>
 			<set name="stackable">true</set>
 			<!-- <set name="enhancement">1</set> -->
 		</setters>
@@ -45,7 +45,7 @@
 		</description>
 		<setters>
 			<set name="category">Ammunition</set>
-			<set name="cost" currency="gp">100</set>
+			<set name="cost" currency="gp">10</set>
 			<set name="weight" lb="0">.2 lb.</set>
 			<set name="type" addition="Bolt">Weapon</set>
 			<set name="rarity">rare</set>
@@ -59,7 +59,7 @@
 		</description>
 		<setters>
 			<set name="category">Ammunition</set>
-			<set name="cost" currency="gp">100</set>
+			<set name="cost" currency="gp">10</set>
 			<set name="weight" lb="0">.2 lb.</set>
 			<set name="type" addition="Bolt">Weapon</set>
 			<set name="rarity">rare</set>
@@ -74,12 +74,26 @@
 		</description>
 		<setters>
 			<set name="category">Ammunition</set>
-			<set name="cost" currency="gp">100</set>
+			<set name="cost" currency="gp">8</set>
 			<set name="weight" lb="0">1 lb.</set>
 			<set name="type" addition="Bolt">Weapon</set>
+			<set name="rarity">uncommon</set>
+			<set name="stackable">true</set>
+			<!-- <set name="enhancement">1</set> -->
+		</setters>
+	</element>	 
+	<element name="Poison Arrow" type="Magic Item" source="JCDM" id="JCDM_Ammo_06">		
+		<description>
+			<p>On hit, deals an additional 1d4 poison damage.  Target must make a DC 13 CON save or be poisoned.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0">.2 lb.</set>
+			<set name="type" addition="Arrow">Weapon</set>
 			<set name="rarity">rare</set>
 			<set name="stackable">true</set>
 			<!-- <set name="enhancement">1</set> -->
 		</setters>
-	</element>	               
+	</element>		              
 </elements>

@@ -4,7 +4,7 @@
 		<name>Custom Items</name>
 		<description>Items aded by the GM</description>
 		<author>JCDM</author>
-		<update version="0.4.17">
+		<update version="0.4.21">
 			<file name="dm_custom_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dm_custom_items.xml" />
 		</update>		
 	</info>
@@ -107,7 +107,7 @@
 				You don't provoke OAs for this action. Recharge on a 5-6.
 			</p>
 			<p>
-				Ignition: Ignites target with magical fire on Crit, +1d10 fire damage, taken again at start of its turns unless it extinguishes the flames   
+				Ignition: Ignites target with magical fire on Crit, +1d10 fire damage, taken again at start of its turns unless it extinguishes the flames (takes an action from creature or ally).  
 			</p>
 		</description>
 		<setters>
@@ -313,7 +313,7 @@
 			</p>
 			<p class="indent">
 				<b>Thornstorm</b>
-				An arrow fired using this effect emits a brief green glow, before exploding into several fragments and a shaft.  
+				An arrow fired using this effect emits a brief green glow, before exploding into three fragments and a shaft.  
 				On a hit, the shaft deals 2d8 piercing damage, while each fragment deals 1d4+1 force damage.   
 				Arrows fired this way are not recoverable, but still apply any effects.  This feature can be used twice per short or long rest.
 			</p>			

@@ -4,7 +4,7 @@
 		<name>Sable Armor</name>
 		<description>Armor made by or for the members of the Order of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.4.17">
+		<update version="0.4.21">
 			<file name="sable_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_items.xml" />
 		</update>		
 	</info>
@@ -185,6 +185,61 @@
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Uncommon</set>
 			<set name="attunement">True</set>	
+		</setters>
+		<rules>
+		</rules>
+	</element>		
+	<element name="Robe of Muffling" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_011">
+		<description>
+			<p>
+				A black robe made of a fine material makes barely a rustle when worn.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="sp">124</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">false</set>			
+		</setters>
+		<rules>
+		</rules>
+	</element>	
+	<element name="Hourglass of Time Manipulation" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_012">
+		<description>
+			<p>
+				A bronze hourglass filled with oily black sand.  When turned over and activated by speaking the command word, a faintly visible transparent dome with a radius of 15 feet springs up.
+				Inside the dome, time flows 3x faster than normally.  This effect lasts for two hours.  Once used, the hourglass cannot be used in this way until two full days have passed.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">4357</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">rare</set>
+			<set name="attunement">false</set>			
+		</setters>
+		<rules>
+		</rules>
+	</element>		
+	<element name="Bag of Devouring" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_013">
+		<description>
+			<p>This bag superficially resembles a <em>bag of holding</em> but is a feeding orifice for a gigantic extradimensional creature. Turning the bag inside out closes the orifice.</p>
+			<p class="indent">
+				The extradimensional creature attached to the bag can sense whatever is placed inside the bag. Animal or vegetable matter placed wholly in the bag is devoured and lost forever. 
+				When part of a living creature is placed in the bag, as happens when someone reaches inside it, there is a 50 percent chance that the creature is pulled inside the bag. 
+				A creature pulled inside the bag has can use its action to try to escape with a successful DC 15 Strength check. Another creature can use its action to reach into the bag to pull a creature out, 
+				doing so with a successful DC 20 Strength check (provided it isn't pulled inside the bag first). Any creature that ends its turn inside the bag is devoured, its body destroyed.</p>
+			<p class="indent">Inanimate objects can be stored in the bag, which can hold a cubic foot of such material. However, once each day, the bag swallows any objects inside it and spits them out into another plane of existence. The GM determines the time and plane.</p>
+			<p class="indent">If the bag is pierced or torn, it is destroyed, and anything contained within it is transported to a random location on the Astral Plane.</p>
+		</description>
+		<setters>
+			<set name="keywords">extradimensional</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
 		</setters>
 		<rules>
 		</rules>

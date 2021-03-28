@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Twilight Domain Cleric Homebrew</name>
+        <description>Custom variant of Twilight Domain Cleric</description>
+        <author url="https://viciousmockery.herokuapp.com/">JCDM</author>
+        <update version="0.4.21">
+            <file name="class_twilight_cleric_custom.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/classes/class_twilight_cleric_custom.xml" />
+        </update>
+    </info>
+
+<element name="Twilight Domain" type="Archetype" source="JCDM" id="ID_WOTC_UA20191003_ARCHETYPE_TWILIGHT_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The Twilight Domain governs the transition and blending of light into darkness. It is a time of rest and comfort, but also the threshold between safety and the unknown. Deities of healing or respite (such as Boldrei, Hestia, Mishakal, or Pelor), bravery or protection (such as Dol Arrah, Hajama, Helm, or Ilmater), travel or transition (such as Fharlanghn, Hermes, the Raven Queen, or the Traveler), or the night and dreams (such as Celestian, Morpheus, Nut, or Selûne) might grant their clerics the Twilight Domain. Clerics who serve these deities tend to be brave, delving into the dark to hold its dangers at bay and to bring comfort to those lost far from the light.</p>
+			<div element="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_SPELLS" />
+			<div element="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_EYES_OF_NIGHT" />
+			<div element="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_VIGILANT_BLESSING" />
+			<div element="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_CD_TWILIGHT_SANCTUARY" />
+			<div element="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_STEPS_OF_THE_BRAVE" />
+			<div element="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_DIVINE_STRIKE" />
+			<div element="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_MIDNIGHT_SHROUD" />
+		</description>
+		<sheet display="false">
+			<description>The Twilight Domain governs the transition and blending of light into darkness.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_EYES_OF_NIGHT" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_VIGILANT_BLESSING" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_CD_TWILIGHT_SANCTUARY" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_STEPS_OF_THE_BRAVE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_DIVINE_STRIKE" level="14" />
+			<grant type="Archetype Feature" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_MIDNIGHT_SHROUD" level="8" />
+		</rules>
+	</element>
+	<element name="Domain Spells" type="Archetype Feature" source="Unearthed Arcana: Cleric, Druid, and Wizard" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_SPELLS">
+		<description>
+			<p>You gain domain spells at the cleric levels listed in the Twilight Domain Spells table. See the Divine Domain class feature for how domain spells work.</p>
+			<h5>Twilight Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>faerie fire, sleep</em></td></tr>
+				<tr><td>3rd</td><td><em>darkness, invisibility</em></td></tr>
+				<tr><td>5th</td><td><em>aura of vitality, Leomund’s tiny hut</em></td></tr>
+				<tr><td>7th</td><td><em>aura of life, greater invisibility</em></td></tr>
+				<tr><td>9th</td><td><em>circle of power, dream</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You gain domain spells at the cleric levels listed in the Twilight Domain Spells table.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_VITALITY" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_TINY_HUT" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CIRCLE_OF_POWER" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DREAM" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Unearthed Arcana: Cleric, Druid, and Wizard" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_BONUS_PROFICIENCIES">
+		<description>
+			<p><em>1st-level Twilight Domain feature</em></p>
+			<p>You gain proficiency with martial weapons and heavy armor.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with martial weapons and heavy armor.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+	<element name="Eyes of Night" type="Archetype Feature" source="Unearthed Arcana: Cleric, Druid, and Wizard" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_EYES_OF_NIGHT">
+		<description>
+			<p><em>1st-level Twilight Domain feature</em></p>
+			<p>Your eyes are blessed, allowing you to see through the deepest gloom. You have darkvision with no maximum range; you can see in dim light as if it were bright light and in darkness as if it were dim light.</p>
+			<p class="indent">As an action, you can magically give the benefit of this feature to any number of creatures you can see within 10 feet of you. The shared benefit lasts for 10 minutes. You can extend this benefit a number of times equal to your Wisdom modifier (a minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{eyes of night:usage}}/Long Rest">
+			<description>You have darkvision with no maximum range; you can see in dim light as if it were bright light and in darkness as if it were dim light.
+			You can magically give the benefit of this feature to any number of creatures you can see within 10 feet of you. The shared benefit lasts for 10 minutes.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="eyes of night:usage" value="1" bonus="base" />
+			<stat name="eyes of night:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Vigilant Blessing" type="Archetype Feature" source="Unearthed Arcana: Cleric, Druid, and Wizard" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_VIGILANT_BLESSING">
+		<description>
+			<p><em>1st-level Twilight Domain feature</em></p>
+			<p>The night has taught you to be vigilant. As an action, you give one creature you touch (including possibly yourself) advantage on the next initiative roll the creature makes. This benefit ends immediately after the roll or if you use this feature again.</p>
+		</description>
+		<sheet action="Action">
+			<description>You give one creature you touch advantage on the next initiative roll the creature makes. This benefit ends immediately after the roll or if you use this feature again.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Twilight Sanctuary" type="Archetype Feature" source="Unearthed Arcana: Cleric, Druid, and Wizard" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_CD_TWILIGHT_SANCTUARY">
+		<description>
+			<p><em>2nd-level Twilight Domain feature</em></p>
+			<p>You can use your Channel Divinity to refresh your allies with soothing twilight.</p>
+			<p class="indent">As an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:</p>
+			<ul>
+				<li>Give it 1d8 temporary hit points.</li>
+				<li>End one effect causing it to be charmed or frightened.</li>
+			</ul>
+		</description>
+		<sheet alt="Twilight Sanctuary" action="Action" usage="Channel Divinity">
+			<description>You present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature ends its turn in the sphere, you can grant that creature one of these benefits:
+			Give it 1d8 temporary hit points.
+			End one effect causing it to be charmed or frightened.</description>
+		</sheet>
+	</element>
+	<element name="Steps of the Brave" type="Archetype Feature" source="Unearthed Arcana: Cleric, Druid, and Wizard" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_STEPS_OF_THE_BRAVE">
+		<description>
+			<p><em>6th-level Twilight Domain feature</em></p>
+			<p>You draw strength from your connection to twilight and find yourself at home within its dark embrace, gaining two benefits:</p>
+			<ul>
+				<li>You have advantage on saving throws against being frightened.</li>
+				<li>If you are in dim light or darkness, you can use a bonus action to magically give yourself a flying speed equal to your walking speed until the end of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being frightened.
+			If you are in dim light or darkness, you can use a bonus action to magically give yourself a flying speed of {{speed}} feet until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Unearthed Arcana: Cleric, Druid, and Wizard" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_DIVINE_STRIKE">
+		<description>
+			<p><em>14th-level Twilight Domain feature</em></p>
+			<p>You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage.</description>
+			<description level="17">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 3d8 psychic damage.</description>
+		</sheet>
+	</element>   
+	<element name="Midnight Shroud" type="Archetype Feature" source="Unearthed Arcana: Cleric, Druid, and Wizard" id="ID_WOTC_UA20191003_ARCHETYPE_FEATURE_TWILIGHT_MIDNIGHT_SHROUD">
+		<description>
+			<p><em>8th-level Twilight Domain feature</em></p>
+			<p>
+                You can harness the shrouding power of night to protect your allies and stymie your foes. Whenever you cast the darkness spell using a spell slot, you can choose a number of creatures that 
+                you can see (including yourself) equal to your Wisdom modifier (minimum of one). The chosen creatures can see through the darkness.  If the spell is dispelled or concentration is lost, if the 
+                character is less than level 17, make a concentration save (DC 15).  On failure, character is blind for 1 minute.
+            </p>
+		</description>
+		<sheet>
+			<description level="8">Whenever you cast the darkness spell using a spell slot, you can choose {{midnight shroud:creatures}} creatures that you can see. The chosen creatures can see through the darkness.  
+            If the spell is dispelled or concentration is lost, if the character is less than level 17, make a concentration save (DC 15).  On failure, character is blind for 1 minute.</description>
+			<description level="17">Whenever you cast the darkness spell using a spell slot, you can choose {{midnight shroud:creatures}} creatures that you can see. The chosen creatures can see through the darkness.</description>            
+		</sheet>
+		<rules>
+			<stat name="midnight shroud:creatures" value="1" bonus="base" />
+			<stat name="midnight shroud:creatures" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+</elements>    

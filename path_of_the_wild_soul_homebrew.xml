@@ -4,7 +4,7 @@
         <name>Path of the Wild Sould Homebrew</name>
         <description>Fixes issues with path of the wild soul barbarian</description>
         <author url="https://viciousmockery.herokuapp.com/">JCDM</author>
-        <update version="0.4">
+        <update version="0.4.21">
             <file name="path_of_the_wild_soul_homebrew.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/path_of_the_wild_soul_homebrew.xml" />
         </update>
     </info>
@@ -122,9 +122,10 @@
         </description>
         <sheet action="Action">
             <description>
-                Touch a creature and expend energy from the pool to restore one or more of the creature's expended spell slots, expending an amount of energy equal to the slot level(s). 
-                You cannot restore a spell slot of 6th level or higher.
+                You have a pool of magical energy equal to 1/2 your barbarian level, rounded up.  You can touch a creature and expend energy from the pool to restore one or more of the creature's 
+                expended spell slots, expending an amount of energy equal to the slot level(s).  You cannot restore a spell slot of 6th level or higher.
                 Alternatively, when you use this feature, the creature gains temporary hit points equal to five times the amount of energy expended, up to a maximum of 30 temporary hit points.
+                Pool replenishes after a long rest.
             </description>
         </sheet>
         <rules>
