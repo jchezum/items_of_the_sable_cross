@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Forge Adept Artificer Specialization</name>
-        <update version="0.4.23">
+        <update version="0.4.24">
             <file name="subclass_artificer_forge_adept.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/subclasses/subclass_artificer_forge_adept.xml" />
         </update>
     </info>
