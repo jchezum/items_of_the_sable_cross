@@ -4,7 +4,7 @@
         <name>Path of the Wild Sould Homebrew</name>
         <description>Fixes issues with path of the wild soul barbarian</description>
         <author url="https://viciousmockery.herokuapp.com/">JCDM</author>
-        <update version="0.4.22">
+        <update version="0.4.26">
             <file name="path_of_the_wild_soul_homebrew.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/path_of_the_wild_soul_homebrew.xml" />
         </update>
     </info>
@@ -137,10 +137,14 @@
     </element>
     <element name="Arcane Rebuke" type="Archetype Feature" source="Unearthed Arcana: Barbarian and Monk" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_ARCANE_REBUKE_HB">
         <description>
-            <p>At 10th level, the magic crackling within your soul lashes out. When a creature forces you to make a saving throw while you are raging, you can use your reaction to deal 3d6 force damage to that creature.</p>
+            <p>
+                At 10th level, the magic crackling within your soul lashes out. 
+                Immediately after you take damage or make a saving throw while you are raging, 
+                you can use your reaction to roll on the Wold Magic Table or deal 3d6 force damage to that creature.
+            </p>
         </description>
         <sheet action="Reaction">
-            <description>When you are forced to make a saving throw while you are raging, deal 3d6 force damage against the creature.</description>
+            <description>When you take damage or are forced to make a saving throw while raging, roll on the Wild Magic table OR deal 3d6 force damage against the creature.</description>
         </sheet>
     </element>
     <element name="Chaotic Fury" type="Archetype Feature" source="Unearthed Arcana: Barbarian and Monk" id="ID_WOTC_UA_WILD_SOUL_ARCHETYPE_FEATURE_CHAOTIC_FURY_HB">
@@ -148,7 +152,7 @@
             <p>At 14th level, you become a wellspring of wild magic while you are raging. As a bonus action, you can trigger a wild surge and roll on the Wild Surge table.</p>
         </description>
         <sheet action="Bonus Action">
-            <description>While raging, you can reroll on the Wild Surge Table replacing your current effect with the new one.</description>
+            <description>While raging, you can trigger a wild surge and roll on the Wild Surge table.</description>
         </sheet>
     </element>
 

@@ -4,7 +4,7 @@
 		<name>Sable Items</name>
 		<description>Lore, Classes, and/or Items found or created by members of the Sable Cross</description>
 		<author url="https://viciousmockery.herokuapp.com/">JCDM</author>
-		<update version="0.4.24">
+		<update version="0.4.26">
 			<file name="items_of_the_sable_cross.index" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items_of_the_sable_cross.index" />
 		</update>
 	</info>
@@ -19,6 +19,9 @@
 		<file name="dragonguard_gear.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/dragonguard_gear.xml" />
 		<file name="sable_tools.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_tools.xml" />		
 		<file name="deities.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/deities.xml" />
+
+		<!-- ITEMS -->
+		<file name="watcher_crafted_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items/watcher_crafted_items.xml" />
 		
 		<!-- BACKGROUNDS -->
 		<file name="background-quester.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/backgrounds/background-adventurer-alt.xml" />

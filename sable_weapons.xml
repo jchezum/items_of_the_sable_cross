@@ -4,7 +4,7 @@
 		<name>Sable Weapons</name>
 		<description>Weapons created or found by members of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.4.17">
+		<update version="0.4.26">
 			<file name="sable_weapons.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_weapons.xml" />
 		</update>		
 	</info>
@@ -16,8 +16,15 @@
 	<!-- ==================================================================================== -->
 	<element name="The Sable Blood Thief" type="Magic Item" source="JCDM" id="JCDM_Weapon_01">
 		<description>
-			<p>The iron of this massive greatsword is uniquely shaped, as though it were forged by intent rather than heat and pressure, and the hilt is crafted out of dark wood from the heart of the Blackthorn Grove. This blade hungers for the iron contained within blood. On a hit, the target takes an extra 2d6 necrotic damage as the blade extracts the precious metal, slowly adding length and breadth to the ever-growing blade. </p>
-			<p class="indent">As a bonus action, you can impale a corpse with this blade to extract the blood that remains. You gain 10 temporary hit points that last 1 hour. Once a corpse has been drained by this weapon, it can’t be used again in this manner.</p>
+			<p>
+				The iron of this massive greatsword is uniquely shaped, as though it were forged by intent rather than heat and pressure, and the hilt is crafted out of dark wood from the heart of the Blackthorn Grove. 
+				This blade hungers for the iron contained within blood. 
+				On a hit, the target takes an extra 2d6 necrotic damage as the blade extracts the precious metal, slowly adding length and breadth to the ever-growing blade. 
+			</p>
+			<p class="indent">
+				As a bonus action, you can impale a corpse with this blade to extract the blood that remains. You gain 10 temporary hit points that last 1 hour. 
+				Once a corpse has been drained by this weapon, it can’t be used again in this manner.
+			</p>
 		</description>
 		<setters>
 			<set name="keywords">greatsword</set>
@@ -61,21 +68,7 @@
 			<set name="cost" currency="gp">1000</set>
 			<set name="type" addition="shortsword">Weapon</set>
 			<set name="rarity">Rare</set>
-			<set name="weapon">shortsword</set>	<element name="Dragonsteel Heavy Crossbow" type="Magic Item" source="JCDM" id="JCDM_Dragonsteel_Weapon_04">
-		<description>
-			<p>This Heavy Crossbow is made of an unusual blackened metal with a faint, poison-green iridescence. </p>
-			<p class="indent">This weapon gives a +1 to hit and attack.  On hit, deals an additional 1d6 acid damage. </p>
-		</description>
-		<setters>
-			<set name="keywords">crossbow</set>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">1000</set>
-			<set name="type" addition="crossbow">Weapon</set>
-			<set name="rarity">Rare</set>
-			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="attunement">false</set>
-			<set name="enhancement">1</set>
-		</setters>		
+			<set name="weapon">shortsword</set>	
 	</element>
 			<set name="attunement">false</set>
 			<set name="enhancement">1</set>

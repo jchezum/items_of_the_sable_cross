@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Watcher Crafted Items</name>
+		<description>Items crafted by the Watchers</description>
+		<author>JCDM</author>
+		<update version="0.4.26">
+			<file name="watcher_crafted_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items/watcher_crafted_items.xml" />
+		</update>		
+	</info>
+
+    <!-- AMAYA -->
+	<element name="Gauntlets of Inspiring Nondetection" type="Magic Item" source="JCDM" id="ID_JCDM_WATCHER_001">
+		<description>
+			<p>
+                These fine leather gauntlets were crafted for the bard Amaya Tempest by craftsmen of the Abyssal Watchers.  The surface of the gauntlets are intricately worked with detailed engravings
+                of a moon overlooking a scene with waves crashing upon a wooded coastline.  
+                Inset into the engraving are delicate gold and silver elements, along with a small marbled pink and green gemstone (embedded into the moon of the right gauntlet).
+			</p>
+            <p>
+                When attuned to these gauntlets, your Dexterity score is 18 (there is no effect if your Dexterity is higher than 18 without them).
+                Additionally, your Charisma score increases by 2 and you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors.
+
+                A creature can attempt to target the gem in the right bracer.  It has an AC of 24, 10 hit points, and resistance to all damage.  
+                If it is destroyed, the +2 bonus to charisma is lost until the gem can be repaired.
+            </p>        
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="cp">57000</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+            <set name="slot">hands</set>
+            <set name="attunement">true</set>	            
+		</setters>
+		<rules>
+            <stat name="dexterity:score:set" value="18" bonus="base" />
+            <stat name="charisma" value="2" />
+		</rules>
+	</element>	    
+
+    <!-- SUTHRA -->
+	<element name="Earrings of Arcane Focus" type="Magic Item" source="JCDM" id="ID_JCDM_WATCHER_002">
+		<description>
+			<p>
+                These fine adamantine earrings were made for the wizard Suthra by craftsmen of the Abyssal Watchers.  
+                The metal of the rings are wound through with threads of platinum and embedded with small emeralds in several places.  
+                The threads precisely align to form several runic symbols.
+			</p>
+            <p>
+                When attuned to these earrings, you gain additional control over the natural magic that courses through your veins.  
+                Your Charisma score increases by 2.  If you are a Barbarian, you can cast spells while raging and your rage doesn't end early if you cast a spell.  
+                Additionally, if the spell is a damaging spell, it does an additional 1d8 damage of the same type as the spell.
+            </p>        
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="cp">57000</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+            <set name="slot">earring</set>
+            <set name="attunement">true</set>	            
+		</setters>
+		<rules>
+            <stat name="charisma" value="2" />
+		</rules>
+	</element>	 
+
+    <!-- CAZ -->
+	<element name="Kara-Kesh" type="Magic Item" source="JCDM" id="ID_JCDM_WATCHER_003">
+		<description>
+			<p>
+				This magical device was made for the warrior Cazithan by the craftsmen of the Abyssal Watchers.  
+				The device takes the form of a gold colored metal ribbon, which wraps around the fingers, hand and forearm of the user; a red gem is nestled in the palm.
+			</p>
+            <p>
+				The Kara-kesh has 11 charges.  While the item is being worn on the forearm, the wearer gains access to the following abilities:	
+				<b>Force Blast (Action, 3 charges)</b>: A wave of force is emitted from the crystal at a target you can see within 60 feet.  Target takes 4d8 force damage and must make a DC 15 strength save or be knocked prone.  On sucess, target damage is reduced to 2d8 and target is not knocked prone.
+				<b>Shield (Reaction, 4 charges, Duration: 1 round)</b>: A shimmering pillar of energy slightly larger than the user springs into existance.  While this shield is active, the following effects apply:
+					- Speed reduced by 10ft
+					- Blocks incoming damaging effects (most evocation/conjuration spells, arows/bullets/launched projectiles, etc) but not melee attacks/throwing weapons (stops high velopcity things)
+					- Enemies attacking with a melee weapon (or thrown weapon) have advantage on their attack(s)
+					Once active, the shield can be kept running for an additional round by expending an additional 1 charge.
+				<b>Cast Spell (Action, 1 charge/spell lvl)</b>: The crystal in the nestled in the palm of the hand can be used as a spellcasting focus to cast one of the following spells:
+					- Invisibility (2nd lvl)
+					- Tasha's Mind Whip (2nd lvl) 
+					- Confusion (4th lvl)
+			</p>
+			<p>
+				Additionally, the item provides the following feature:	
+				<b>Digging Deep (bonus action)</b>: User can immediately regenerate 3 charges but takes 1 point of exhaustion.
+				
+
+				<!-- Shield: 4 charges, reaction to activate
+					A pillar of energy surrounds you.  Duration: 1 round.  Can spend an additional 1 charge to keep the shield running an additional round.
+					While active:
+						Speed reduced by 10ft
+						Blocks incoming damaging effects (most evocation/conjuration spells, arows/bullets/launched projectiles, etc) but not melee attacks/throwing weapons (stops high velopcity things)
+						Enemies attacking with a melee weapon (or thrown weapon) have advantage on their attack(s) -->
+
+				<!-- Cast Spell: variable charges (1 charge/spell level), action to cast spell from list
+					Invisibility (2nd)
+					Tasha's Mind Whip (2nd) https://5e.tools/spells.html#tasha's%20mind%20whip_tce
+					Confusion (4th) https://5e.tools/spells.html#confusion_phb -->
+            </p>        
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="cp">57000</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+            <set name="slot">Glove</set>
+            <set name="attunement">false</set>	            
+		</setters>
+		<rules>
+		</rules>
+	</element>	    
+
+
+    <!-- WHISPER -->
+	<element name="Crystal of Slumber" type="Magic Item" source="JCDM" id="ID_JCDM_WATCHER_004">
+		<description>
+			<p>
+                This finely crafted azure gem was crafted for the thief and explorer Whisper by the craftsmen of the Abyssal Watchers.  
+				The crystal comes to a shallow point and is inlaid into a frame of blackened steel wrapped in finely-laid adamantine.  The gem was then fastened to a fine leather cord, to be worn around the neck.
+				The gem contains a small pocket dimension that is able to house a provide for a living creature indefinitely.  The space is around 30ft x 30ft, and is surrounded on three sides by a stone wall.  
+				The fourth wall is transparent, and one can vaguely see through it into the outside world.				
+			</p>
+			<p>
+				Using an action, the user can teleport a creature (size huge or smaller) within 60ft into the gem.  If the creature is unwilling they must succeed on a DC 15 Wisdom saving throw or be drawn into the crystal.  If they are willing, the teleportation happens instantly.
+				If a creature falls unconcious within range of the user, and the gem is unoccupied, the user can user a reaction to teleport the creature into the gem.			
+				The user can spend a bonus action to summon the contained creature forth from the gem.  For maximum effect, the user must also shout the name of the creature being summoned along with the phrase "I choose you!"
+			</p>
+			<p>
+				If the creature contained within the gem attacks the walls with enough magical damage, they can eventually collapse the walls and escape.  (the damage required is subject to DM discretion).  
+				This will destroy the gem and the creature will appear in a random location within 60 feet.
+			</p>			
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="cp">57000</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+            <set name="slot">neck</set>
+            <set name="attunement">true</set>	            
+		</setters>
+		<rules>
+		</rules>
+	</element>	 
+
+    <!-- LIVILLA -->
+	<element name="Barbed Chakrams" type="Magic Item" source="JCDM" id="ID_JCDM_WATCHER_005">
+		<description>
+			<p>
+                These chakrams were made for the figher Livilla by the craftsmen of the Abyssal Watchers.  
+				They are crafted from a reddish-brown steel.  The blade edge is surrounded by many small spikes.  
+			</p>
+            <p>
+                When an attack hits, user can use their reaction to cause the targeted creature to be surrounded by dark barbed chains fastening them to the nearest solid surface (floor, wall, etc).
+				While bound, the target can move only at half speed and has disadvantage on attack rolls, saving throws, and Dexterity-related checks.  
+				If it moves more than 5ft during it's turn it takes 3d6 piercing damage from the barbs on the chain.
+            </p>        
+			<p>
+				The creature can escape from the chains by using an action and making a sucessful Strength check against your spell save DC (or 14 if not a caster), or if the chains are destroyed.
+				The chains have an AC of 18 and 20 hit points.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">chakram</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">37000</set>
+			<set name="type" addition="chakram">Weapon</set>
+			<set name="rarity">Unique</set>
+			<set name="weapon">chakram</set>
+			<set name="attunement">false</set>
+			<set name="enhancement">2</set>
+		</setters>				
+		<rules>
+		</rules>
+	</element>	     
+
+
+
+
+</elements>
