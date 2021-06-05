@@ -4,7 +4,7 @@
         <name>Path of the Wild Sould Homebrew</name>
         <description>Fixes issues with path of the wild soul barbarian</description>
         <author url="https://viciousmockery.herokuapp.com/">JCDM</author>
-        <update version="0.4.26">
+        <update version="0.4.27">
             <file name="path_of_the_wild_soul_homebrew.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/path_of_the_wild_soul_homebrew.xml" />
         </update>
     </info>

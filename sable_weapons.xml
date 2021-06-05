@@ -4,7 +4,7 @@
 		<name>Sable Weapons</name>
 		<description>Weapons created or found by members of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.4.26">
+		<update version="0.4.27">
 			<file name="sable_weapons.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_weapons.xml" />
 		</update>		
 	</info>
@@ -69,7 +69,6 @@
 			<set name="type" addition="shortsword">Weapon</set>
 			<set name="rarity">Rare</set>
 			<set name="weapon">shortsword</set>	
-	</element>
 			<set name="attunement">false</set>
 			<set name="enhancement">1</set>
 		</setters>		
