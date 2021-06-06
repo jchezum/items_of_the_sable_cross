@@ -4,7 +4,7 @@
 		<name>Watcher Crafted Items</name>
 		<description>Items crafted by the Watchers</description>
 		<author>JCDM</author>
-		<update version="0.4.30">
+		<update version="0.4.31">
 			<file name="watcher_crafted_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items/watcher_crafted_items.xml" />
 		</update>		
 	</info>
@@ -85,7 +85,7 @@
 			</p>
 			<p class="indent"><strong><em>Cast Spell (Action, 1 charge/spell lvl): </em></strong>
 				The crystal in the nestled in the palm of the hand can be used as a spellcasting focus to cast one of the following spells: 
-				<b>Invisibility<b> (2nd lvl), <b>Tasha's Mind Whip</b> (2nd lvl), or <b>Confusion</b> (4th lvl).
+				<b>Invisibility</b> (2nd lvl), <b>Tasha's Mind Whip</b> (2nd lvl), or <b>Confusion</b> (4th lvl).
 			</p>
 			<p class="indent"><strong><em>Digging Deep (bonus action): </em></strong>
 				User can immediately regenerate 3 charges but takes 1 point of exhaustion.
