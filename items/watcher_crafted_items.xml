@@ -13,9 +13,8 @@
 	<element name="Gauntlets of Inspiring Nondetection" type="Magic Item" source="JCDM" id="ID_JCDM_WATCHER_001">
 		<description>
 			<p>
-                These fine leather gauntlets were crafted for the bard Amaya Tempest by craftsmen of the Abyssal Watchers.  The surface of the gauntlets are intricately worked with detailed engravings
-                of a moon overlooking a scene with waves crashing upon a wooded coastline.  
-                Inset into the engraving are delicate gold and silver elements, along with a small marbled pink and green gemstone (embedded into the moon of the right gauntlet).
+                These fine leather and steel gauntlets were crafted for the bard Amaya Tempest by craftsmen of the Abyssal Watchers.  The surface of the gauntlets are intricately worked with detailed runic engravings. 
+                Inset into the engraving are delicate gold and silver elements, along with a small marbled pink and green gemstone (embedded into the right gauntlet).
 			</p>
             <p>
                 When attuned to these gauntlets, your Dexterity score is 18 (there is no effect if your Dexterity is higher than 18 without them).
@@ -75,15 +74,34 @@
 			</p>
             <p>
 				The Kara-kesh has 11 charges.  While the item is being worn on the forearm, the wearer gains access to the following abilities:	
+
 				<b>Force Blast (Action, 3 charges)</b>: A wave of force is emitted from the crystal at a target you can see within 60 feet.  Target takes 4d8 force damage and must make a DC 15 strength save or be knocked prone.  On success, target damage is reduced to 2d8 and target is not knocked prone.
 				<b>Shield (Reaction, 4 charges, Duration: 1 round)</b>: A shimmering pillar of energy slightly larger than the user springs into existance.  
 				While this shield is active, the user's speed is reduced by 10 feet and enemies have advantage on melee attacks against them.  
 				Incoming evocation spells, conjuration spells, and attacks from arrows/bullets/launched projectiles are blocked harmlessly.  
 				Once active, the shield can be kept running for an additional round(s) by expending an additional 1 charge per round.
-				<b>Cast Spell (Action, 1 charge/spell lvl)</b>: The crystal in the nestled in the palm of the hand can be used as a spellcasting focus to cast one of the following spells:
+				<b>Cast Spell (Action, 1 charge/spell lvl)</b>: The crystal in the nestled in the palm of the hand can be used as a spellcasting focus to cast one of the following spells: 
 					- Invisibility (2nd lvl)
 					- Tasha's Mind Whip (2nd lvl) 
 					- Confusion (4th lvl)
+				<ul>
+					<li>
+						<b>Force Blast (Action, 3 charges)</b>: A wave of force is emitted from the crystal at a target you can see within 60 feet.  
+						Target takes 4d8 force damage and must make a DC 15 strength save or be knocked prone.  On success, target damage is reduced to 2d8 and target is not knocked prone.
+					</li>
+					<li>
+						<b>Shield (Reaction, 4 charges, Duration: 1 round)</b>: A shimmering pillar of energy slightly larger than the user springs into existance.  
+						While this shield is active, the user's speed is reduced by 10 feet and enemies have advantage on melee attacks against them.  
+						Incoming evocation spells, conjuration spells, and attacks from arrows/bullets/launched projectiles are blocked harmlessly.  
+						Once active, the shield can be kept running for an additional round(s) by expending an additional 1 charge per round.						
+					</li>
+					<li>
+						<b>Cast Spell (Action, 1 charge/spell lvl)</b>: The crystal in the nestled in the palm of the hand can be used as a spellcasting focus to cast one of the following spells: 
+						- Invisibility (2nd lvl)
+						- Tasha's Mind Whip (2nd lvl) 
+						- Confusion (4th lvl)
+					</li>
+				</ul>
 			</p>
 			<p>
 				Additionally, the item provides the following feature:	
@@ -108,7 +126,7 @@
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="cp">57000</set>
+			<set name="cost" currency="cp">57011</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Unique</set>
             <set name="slot">Glove</set>
@@ -171,7 +189,7 @@
 		<setters>
 			<set name="keywords">chakram</set>
 			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">37000</set>
+			<set name="cost" currency="gp">57000</set>
 			<set name="type" addition="chakram">Weapon</set>
 			<set name="rarity">Unique</set>
 			<set name="weapon">chakram</set>
