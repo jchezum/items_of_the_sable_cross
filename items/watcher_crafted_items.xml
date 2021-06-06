@@ -4,7 +4,7 @@
 		<name>Watcher Crafted Items</name>
 		<description>Items crafted by the Watchers</description>
 		<author>JCDM</author>
-		<update version="0.4.31">
+		<update version="0.4.33">
 			<file name="watcher_crafted_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items/watcher_crafted_items.xml" />
 		</update>		
 	</info>
@@ -108,15 +108,14 @@
 	<element name="Crystal of Slumber" type="Magic Item" source="JCDM" id="ID_JCDM_WATCHER_004">
 		<description>
 			<p>
-                This finely crafted azure gem was crafted for the thief and explorer Whisper by the craftsmen of the Abyssal Watchers.  
+                This finely crafted emerald gem was crafted for the thief and explorer Whisper by the craftsmen of the Abyssal Watchers.  
 				The crystal comes to a shallow point and is inlaid into a frame of blackened steel wrapped in finely-laid adamantine.  The gem was then fastened to a fine leather cord, to be worn around the neck.
 				The gem contains a small pocket dimension that is able to house a provide for a living creature indefinitely.  The space is around 30ft x 30ft, and is surrounded on three sides by a stone wall.  
-				The fourth wall is transparent, and one can vaguely see through it into the outside world.				
+				The fourth wall is transparent, and one can vaguely see through it into the outside world.  The space within the walls is filled with a dense jungle environment that is evergreen and evergrowing.  				
 			</p>
 			<p>
-				Using an action, the user can teleport a creature (size huge or smaller) within 100ft into the gem.  If the creature is unwilling they must succeed on a DC 15 Wisdom saving throw or be drawn into the crystal.  
-				If they are willing, the teleportation happens instantly.
-				If a creature falls unconcious within range of the user, and the gem is unoccupied, the user can user a reaction to teleport the creature into the gem.			
+				Using an action, the user can teleport a creature (size huge or smaller) within 100 ft into the gem.  If the creature is unwilling they must succeed on a DC 15 Wisdom saving throw or be drawn into the crystal.  
+				If they are willing, the teleportation happens instantly.  If the last creature to enter the demiplane falls unconscious within 100 ft, it enters the demiplane and is stabilized.  
 				The user can spend a bonus action to summon the contained creature forth from the gem.  For maximum effect, the user must also shout the name of the creature being summoned along with the phrase "I choose you!"
 			</p>
 			<p>
@@ -130,7 +129,7 @@
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Unique</set>
             <set name="slot">neck</set>
-            <set name="attunement">true</set>	            
+            <set name="attunement">false</set>	            
 		</setters>
 		<rules>
 		</rules>
