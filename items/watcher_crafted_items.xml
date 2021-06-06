@@ -4,7 +4,7 @@
 		<name>Watcher Crafted Items</name>
 		<description>Items crafted by the Watchers</description>
 		<author>JCDM</author>
-		<update version="0.4.28">
+		<update version="0.4.30">
 			<file name="watcher_crafted_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items/watcher_crafted_items.xml" />
 		</update>		
 	</info>
@@ -72,54 +72,24 @@
 				This magical device was made for the warrior Cazithan by the craftsmen of the Abyssal Watchers.  
 				The device takes the form of a gold colored metal ribbon, which wraps around the fingers, hand and forearm of the user; a red gem is nestled in the palm.
 			</p>
-            <p>
-				The Kara-kesh has 11 charges.  While the item is being worn on the forearm, the wearer gains access to the following abilities:	
-
-				<b>Force Blast (Action, 3 charges)</b>: A wave of force is emitted from the crystal at a target you can see within 60 feet.  Target takes 4d8 force damage and must make a DC 15 strength save or be knocked prone.  On success, target damage is reduced to 2d8 and target is not knocked prone.
-				<b>Shield (Reaction, 4 charges, Duration: 1 round)</b>: A shimmering pillar of energy slightly larger than the user springs into existance.  
+            <p>The Kara-kesh has 11 charges.  While the item is being worn on the forearm, the wearer gains access to the following abilities:</p>
+			<p class="indent"><strong><em>Force Blast (Action, 3 charges): </em></strong>
+				A wave of force is emitted from the crystal at a target you can see within 60 feet.  
+				Target takes 4d8 force damage and must make a DC 15 strength save or be knocked prone.  
+				On success, target damage is reduced to 2d8 and target is not knocked prone.
+			</p>
+			<p class="indent"><strong><em>Shield (Reaction, 4 charges, Duration: 1 round): </em></strong>
+				A shimmering pillar of energy slightly larger than the user springs into existance.  
 				While this shield is active, the user's speed is reduced by 10 feet and enemies have advantage on melee attacks against them.  
 				Incoming evocation spells, conjuration spells, and attacks from arrows/bullets/launched projectiles are blocked harmlessly.  
-				Once active, the shield can be kept running for an additional round(s) by expending an additional 1 charge per round.
-				<b>Cast Spell (Action, 1 charge/spell lvl)</b>: The crystal in the nestled in the palm of the hand can be used as a spellcasting focus to cast one of the following spells: 
-					- Invisibility (2nd lvl)
-					- Tasha's Mind Whip (2nd lvl) 
-					- Confusion (4th lvl)
-				<ul>
-					<li>
-						<b>Force Blast (Action, 3 charges)</b>: A wave of force is emitted from the crystal at a target you can see within 60 feet.  
-						Target takes 4d8 force damage and must make a DC 15 strength save or be knocked prone.  On success, target damage is reduced to 2d8 and target is not knocked prone.
-					</li>
-					<li>
-						<b>Shield (Reaction, 4 charges, Duration: 1 round)</b>: A shimmering pillar of energy slightly larger than the user springs into existance.  
-						While this shield is active, the user's speed is reduced by 10 feet and enemies have advantage on melee attacks against them.  
-						Incoming evocation spells, conjuration spells, and attacks from arrows/bullets/launched projectiles are blocked harmlessly.  
-						Once active, the shield can be kept running for an additional round(s) by expending an additional 1 charge per round.						
-					</li>
-					<li>
-						<b>Cast Spell (Action, 1 charge/spell lvl)</b>: The crystal in the nestled in the palm of the hand can be used as a spellcasting focus to cast one of the following spells: 
-						- Invisibility (2nd lvl)
-						- Tasha's Mind Whip (2nd lvl) 
-						- Confusion (4th lvl)
-					</li>
-				</ul>
 			</p>
-			<p>
-				Additionally, the item provides the following feature:	
-				<b>Digging Deep (bonus action)</b>: User can immediately regenerate 3 charges but takes 1 point of exhaustion.
-				
-
-				<!-- Shield: 4 charges, reaction to activate
-					A pillar of energy surrounds you.  Duration: 1 round.  Can spend an additional 1 charge to keep the shield running an additional round.
-					While active:
-						Speed reduced by 10ft
-						Blocks incoming damaging effects (most evocation/conjuration spells, arows/bullets/launched projectiles, etc) but not melee attacks/throwing weapons (stops high velopcity things)
-						Enemies attacking with a melee weapon (or thrown weapon) have advantage on their attack(s) -->
-
-				<!-- Cast Spell: variable charges (1 charge/spell level), action to cast spell from list
-					Invisibility (2nd)
-					Tasha's Mind Whip (2nd) https://5e.tools/spells.html#tasha's%20mind%20whip_tce
-					Confusion (4th) https://5e.tools/spells.html#confusion_phb -->
-            </p>   
+			<p class="indent"><strong><em>Cast Spell (Action, 1 charge/spell lvl): </em></strong>
+				The crystal in the nestled in the palm of the hand can be used as a spellcasting focus to cast one of the following spells: 
+				<b>Invisibility<b> (2nd lvl), <b>Tasha's Mind Whip</b> (2nd lvl), or <b>Confusion</b> (4th lvl).
+			</p>
+			<p class="indent"><strong><em>Digging Deep (bonus action): </em></strong>
+				User can immediately regenerate 3 charges but takes 1 point of exhaustion.
+			</p>									 
 			<p>
 				Item regenerates 1d4+3 charges each night at midnight.
 			</p>     
