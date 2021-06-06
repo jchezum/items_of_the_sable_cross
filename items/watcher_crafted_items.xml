@@ -72,7 +72,7 @@
 				This magical device was made for the warrior Cazithan by the craftsmen of the Abyssal Watchers.  
 				The device takes the form of a gold colored metal ribbon, which wraps around the fingers, hand and forearm of the user; a red gem is nestled in the palm.
 			</p>
-            <p>The Kara-kesh has 11 charges.  While the item is being worn on the forearm, the wearer gains access to the following abilities:</p>
+            <p>The Kara-kesh has 11 charges, and regenerates 1d4+3 charges each night at midnight.  While the item is being worn on the forearm, the wearer gains access to the following abilities:</p>
 			<p class="indent"><strong><em>Force Blast (Action, 3 charges): </em></strong>
 				A wave of force is emitted from the crystal at a target you can see within 60 feet.  
 				Target takes 4d8 force damage and must make a DC 15 strength save or be knocked prone.  
@@ -89,10 +89,7 @@
 			</p>
 			<p class="indent"><strong><em>Digging Deep (bonus action): </em></strong>
 				User can immediately regenerate 3 charges but takes 1 point of exhaustion.
-			</p>									 
-			<p>
-				Item regenerates 1d4+3 charges each night at midnight.
-			</p>     
+			</p>									     
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
