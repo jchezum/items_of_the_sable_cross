@@ -4,7 +4,7 @@
 		<name>Watcher Crafted Items</name>
 		<description>Items crafted by the Watchers</description>
 		<author>JCDM</author>
-		<update version="0.4.33">
+		<update version="0.4.35">
 			<file name="watcher_crafted_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items/watcher_crafted_items.xml" />
 		</update>		
 	</info>
@@ -26,7 +26,7 @@
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="cp">57000</set>
+			<set name="cost" currency="gp">57000</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Unique</set>
             <set name="slot">hands</set>
@@ -54,7 +54,7 @@
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="cp">57000</set>
+			<set name="cost" currency="gp">57000</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Unique</set>
             <set name="slot">earring</set>
@@ -93,7 +93,7 @@
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="cp">57011</set>
+			<set name="cost" currency="gp">57011</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Unique</set>
             <set name="slot">Glove</set>
@@ -121,11 +121,14 @@
 			<p>
 				If the creature contained within the gem attacks the walls with enough magical damage, they can eventually collapse the walls and escape.  (the damage required is subject to DM discretion).  
 				This will destroy the gem and the creature will appear in a random location within 60 feet.
-			</p>			
+			</p>		
+			<p>
+				Additionally, the user is able to cast Speak with Animals up to 3 times per long rest as a bonus action.
+			</p>	
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="cp">57000</set>
+			<set name="cost" currency="gp">57000</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Unique</set>
             <set name="slot">neck</set>
