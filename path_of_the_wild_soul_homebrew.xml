@@ -4,7 +4,7 @@
         <name>Path of the Wild Sould Homebrew</name>
         <description>Fixes issues with path of the wild soul barbarian</description>
         <author url="https://viciousmockery.herokuapp.com/">JCDM</author>
-        <update version="0.4.27">
+        <update version="0.4.36">
             <file name="path_of_the_wild_soul_homebrew.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/path_of_the_wild_soul_homebrew.xml" />
         </update>
     </info>
@@ -63,7 +63,7 @@
                 Whenever you take damage, you trigger a wild surge.  
                 <!-- Whenever you take damage, roll a d20.  -->
                 <!-- You trigger a wild surge if the result of the roll is equal to or less than half the damage you took.  -->
-                Once you trigger a wild surge in this way, you cannot trigger another one until the start of your next turn.
+                <!-- Once you trigger a wild surge in this way, you cannot trigger another one until the start of your next turn. -->
             </p>        
             <p><b><i>Directed Chaos. </i></b>
                 When you roll on the Wild Surge table, you can change the result of the d20 roll by up to 1/2 your proficiency bonus (rounded down) in either direction, changing which effect is produced. 
@@ -95,9 +95,12 @@
 			</table>
         </description>
         <sheet>
-            <description>Magic erupts from you when you rage; when you enter a rage, roll on the Wild Surge Table. The save DC is {{wild surge:dc}}.
-            Unstable Rage: Whenever you take damage, you trigger a wild surge.  Once you trigger a wild surge in this way, you cannot trigger another one until the start of your next turn.
-            Directed Chaos: When you roll on the Wild Surge table, you can change the result of the d20 roll by up to 1/2 your proficiency bonus (rounded down) in either direction, changing which effect is produced.  Once you do, you can't do so again until you finish a short or long rest.
+            <description>
+                Magic erupts from you as you rage; when you enter a rage, roll on the Wild Surge Table. The save DC is {{wild surge:dc}}.
+                Unstable Rage: Whenever you take damage, you trigger a wild surge.  
+                <!-- Once you trigger a wild surge in this way, you cannot trigger another one until the start of your next turn. -->
+                <b>Directed Chaos:</b> When you roll on the Wild Surge table, you can change the result of the d20 roll by up to 1/2 your proficiency bonus (rounded down) in either direction, changing which effect is produced.  
+                Once you do, you can't do so again until you finish a short or long rest.
             </description>
         </sheet>
         <rules>
