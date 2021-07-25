@@ -4,8 +4,8 @@
         <name>Planeshift Vampire</name>
         <description>Custom Vampire Race</description>
         <author>JCDM</author>
-        <update version="0.4.2">
-            <file name="planeshift_vampire.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/planeshift_vampire.xml" />
+        <update version="0.5.01">
+            <file name="planeshift_vampire.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/races/planeshift_vampire.xml" />
         </update>
     </info>
     

@@ -4,8 +4,8 @@
 		<name>Tashan Bladesinger</name>
 		<description>Bladesinger updated with rules from TCoE</description>
 		<author>JCDM</author>
-		<update version="0.4.5">
-			<file name="wizard-tashan-bladesinger.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/wizard-tashan-bladesinger.xml" />
+		<update version="0.5.01">
+			<file name="wizard-tashan-bladesinger.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/subclasses/wizard-tashan-bladesinger.xml" />
 		</update>		
 	</info>
 

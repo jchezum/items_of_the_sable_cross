@@ -4,7 +4,7 @@
 		<name>Watcher Crafted Items</name>
 		<description>Items crafted by the Watchers</description>
 		<author>JCDM</author>
-		<update version="0.4.35">
+		<update version="0.5.01">
 			<file name="watcher_crafted_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items/watcher_crafted_items.xml" />
 		</update>		
 	</info>
@@ -36,7 +36,39 @@
             <stat name="dexterity:score:set" value="18" bonus="base" />
             <stat name="charisma" value="2" />
 		</rules>
+	</element>	
+
+	<element name="Abyssal Frostpiercer" type="Magic Item" source="DM" id="ID_JCDM_WATCHER_008">
+		<description>
+			<p>
+				On hit, weapon deals 2d8 frost damage.
+			</p>
+			<p>
+				When you hit a creature with a weapon attack, the creature must make a DC 15 Constitution saving throw or have their movement speed reduced by half until the end of their next turn. 
+			</p>
+			<p>
+				Abyssal Fristpeircer has 4 ice charges, and regains 1d4 each day at dawn.  
+				When consuming a charge, choose a point within 60 feet.  Rending ice spike thrust out of the ground in a 15 foot radius area around that point.  
+				All creatures of the wielder's choice standing in that area or that enters the area must make a Dexterity saving throw against the wielder's spell save DC or take 2d8 cold damage and 2d8 piercing damage, 
+				or half as much on a successful save. Any creature that fails their save is impaged on the ice spikes and is Restrained.  A creature so impaled can use it's action to make an Athletics (Strength) check to 
+				break themselves free of the ice.
+
+				The Ice Spikes count as difficult terrain and last for 1 minute.
+			</p>
+		</description>
+		<short_description>test</short_description>
+		<setters>
+			<set name="keywords">rapier</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">57000</set>
+			<set name="type" addition="rapier">Weapon</set>
+			<set name="rarity">Unique</set>
+			<set name="weapon">rapier</set>
+			<set name="enhancement">2</set>
+			<set name="attunement">false</set>
+		</setters>
 	</element>	    
+
 
     <!-- SUTHRA -->
 	<element name="Earrings of Arcane Focus" type="Magic Item" source="JCDM" id="ID_JCDM_WATCHER_002">
@@ -64,6 +96,31 @@
             <stat name="charisma" value="2" />
 		</rules>
 	</element>	 
+
+	<element name="UCP Power Core" type="Magic Item" source="JCDM" id="ID_JCDM_WATCHER_006">
+		<description>
+			<p>
+				This intricately crafted ademantine cylinder contains many specially-crafted gemstones.  Each gem is charged with magical energy, which 
+				can be drawn out to enhance the effects of spells.  
+
+				When casting a spell, a user can drawn on the power stored within this core to double all effects of the spell.
+			</p>
+            <p>
+				The UCP core has 100 charges.  When a user casts a spell, they can choose to expend charges equal to the spell level + 1 to enhance the
+				effects of the spell.  The core cannot be recharged...as far as anyone knows.
+            </p>        
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">57000</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+            <set name="attunement">false</set>	            
+		</setters>
+		<rules>
+		</rules>
+	</element>	
+
 
     <!-- CAZ -->
 	<element name="Kara-Kesh" type="Magic Item" source="JCDM" id="ID_JCDM_WATCHER_003">
@@ -137,6 +194,38 @@
 		<rules>
 		</rules>
 	</element>	 
+
+	<element name="Boots of Haste" type="Magic Item" source="JCDM" id="ID_JCDM_WATCHER_007">
+		<description>
+			<p>
+                These sleek black leather boots give the impression of swiftness to anyone who sees them.  They have small wings embossed into the ankles on each boot.
+			</p>
+			<p>
+				While you wear these boots, you can use a Bonus Action and click the boots' heels together. If you do, you benefit from the effects of the Haste spell for the duration of this effect (1 minute). 
+				If you click your heels together again, you end the effect.  The boots' effect does not require concentration and does not cause lethargy after use.  
+
+				<!-- https://criticalrole.fandom.com/wiki/Boots_of_Haste -->
+			</p>
+			<p>
+				The effect lasts for 1 minute, and cannot be used until after the user has completed a long rest.
+			</p>	
+			<p>
+				When activated, you gain a +2 bonus to AC, advantage on Dexterity saving throws, and you gain an additional action on each of your turns.
+				This action can only be user to take the Attack (one weapon only), Dash, Disengage, Hide, or Use an Object action.
+			</p>	
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">57000</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+            <set name="slot">boots</set>
+            <set name="attunement">true</set>	            
+		</setters>
+		<rules>
+		</rules>
+	</element>	
+
 
     <!-- LIVILLA -->
 	<element name="Barbed Chakrams" type="Magic Item" source="JCDM" id="ID_JCDM_WATCHER_005">
