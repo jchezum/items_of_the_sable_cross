@@ -4,7 +4,7 @@
 		<name>Sable Armor</name>
 		<description>Armor made by or for the members of the Order of the Sable Cross</description>
 		<author>JCDM</author>
-		<update version="0.4.21">
+		<update version="0.5.08">
 			<file name="sable_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/sable_items.xml" />
 		</update>		
 	</info>
@@ -90,6 +90,24 @@
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Uncommon</set>
 			<set name="attunement">true</set>	
+		</setters>
+		<rules>
+		</rules>
+	</element>	
+	<element name="Lesser Cloak of the Underdark" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_005">
+		<description>
+			<p>
+				A simple drow-crafted cloak that protects the wearer from the effects of sunlight.  
+				While wearing this cloak, a creature with sunlight sensitivity suffers no effect 
+				from being in sunlight *except* for when the sun is directly overhead (noon +/- 1 hr).
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="cp">145</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">false</set>	
 		</setters>
 		<rules>
 		</rules>

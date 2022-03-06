@@ -4,8 +4,8 @@
         <name>Twilight Domain Cleric Homebrew</name>
         <description>Custom variant of Twilight Domain Cleric</description>
         <author url="https://viciousmockery.herokuapp.com/">JCDM</author>
-        <update version="0.4.22">
-            <file name="class_twilight_cleric_custom.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/classes/class_twilight_cleric_custom.xml" />
+        <update version="05.08">
+            <file name="class_twilight_cleric_custom.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/subclasses/class_twilight_cleric_custom.xml" />
         </update>
     </info>
 

@@ -1,0 +1,43 @@
+{
+    "id": 1,
+    "name": "",
+    "basic_item_details": {
+        "weapon_ranged_category": "", 
+        "weapon_type": "",
+        "weapon_properties": [],
+        "damage_type": "",
+        "damage_formula": "",
+        "weight": 1,
+        "cost": 1,
+        "currency_type": "",
+        "rarity": "",
+        "name": "",
+        "required_proficiencies": [],
+        "enhancement": "",
+        "slot": "",
+        "basic_description": "",
+        "supports": [],
+        "aurora_details": {
+            "aurora_type": "",
+            "aurora_id": ""
+        }        
+    },
+    "item_details": {
+        "weapon_properties": [],
+        "damage_formula": "",
+        "weight": 1,
+        "cost": 1,
+        "currency_type": "",
+        "rarity": "",
+        "required_proficiencies": [],
+        "enhancement": 0,
+        "accuracy_enhancement": 0,
+        "damage_enhancement": 0,
+        "description": "",
+        "aurora_details": {
+            "aurora_type": "",
+            "aurora_id": ""
+        }
+    }
+
+}

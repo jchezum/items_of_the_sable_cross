@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Potions</name>
+		<description>Potions</description>
+		<author>JCDM</author>
+		<update version="0.5.08">
+			<file name="potions.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items/potions.xml" />
+		</update>		
+	</info>
+
+
+	<element name="Elixer of Zombification" type="Magic Item" source="JCDM" id="JCDM_POTION_001">		
+		<description>
+			<p>
+                If you drink this potion, you permanently turn into an undead zombie, with a CR equal to your character level.  You retain the same stats as your character.  
+            </p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+            <set name="cost" currency="gp">247</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Potion of Rapid Combat" type="Magic Item" source="JCDM" id="JCDM_POTION_002">
+		<description>
+			<p>
+                A simple vial of a teal looking liquid. When you drink it, you get the feeling of bravery and gain one extra bonus action per round. The effect lasts for 1 minute.
+            </p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+            <set name="cost" currency="gp">2457</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>    
+</elements>

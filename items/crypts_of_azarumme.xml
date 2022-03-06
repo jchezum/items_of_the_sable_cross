@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Crypts of Azarumme</name>
+		<description>Items added for the Crypts of Azarumme</description>
+		<author>JCDM</author>
+		<update version="0.5.08">
+			<file name="crypts_of_azarumme.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items/crypts_of_azarumme.xml" />
+		</update>		
+	</info>
+
+	<element name="Wand of the Grammarian" type="Magic Item" source="JCDM" id="JCDM_coa_001">
+		<description>
+			<p>This wand enables its user to change one letter of any spell they cast. The DM then determines what the new spell does.  Has 4 charges and regains 1d4 each night.</p>
+		</description>
+		<setters>
+			<set name="keywords">Wands</set>
+			<set name="cost" currency="gp">5751</set>
+			<set name="weight" lb="1">1 lb.</set>            
+			<set name="slot">onehand</set>            
+			<set name="rarity">Rare</set>
+			<set name="type">Wand</set>
+			<set name="attunement">false</set>
+		</setters>		
+	</element>	
+
+	<element name="Warhammer of Returning" type="Magic Item" source="JCDM" id="JCDM_coa_002">
+		<description>
+			<p>
+                When wielding this hammer, you gain a +1 bonus to attack and damage rolls made with this magic weapon. It has the thrown property with a normal range of 30 feet and a long range of 90 feet.
+                If thrown, the wielder can use a bonus action to teleport to the hammer’s new location with the hammer in their hand.
+            </p>
+		</description>
+		<setters>
+			<set name="keywords">warhammer</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">5874</set>
+			<set name="type" addition="warhammer">Weapon</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Warhammer</set>
+            <!-- <set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set> -->
+		</setters>	
+	</element>	 
+
+	<element name="Gloves of Mimic Detection" type="Magic Item" source="JCDM" id="JCDM_coa_003">
+		<description>
+			<p>
+                While wearing these gloves, the range of your touch is extended up to 30 feet.  You can manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, pour the contents out of a vial, or some other similar task.  
+                However, you cannot make an attack or carry more than 10 pounds.
+            </p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">3745</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+            <set name="slot">hands</set>
+            <set name="attunement">false</set>	
+		</setters>		
+	</element>	 
+
+	<element name="Ring of Attunement" type="Magic Item" source="JCDM" id="JCDM_coa_004">
+		<description>
+			<p>While you are attuned to this ring, you may attune to one additional item.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+            <set name="cost" currency="gp">1284</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="attunement">true</set>
+		</setters>		
+	</element>	   
+
+	<element name="Whisperskull" type="Magic Item" source="JCDM" id="JCDM_coa_005">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Wonderous Items</set>
+			<set name="cost" currency="gp">71000</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+		</setters>		
+	</element>	           
+
+</elements>    

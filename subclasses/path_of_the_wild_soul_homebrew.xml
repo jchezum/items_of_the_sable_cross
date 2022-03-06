@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Path of the Wild Sould Homebrew</name>
+        <name>Path of the Wild Soul Homebrew</name>
         <description>Fixes issues with path of the wild soul barbarian</description>
         <author url="https://viciousmockery.herokuapp.com/">JCDM</author>
-        <update version="0.5.01">
+        <update version="0.5.06">
             <file name="path_of_the_wild_soul_homebrew.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/subclasses/path_of_the_wild_soul_homebrew.xml" />
         </update>
     </info>
@@ -82,7 +82,7 @@
                     <tr><td>8</td><td>(Persistent) Light bends around you. You and anything you are wearing or carrying becomes invisible. This effect ends early when you attack.</td></tr>
                     <tr><td>9</td><td>A beam of brilliant light lances from your chest in a line 5-feet-wide and 60-feet-long. Roll a number of d8s equal to your Rage Damage. Each creature in the line must succeed on a Constitution saving throw or take radiant damage equal to the total and be blinded until the start of your next turn.</td></tr>
                     <tr><td>10</td><td>(Persistent) Shadows weave around a weapon of your choice you are holding. Until your rage ends, your weapon deals psychic damage instead of its bludgeoning, slashing, or piercing damage, and it gains the light and thrown properties with a normal range of 20 feet and a long range of 60 feet. If you drop the weapon or throw it, the weapon dissipates and reappears in your hand at the end of your turn.</td></tr>
-                    <tr><td>11</td><td>Necrotic energy bursts from you. Roll a number of d6s equal to your Rage Damage. Each other creature within 30 feet of you takes necrotic damage equal to the total, and you gain temporary hit points equal to the sum of the necrotic damage dealt to the creatures.</td></tr>
+                    <tr><td>11</td><td>Necrotic energy bursts from you. Roll a number of d6s equal to your Rage Damage. Each creature of your choice within 30 feet of you takes necrotic damage equal to the total, and you gain temporary hit points equal to the sum of the necrotic damage dealt to the creatures.</td></tr>
                     <tr><td>12</td><td>(Persistent) Arcane energy enshrouds you. Until your rage ends, you gain a +2 bonus to AC, and whenever a creature within 10 feet of you hits you with an attack, that creature takes force damage equal to two times your Rage Damage.</td></tr>
                     <tr><td>13</td><td>Strong winds blast out from you. Each creature within 10 feet of you must succeed on a Strength saving throw or be pushed away from you a number of feet equal to five times your Rage Damage, and then fall prone.</td></tr>
                     <tr><td>14</td><td>(Persistent) Your body becomes wreathed in flames. You shed bright light in a 30-foot radius and dim light for an additional 30 feet, and your melee attacks deal an additional amount of fire damage equal to your Rage Damage. If another creature touches you or hits you with a melee attack while within 5 feet of you, roll a number of d4s equal to your Rage Damage. That creature takes fire damage equal to the total.</td></tr>
