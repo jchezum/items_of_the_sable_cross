@@ -28,8 +28,6 @@
 		<file name="background-quester.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/backgrounds/background-adventurer-alt.xml" />
 
 		<!-- RACES -->
-		<file name="race_vampire.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/races/race_vampire.xml" />	
-		<file name="planeshift_vampire.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/races/planeshift_vampire.xml" />
 
 		<!-- CLASSES -->
 		<file name="revised_ranger_beta.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/classes/revised_ranger_beta.xml" />		
