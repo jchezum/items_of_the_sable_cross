@@ -2,9 +2,9 @@
 <elements>
     <info>
         <name>Revenant Vampire</name>
-        <description>Revenant  Vampire Race</description>
+        <description>Revenant Vampire Race</description>
         <author>JCDM</author>
-        <update version="0.5.01">
+        <update version="0.5.08">
             <file name="race_vampire.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/races/race_vampire.xml" />
         </update>
     </info>
@@ -13,7 +13,7 @@
         <description>
             <p> 
                 Tall, pale and gaunt humanoids, their otherworldly presence and stillness make a vampire stand out among the warm bodied living. 
-                With sharp dark facial features, red eyes that seem to glow in the absence of light and cold bodies that cast no reflection, vampires are as solitary as they come.
+                With sharp dark facial features, eyes that seem to glow in the absence of light, and cold bodies that cast no reflection, vampires are as solitary as they come.
                 Vampires are pale due to their undead nature and avoidance of the sun. While their stillness comes from the fact that they no longer need to draw breath, making every action and 
                 inaction a conscious decision on their part. When forced into a corner, their sharp retractable fangs and claws become a declaration of warning to all creatures that bleed as any 
                 eloquence in their humanoid guise disappears, replaced with a primal bloodlust as they cut down the living like a plague.

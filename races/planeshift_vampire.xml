@@ -4,7 +4,7 @@
         <name>Planeshift Vampire</name>
         <description>Custom Vampire Race</description>
         <author>JCDM</author>
-        <update version="0.5.01">
+        <update version="0.5.08">
             <file name="planeshift_vampire.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/races/planeshift_vampire.xml" />
         </update>
     </info>
@@ -45,7 +45,7 @@
     <element name="Vampire Subrace" type="Racial Trait" source="Plane Shift: Ixalan" id="ID_WOTC_PSI_RACIAL_TRAIT_VAMPIRE_SUBRACE">
         <supports>vampire</supports>
         <description>
-            <p>There exists two races of vampires, the Zendikar vampires and the Ixalan vampires. These change depending on which region the vampire's magic comes from.</p>
+            <p>There exist several races of vampires. These change depending on which region the vampire's magic comes from.</p>
         </description>
         <sheet display="false"/>
         <rules>
