@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kats Loot</name>
+		<description>Items made by or for the members of the Order of the Sable Cross</description>
+		<author>KWil</author>
+		<update version="0.5.11">
+			<file name="kats_loot.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/kats_loot.xml" />
+		</update>		
+	</info>
+
+	<!-- ==================================================================================== -->
+	<!-- Examples -->
+	<!-- ==================================================================================== -->
+    <!-- Magic Item -->
+	<element name="Alluring Ruby Amulet" type="Magic Item" source="JCDM" id="ID_EXAMPLE_JCDM_MAGIC_ITEM_002">
+		<description>
+			<p>
+				A small, well-crafted amulet that when worn causes heads to turn and suggestions to be more impactful.
+				Gives a +1 to Charisma and proficiency wtih Persuasion checks where the target can see you.  
+			</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="cp">2500</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>	 
+
+    <!-- Weapon -->
+    <element name="Dark Quasar Blade" type="Magic Item" source="DM" id="ID_EXAMPLE_DM_WEAPONS_06">
+        <description>
+            <p>
+				This blade has an unusual black circular guard.
+				When unsheathed, this sword absorbs light in a 10-foot sphere around it.  Bright light becomes dim light, and dim light becomes darkness.  
+			</p>
+            <p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon</p>
+            <p class="indent">This weapon has 5 charges, and it regains 1d4+1 expended charges daily at dawn.</p>
+            <p class="indent">
+				As an action, you can expend charges to release a beam of darkness. Each creature within a 5 ft. wide and 200 ft long line must make a DC 15 Constitution saving throw. 
+				On a failed save, a creature takes 2d8 necrotic damage for each charge expended and is blinded until the end of its next turn. 
+				On a successful save, it takes half as much damage and is not blinded.
+			</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type" addition="greatsword, longsword, rapier, or shortsword">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Greatsword||Longsword||Shortsword||Rapier</set>
+        </setters>
+    </element> 
+
+    <!-- Armor -->
+    <element name="Cole's Custom Cuirass" type="Magic Item" source="DM" id="ID_DM_ARMOR_01">
+		<description>
+			<p>
+				Cunningly crafted by expert smith Cole Bern for her personal use.
+				Armor is wrought of blackened mithril and leather, creating a dark and light, yet incredibly strong suit of armor.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="slot">body</set>
+			<set name="type" addition="light">Armor</set>
+			<set name="rarity">Unique</set>
+			<set name="enhancement">1</set>
+			<set name="weight" lb="30">30 lb.</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER</set>	
+		</setters>
+		<rules>
+			<!-- Armor is supposed to have a base AC of 15, but was having trouble getting that working, so added +3 here as a hack over the armor's normal +1 -->
+			<stat name="ac:armored:enhancement" value="4" bonus="enhancement" />
+		</rules>	
+	</element> 
+
+    <!-- Ring -->
+	<element name="Ring of Vitality" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_006">
+		<description>
+			<p>
+				This white gold ring is set with a large, heart shaped ruby. While wearing the ring, you gain +2 to Constitution.
+				When using healing spells, if you roll a 1 or 2 on a healing roll, it becomes a 3.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="cost" currency="cp">1874</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>	
+		</setters>
+		<rules>
+			<stat name="constitution" value="2" />
+		</rules>
+	</element>	  
+
+	<!-- ==================================================================================== -->
+	<!-- Kat's Loot Items -->
+	<!-- ==================================================================================== -->           
+    <!-- Copy the relevant template above and paste it below this line.   -->
+
+</elements>       
