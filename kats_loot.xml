@@ -4,7 +4,7 @@
 		<name>Kats Loot</name>
 		<description>Items found by the members of the Order of the Sable Cross</description>
 		<author>KWil</author>
-		<update version="0.5.12">
+		<update version="0.5.13">
 			<file name="kats_loot.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/kats_loot.xml" />
 		</update>		
 	</info>
@@ -328,9 +328,9 @@
 
             <p>
                 You gain these benefits while wearing the robe: 
-                <br>1.) If you aren't wearing armor, your base Armor Class is 15 + your Dex modifier. 
-                <br>2.) Your spell save DC and spell Attack bonus each increase by 1. 
-                <br>3.) You have advantage on Saving Throws against spells. On a successful save, roll a d100 on the Wild Magic Surge table assigned to your current alignment. 
+                <br />1.) If you aren't wearing armor, your base Armor Class is 15 + your Dex modifier. 
+                <br />2.) Your spell save DC and spell Attack bonus each increase by 1. 
+                <br />3.) You have advantage on Saving Throws against spells. On a successful save, roll a d100 on the Wild Magic Surge table assigned to your current alignment. 
             </p>                
             <p class="indent">Good: Feyblood Wild Surge Table </p>
             <p class="indent">Neutral: Pyromancer Wild Surge Table </p>
@@ -365,11 +365,11 @@
                 While holding the shield, whenever a creature makes a melee attack roll against you and misses, 
                 you can use your reaction to make a special melee attack with the shield against that target, with an attack bonus of +8. 
                 When you do, the shield splits apart to form a toothy maw, which opens wide and bites down on the target.  
-                <br>On a hit, the target takes 1d6 piercing damage plus 1d6 psychic damage. If you roll a 20 on the attack roll, 
+                <br />On a hit, the target takes 1d6 piercing damage plus 1d6 psychic damage. If you roll a 20 on the attack roll, 
                 the target is magically shunted to a special demiplane within the shield. The creature remains in the demiplane until you end the effect 
                 (no action required), to a maximum of 1 minute, during which time it takes 1d4 acid damage plus 3d6 psychic damage at the start of each of 
                 its turns. A creature reduced to 0 hit points in the demiplane is devoured. 
-                <br>At the end of each of its turns, the shunted creature 
+                <br />At the end of each of its turns, the shunted creature 
                 can make a DC 16 Charisma saving throw. On a success, it escapes the demiplane and reappears in the nearest unoccupied space. 
                 Only one creature can be in the demiplane at a time. 
             </p>
@@ -397,7 +397,7 @@
     <element name="Ring of Spell Splitting" type="Magic Item" source="Kwil" id="ID_Kwil_MAGIC_ITEM_006">
         <description>
             <p> The ring is composed of a gold and a silver band spiraling around each other in a single loop, simple but beautiful in its simplicity. </p>
-            <br>
+            <br />
             <p class="indent"> When the wearer casts a spell that targets a single creature, the wearer can target one additional creature (1/Day). If this spell requires concentration, the wearer makes one concentration check at a time to maintain both spells while taking damage. </p>
         </description>
         <setters>
