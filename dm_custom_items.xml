@@ -35,6 +35,7 @@
 			<set name="proficiency">ID_WOTC_WGTE_WEAPON_PROFICIENCY_DOUBLE_BLADED_SCIMITAR</set>
 		</setters>		
 	</element>
+	
 	<element name="Special (Heavy Double Scimitar)" type="Weapon Property" source="DM" id="ID_DM_INTERNAL_WEAPON_PROPERTY_HEAVY_DOUBLE_SCIMITAR">
 		<description>
 			<p>
@@ -92,6 +93,7 @@
 			<set name="damage" type="slashing">1d8</set>
 		</setters>
 	</element>
+
 	<element name="Gutrip" type="Magic Item" source="DM" id="ID_DM_WEAPONS_02">
 		<!-- <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_WOTC_ERLW_INTERNAL_WEAPON_PROPERTY_SPECIAL_DOUBLE_BLADED_SCIMITAR</supports>	 -->
 		<description>
@@ -124,6 +126,7 @@
 			<set name="enhancement">2</set>
 		</setters>
 	</element>	
+
 	<element name="Frostpiercer" type="Magic Item" source="DM" id="ID_DM_WEAPONS_03">
 		<description>
 			<p>On hit, weapon deals 1d6 frost damage.</p>
