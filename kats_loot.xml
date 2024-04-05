@@ -4,7 +4,7 @@
 		<name>Kats Loot</name>
 		<description>Items found by the members of the Order of the Sable Cross</description>
 		<author>KWil</author>
-		<update version="0.5.11">
+		<update version="0.5.12">
 			<file name="kats_loot.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/kats_loot.xml" />
 		</update>		
 	</info>
@@ -12,10 +12,24 @@
 	<!-- ==================================================================================== -->
 	<!-- Base Weapons -->
 	<!-- ==================================================================================== -->
-	<element name="Heavy Chakram" type="Weapon" source="JCDM" id="ID_DM_BASE_WEAPONS_03">
+	<element name="Chakram" type="Weapon" source="JCDM" id="ID_DM_BASE_WEAPONS_03">
 		<!-- <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports> -->
 		<description>
-			<p></p>
+			<p>Simple Chakram</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d6</set>
+			<!-- <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</set> -->
+		</setters>
+	</element>        
+	<element name="Heavy Chakram" type="Weapon" source="JCDM" id="ID_DM_BASE_WEAPONS_04">
+		<!-- <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports> -->
+		<description>
+			<p>Heavy Chakram</p>
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -104,12 +118,11 @@
     You can create any floor plan you like in the cottage, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated like a winter cabin. It contains sufficient food to serve a nine-course banquet for up to 100 people. A staff of near-transparent servants attend to all who enter. They appear to be tiny elves like in the Santa stories, and are completely obedient to your orders (within reason). Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus, the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the snow globe but can't leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the snow globe. When the spell ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance. -->
     <element name="Magnificent Snow Globe" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_005">
         <description>
-            <p> Requires a command sequence to activate it (sing “Frosty the Snowman”), and the casting time is 1 minute.
+            <p> Requires a command sequence to activate it (sing “Frosty the Snowman”), and the casting time is 1 minute.</p>
             <p class="indent"> The mansion remains active for up to 12 hours. While the mansion is in use, the snow globe becomes invisible. This item can only be used once every three days. </p>
             <p class="indent"> You conjure an extradimensional dwelling that lasts for the duration. The entrance is located where you set the snow globe. The entrance shimmers faintly when open. You and any creature you designate when you cast the spell can enter and exit the extradimensional dwelling as long as the portal remains open. The caster can open or close the portal if they are within 30 feet of it. While closed, the portal is invisible. </p>
             <p class="indent"> Beyond the portal is a snowy clearing with a quaint, cozy cottage that is bigger on the inside. The atmosphere is clean, fresh, and a bit chilly. A snowman with a snow mustache is there to greet all who enter, wearing a green vest with a pocket watch, a black bowler hat, and an umbrella. </p>
             <p class="indent"> You can create any floor plan you like in the cottage, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated like a winter cabin. It contains sufficient food to serve a nine-course banquet for up to 100 people. A staff of near-transparent servants attend to all who enter. They appear to be tiny elves like in the Santa stories, and are completely obedient to your orders (within reason). Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus, the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the snow globe but can't leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the snow globe. When the spell ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance. </p>
-            </p>
         </description>
         <setters>
             <set name="category">Wondrous Items</set>
@@ -136,32 +149,38 @@
 
     <element name="Fang Keeper Necklace" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_007">
         <description>
-            <p> A fang keeper is a dark silver necklace that can be adorned with up to 4 monstrous fangs. You can add or replace one or more teeth to the chain up to a total of 4, with 1 hour of work, which can be done over a short rest. While wearing the necklace, you gain the following benefits. 
+            <p> A fang keeper is a dark silver necklace that can be adorned with up to 4 monstrous fangs. You can add or replace one or more teeth to the chain up to a total of 4, with 1 hour of work, which can be done over a short rest. While wearing the necklace, you gain the following benefits. </p>
             <p class="indent"> Bite. Your teeth lengthen and sharpen slightly; your bite becomes a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d8 + your Strength modifier. Instead of the bludgeoning damage normal for an unarmed strike. If you bite a target in this way, you can immediately use your bonus action to clamp down even harder, dealing an extra 1d4 piercing damage to the target as part of the same attack. </p>
             <p class="indent"> Spectral Maw. As a bonus action, you can choose a tooth on the necklace. If the tooth came from a creature that had the Bite action, it summons the spectral maw in front of you of that creature, which is instantaneous. Make a melee spell attack with the spectral maw; the spell attack bonus and damage depends on the challenge rating of the creature the tooth came from. The tooth then rots immediately after the attack, and it can’t be used again to summon the maw. </p>
-
-            Challenge rating	Spell Attack Bonus	Damage
-            1 or lower		+5 to hit		1d10+2 piercing damage
-            2-5			+7 to hit		2d10+3 piercing damage
-            6-9			+8 to hit		3d10+4 piercing damage
-            10 or higher		+9 to hit		4d10 +5 piercing damage
-            </p>
             <p>
                 <table>
                     <thead>
                         <tr>
-                            <th>Header 1</th>
-                            <th>Header 2</th>
+                            <th>Challnge Rating</th>
+                            <th>Spell Attack Bonus</th>
+                            <th>Damage</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>test1</td>
-                            <td>test2</td>
+                            <td>1 or lower</td>
+                            <td>+5</td>
+                            <td>1d10+2 piercing dmg</td>
                         </tr>
                         <tr>
-                            <td>test3</td>
-                            <td>test4</td>
+                            <td>2-5</td>
+                            <td>+7;</td>
+                            <td>2d10+3 piercing dmg</td>
+                        </tr>
+                        <tr>
+                            <td>6-9</td>
+                            <td>+8</td>
+                            <td>3d10+4 piercing dmg</td>
+                        </tr>
+                        <tr>
+                            <td>10 or higher</td>
+                            <td>+9</td>
+                            <td>4d10+5 piercing dmg</td>
                         </tr>
                     </tbody>
                 </table>
@@ -184,10 +203,9 @@
     *Does not affect fire damage to creatures.  -->
     <element name="Uzors Fire Loss Prevention Measure" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_008">
         <description>
-            <p> A large red cylinder with gold filigree that can be kept as a decorative object.
+            <p> A large red cylinder with gold filigree that can be kept as a decorative object.</p>
             <p class="indent">Fireproofing: Any flammable object within a 30-foot radius sphere of this cylinder cannot be caught on fire unless deliberately set alight with an open flame (e.g., it’s protected from area-of-effect spells that inflict fire damage). </p>
             <p class="indent"> *Does not affect fire damage to creatures. </p>
-            </p>
         </description>
         <setters>
             <set name="category">Wondrous Items</set>
@@ -205,10 +223,9 @@
     The chimes must be hung in a stationary location to work. -->
     <element name="Sentinel Chime" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_009">
         <description>
-            <p> A simple but lovely wind chime made from clay and metal in a shape resembling a pine cone.
+            <p> A simple but lovely wind chime made from clay and metal in a shape resembling a pine cone.</p>
             <p class="indent">Always Watching. This chime makes no sound because of wind like its non-magical cousins. However, it does chime whenever a creature that is disguised through illusory magic or is invisible is within 30' of it (60’ diameter). The chiming can be heard by any creature within 60' of it (120’ radius). The creature that is trying to veil its true form is not revealed, but anyone that understands the chime's true nature will understand that something is not as it seems. </p>
             <p class="indent">The chimes must be hung in a stationary location to work. </p>
-            </p>
         </description>
         <setters>
             <set name="category">Wondrous Items</set>
@@ -249,7 +266,7 @@
             <p> This weapon is decorated with dragon heads, claws, wings, scales, or Draconic letters. When it steeps in a dragon’s hoard, it absorbs the energy of the dragon’s breath weapon and deals damage of that type with its special properties. </p>
             <p class="indent">Whenever you roll a 20 on your attack roll with this weapon, each creature of your choice within 5 feet of the target takes 5 damage of the type dealt by the dragon’s breath weapon (Cold). </p>
             <p class="indent">+2 weapon, On your first hit, the weapon deals an extra 2d6 damage of the type dealt by the dragon’s breath weapon (cold). </p>
-            <p class="indent">Blast Attack (1/day): As an action, you can unleash a 30-foot cone of destructive energy from the weapon. Each creature in that area must make a DC 16 Dexterity saving throw, taking 8d6 damage of the type dealt by the dragon’s breath weapon (cold) on a failed save, or half as much damage on a successful one. Once this action is used, it can’t be used again until the next dawn. </p>
+            <p class="indent"><b>Blast Attack (1/day):</b> As an action, you can unleash a 30-foot cone of destructive energy from the weapon. Each creature in that area must make a DC 16 Dexterity saving throw, taking 8d6 damage of the type dealt by the dragon’s breath weapon (cold) on a failed save, or half as much damage on a successful one. Once this action is used, it can’t be used again until the next dawn. </p>
             <p class="indent">http://dnd5e.wikidot.com/wondrous-items:dragons-wrath-weapon </p>
         </description>
         <setters>
@@ -278,8 +295,8 @@
         <description>
             <p> These chakrams return to the wielder after lacerating their target. Equally lethal in both melee and ranged combat. </p>
             <p class="indent">This magic weapon grants a +2 bonus to attack and damage rolls made with it (1d8+dex+2), and it returns to your hand immediately after it is used to make a ranged attack. On your first hit, the weapon deals an extra 1d8 radiant damage. </p>
-            <p class="indent">Shifting Light Step. Once per turn, when you use this weapon to make an attack against a creature, you can move up to 10 feet immediately after the attack without spending movement and without triggering opportunity attacks. You cannot move in this way if your speed is 0. </p> 
-            <p class="indent">Moonbeam Burst. As an action, you can clash the chakrams together to create a burst effect. Each hostile creature within 15 feet of you must succeed on a DC 16 Constitution saving throw, or be engulfed in ghostly white flames, taking 2d10 radiant damage on a failed save, or half as much on a successful one. </p>
+            <p class="indent"><b>Shifting Light Step:</b> Once per turn, when you use this weapon to make an attack against a creature, you can move up to 10 feet immediately after the attack without spending movement and without triggering opportunity attacks. You cannot move in this way if your speed is 0. </p> 
+            <p class="indent"><b>Moonbeam Burst:</b> As an action, you can clash the chakrams together to create a burst effect. Each hostile creature within 15 feet of you must succeed on a DC 16 Constitution saving throw, or be engulfed in ghostly white flames, taking 2d10 radiant damage on a failed save, or half as much on a successful one. </p>
             <p class="indent">A shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can’t assume a different form until it leaves the spell’s light. </p>
         </description>
         <setters>
@@ -307,11 +324,17 @@
     Your spell save DC and spell Attack bonus each increase by 1. -->
     <element name="Mottled Robe of Wild Magic" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_010">
         <description>
-            <p> A robe with a swirling almost marbled pattern in splotches of white, grey, and black. You gain these benefits while wearing the robe: If you aren't wearing armor, your base Armor Class is 15 + your Dex modifier. You have advantage on Saving Throws against spells. On a successful save, roll a d100 on the Wild Magic Surge table assigned to your current alignment. </p>
+            <p> A robe with a swirling almost marbled pattern in splotches of white, grey, and black. </p>
+
+            <p>
+                You gain these benefits while wearing the robe: 
+                <br>1.) If you aren't wearing armor, your base Armor Class is 15 + your Dex modifier. 
+                <br>2.) Your spell save DC and spell Attack bonus each increase by 1. 
+                <br>3.) You have advantage on Saving Throws against spells. On a successful save, roll a d100 on the Wild Magic Surge table assigned to your current alignment. 
+            </p>                
             <p class="indent">Good: Feyblood Wild Surge Table </p>
             <p class="indent">Neutral: Pyromancer Wild Surge Table </p>
             <p class="indent">Evil: Necromantic Wild Surge Table </p>
-            <p class="indent">Your spell save DC and spell Attack bonus each increase by 1. </p>
         </description>
         <setters>
             <set name="category">Magic Armor</set>
@@ -338,7 +361,18 @@
     <element name="Shield of the Edlritch Maw" type="Magic Item" source="Kwil" id="ID_KWIL_ARMOR_014">
         <description>
             <p> The face of this shield is seemingly made of teeth, with a clear, fang-like line through its center. While holding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield’s normal bonus to AC. </p>
-            <p class="indent"> While holding the shield, whenever a creature makes a melee attack roll against you and misses, you can use your reaction to make a special melee attack with the shield against that target, with an attack bonus of +8. When you do, the shield splits apart to form a toothy maw, which opens wide and bites down on the target. On a hit, the target takes 1d6 piercing damage plus 1d6 psychic damage. If you roll a 20 on the attack roll, the target is magically shunted to a special demiplane within the shield. The creature remains in the demiplane until you end the effect (no action required), to a maximum of 1 minute, during which time it takes 1d4 acid damage plus 3d6 psychic damage at the start of each of its turns. A creature reduced to 0 hit points in the demiplane is devoured. At the end of each of its turns, the shunted creature can make a DC 16 Charisma saving throw. On a success, it escapes the demiplane and reappears in the nearest unoccupied space. Only one creature can be in the demiplane at a time. </p>
+            <p class="indent"> 
+                While holding the shield, whenever a creature makes a melee attack roll against you and misses, 
+                you can use your reaction to make a special melee attack with the shield against that target, with an attack bonus of +8. 
+                When you do, the shield splits apart to form a toothy maw, which opens wide and bites down on the target.  
+                <br>On a hit, the target takes 1d6 piercing damage plus 1d6 psychic damage. If you roll a 20 on the attack roll, 
+                the target is magically shunted to a special demiplane within the shield. The creature remains in the demiplane until you end the effect 
+                (no action required), to a maximum of 1 minute, during which time it takes 1d4 acid damage plus 3d6 psychic damage at the start of each of 
+                its turns. A creature reduced to 0 hit points in the demiplane is devoured. 
+                <br>At the end of each of its turns, the shunted creature 
+                can make a DC 16 Charisma saving throw. On a success, it escapes the demiplane and reappears in the nearest unoccupied space. 
+                Only one creature can be in the demiplane at a time. 
+            </p>
         </description>
         <setters>
             <set name="category">Magic Armor</set>
@@ -362,9 +396,9 @@
 
     <element name="Ring of Spell Splitting" type="Magic Item" source="Kwil" id="ID_Kwil_MAGIC_ITEM_006">
         <description>
-            <p> When the wearer casts a spell that targets a single creature, the wearer can target one additional creature (1/Day). If this spell requires concentration, the wearer makes one concentration check at a time to maintain both spells while taking damage. 
-            <p class="indent"> The ring is composed of a gold and a silver band spiraling around each other in a single loop, simple but beautiful in its simplicity. </p>
-            </p>
+            <p> The ring is composed of a gold and a silver band spiraling around each other in a single loop, simple but beautiful in its simplicity. </p>
+            <br>
+            <p class="indent"> When the wearer casts a spell that targets a single creature, the wearer can target one additional creature (1/Day). If this spell requires concentration, the wearer makes one concentration check at a time to maintain both spells while taking damage. </p>
         </description>
         <setters>
             <set name="category">Rings</set>

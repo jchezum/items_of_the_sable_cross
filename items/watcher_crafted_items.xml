@@ -4,7 +4,7 @@
 		<name>Watcher Crafted Items</name>
 		<description>Items crafted by the Watchers</description>
 		<author>JCDM</author>
-		<update version="0.5.01">
+		<update version="0.5.12">
 			<file name="watcher_crafted_items.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/items/watcher_crafted_items.xml" />
 		</update>		
 	</info>
@@ -245,12 +245,12 @@
 			</p>
 		</description>
 		<setters>
-			<set name="keywords">chakram</set>
+			<set name="keywords">Chakram</set>
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">57000</set>
-			<set name="type" addition="chakram">Weapon</set>
+			<set name="type" addition="Chakram">Weapon</set>
 			<set name="rarity">Unique</set>
-			<set name="weapon">chakram</set>
+			<set name="weapon">Chakram</set>
 			<set name="attunement">false</set>
 			<set name="enhancement">2</set>
 		</setters>				
