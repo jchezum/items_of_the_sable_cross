@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Kats Loot</name>
-		<description>Items made by or for the members of the Order of the Sable Cross</description>
+		<description>Items found by the members of the Order of the Sable Cross</description>
 		<author>KWil</author>
 		<update version="0.5.11">
 			<file name="kats_loot.xml" url="https://raw.githubusercontent.com/jchezum/items_of_the_sable_cross/master/kats_loot.xml" />
@@ -10,103 +10,397 @@
 	</info>
 
 	<!-- ==================================================================================== -->
-	<!-- Examples -->
+	<!-- Base Weapons -->
 	<!-- ==================================================================================== -->
-    <!-- Magic Item -->
-	<element name="Alluring Ruby Amulet" type="Magic Item" source="JCDM" id="ID_EXAMPLE_JCDM_MAGIC_ITEM_002">
+	<element name="Heavy Chakram" type="Weapon" source="JCDM" id="ID_DM_BASE_WEAPONS_03">
+		<!-- <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports> -->
 		<description>
-			<p>
-				A small, well-crafted amulet that when worn causes heads to turn and suggestions to be more impactful.
-				Gives a +1 to Charisma and proficiency wtih Persuasion checks where the target can see you.  
-			</p>
+			<p></p>
 		</description>
 		<setters>
-			<set name="category">Wondrous Items</set>
-			<set name="cost" currency="cp">2500</set>
-			<set name="type">Wondrous Item</set>
-			<set name="rarity">Rare</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<!-- <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</set> -->
 		</setters>
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
-			<stat name="charisma" value="1" />
-		</rules>
-	</element>	 
-
-    <!-- Weapon -->
-    <element name="Dark Quasar Blade" type="Magic Item" source="DM" id="ID_EXAMPLE_DM_WEAPONS_06">
-        <description>
-            <p>
-				This blade has an unusual black circular guard.
-				When unsheathed, this sword absorbs light in a 10-foot sphere around it.  Bright light becomes dim light, and dim light becomes darkness.  
-			</p>
-            <p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon</p>
-            <p class="indent">This weapon has 5 charges, and it regains 1d4+1 expended charges daily at dawn.</p>
-            <p class="indent">
-				As an action, you can expend charges to release a beam of darkness. Each creature within a 5 ft. wide and 200 ft long line must make a DC 15 Constitution saving throw. 
-				On a failed save, a creature takes 2d8 necrotic damage for each charge expended and is blinded until the end of its next turn. 
-				On a successful save, it takes half as much damage and is not blinded.
-			</p>
-        </description>
-        <setters>
-            <set name="category">Magic Weapons</set>
-            <set name="cost" currency="gp">0</set>
-            <set name="weight" lb="0">0 lb.</set>
-            <set name="type" addition="greatsword, longsword, rapier, or shortsword">Weapon</set>
-            <set name="rarity">Very Rare</set>
-            <set name="attunement">true</set>
-			<set name="enhancement">2</set>
-			<set name="weapon">Greatsword||Longsword||Shortsword||Rapier</set>
-        </setters>
-    </element> 
-
-    <!-- Armor -->
-    <element name="Cole's Custom Cuirass" type="Magic Item" source="DM" id="ID_DM_ARMOR_01">
-		<description>
-			<p>
-				Cunningly crafted by expert smith Cole Bern for her personal use.
-				Armor is wrought of blackened mithril and leather, creating a dark and light, yet incredibly strong suit of armor.
-			</p>
-		</description>
-		<setters>
-			<set name="category">Magic Armor</set>
-			<set name="slot">body</set>
-			<set name="type" addition="light">Armor</set>
-			<set name="rarity">Unique</set>
-			<set name="enhancement">1</set>
-			<set name="weight" lb="30">30 lb.</set>
-			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
-			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER</set>	
-		</setters>
-		<rules>
-			<!-- Armor is supposed to have a base AC of 15, but was having trouble getting that working, so added +3 here as a hack over the armor's normal +1 -->
-			<stat name="ac:armored:enhancement" value="4" bonus="enhancement" />
-		</rules>	
-	</element> 
-
-    <!-- Ring -->
-	<element name="Ring of Vitality" type="Magic Item" source="JCDM" id="ID_JCDM_MAGIC_ITEM_006">
-		<description>
-			<p>
-				This white gold ring is set with a large, heart shaped ruby. While wearing the ring, you gain +2 to Constitution.
-				When using healing spells, if you roll a 1 or 2 on a healing roll, it becomes a 3.
-			</p>
-		</description>
-		<setters>
-			<set name="category">Rings</set>
-			<set name="cost" currency="cp">1874</set>
-			<set name="slot">ring</set>
-			<set name="type">Ring</set>
-			<set name="rarity">Rare</set>
-			<set name="attunement">true</set>	
-		</setters>
-		<rules>
-			<stat name="constitution" value="2" />
-		</rules>
-	</element>	  
+	</element>    
 
 	<!-- ==================================================================================== -->
 	<!-- Kat's Loot Items -->
 	<!-- ==================================================================================== -->           
-    <!-- Copy the relevant template above and paste it below this line.   -->
+    <!-- Magic Items -->
+    <!-- (Wondrous item, very rare) Astral Star Chart: A magical navigation tool used for plotting courses in the Astral Plane. It grants advantage on Wisdom (Survival) checks made to navigate the Astral Plane and can also be used to determine the positions of celestial bodies in the Material Plane. -->
+    <element name="Astral Star Chart" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_001">
+        <description>
+            <p> A magical navigation tool used for plotting courses in the Astral Plane. It grants advantage on Wisdom (Survival) checks made to navigate the Astral Plane and can also be used to determine the positions of celestial bodies in the Material Plane. </p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">2500</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+        </setters>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- (Wondrous item, rare) Basilisk Oil: Apply over the body of a petrified creature within 1 minute of their petrification, and they return to the state they were in before being turned to stone. If the body is missing any vital parts (head, torso, etc.) they are not brought back to life in this process  -->
+    <element name="Basilisk Oil" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_002">
+        <description>
+            <p> Apply over the body of a petrified creature within 1 minute of their petrification, and they return to the state they were in before being turned to stone. If the body is missing any vital parts (head, torso, etc.) they are not brought back to life in this process. </p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">1000</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+        </rules>
+    </element>    
+
+    <!-- (Wondrous item, rare) Reindeer Headpiece – does not require attunement
+    Allows the wearer to cast Fly on themselves without requiring concentration. This fly spell lasts for up to 10 minutes, but can only be activated once a day. The wearer’s nose glows red while it’s active.  -->
+    <element name="Reindeer Headpiece" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_003">
+        <description>
+            <p> Allows the wearer to cast Fly on themselves without requiring concentration. This fly spell lasts for up to 10 minutes, but can only be activated once a day. The wearer’s nose glows red while it’s active. </p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">750</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+        </rules>
+    </element>
+
+    <!-- (Wondrous item, rare) Beads of Fluid Calming 
+    A string of beads that can be worn as a bracelet. The beads appear to have been made from turquoise. There are (x) beads on the bracelet when you find it. 
+    Serenity Ripple Charm. As an action, you can yank a single bead off of the bracelet (it seems to come off with ease and does not damage the rest of the bracelet) and throw it at a point within 90'. If the bead contacts a body of moving liquid, the liquid within a 30' radius sphere of the point where the bead contacts seems to freeze in time and cease moving. Such an area can be walked or climbed on as if it were made of stone. The liquid remains calmed for 2d4 minutes (roll each time a bead is used). -->
+    <element name="Beads of Fluid Calming" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_004">
+        <description>
+            <p> A string of turquoise-colored beads that can be worn as a bracelet. There are (x=determined by DM) beads on the bracelet when you find it. 
+            <p class="indent"> Serenity Ripple Charm. As an action, you can yank a single bead off of the bracelet (it seems to come off with ease and does not damage the rest of the bracelet) and throw it at a point within 90 feet. If the bead contacts a body of moving liquid, the liquid within a 30 foot radius sphere of the point where the bead contacts seems to freeze in time and cease moving. Such an area can be walked on or climbed on as if it were made of stone. The liquid remains calmed for 2d4 minutes (roll each time a bead is used). </p>
+            </p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">1000</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+        </rules>
+    </element>    
+
+    <!-- (Wondrous item, unique) Magnificent Snow Globe 
+    Requires a command sequence to activate it (sing “Frosty the Snowman”), and the casting time is 1 minute.
+    The mansion remains active for up to 12 hours. While the mansion is in use, the snow globe becomes invisible. This item can only be used once every three days. 
+    You conjure an extradimensional dwelling that lasts for the duration. The entrance is located where you set the snow globe. The entrance shimmers faintly when open. You and any creature you designate when you cast the spell can enter and exit the extradimensional dwelling as long as the portal remains open. The caster can open or close the portal if they are within 30 feet of it. While closed, the portal is invisible.
+    Beyond the portal is a snowy clearing with a quaint, cozy cottage that is bigger on the inside. The atmosphere is clean, fresh, and a bit chilly. A snowman with a tiny snow mustache is there to greet all who enter, wearing a green vest with a pocketwatch, a little black bowler hat, and an umbrella. 
+    You can create any floor plan you like in the cottage, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated like a winter cabin. It contains sufficient food to serve a nine-course banquet for up to 100 people. A staff of near-transparent servants attend to all who enter. They appear to be tiny elves like in the Santa stories, and are completely obedient to your orders (within reason). Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus, the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the snow globe but can't leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the snow globe. When the spell ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance. -->
+    <element name="Magnificent Snow Globe" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_005">
+        <description>
+            <p> Requires a command sequence to activate it (sing “Frosty the Snowman”), and the casting time is 1 minute.
+            <p class="indent"> The mansion remains active for up to 12 hours. While the mansion is in use, the snow globe becomes invisible. This item can only be used once every three days. </p>
+            <p class="indent"> You conjure an extradimensional dwelling that lasts for the duration. The entrance is located where you set the snow globe. The entrance shimmers faintly when open. You and any creature you designate when you cast the spell can enter and exit the extradimensional dwelling as long as the portal remains open. The caster can open or close the portal if they are within 30 feet of it. While closed, the portal is invisible. </p>
+            <p class="indent"> Beyond the portal is a snowy clearing with a quaint, cozy cottage that is bigger on the inside. The atmosphere is clean, fresh, and a bit chilly. A snowman with a snow mustache is there to greet all who enter, wearing a green vest with a pocket watch, a black bowler hat, and an umbrella. </p>
+            <p class="indent"> You can create any floor plan you like in the cottage, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated like a winter cabin. It contains sufficient food to serve a nine-course banquet for up to 100 people. A staff of near-transparent servants attend to all who enter. They appear to be tiny elves like in the Santa stories, and are completely obedient to your orders (within reason). Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus, the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the snow globe but can't leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the snow globe. When the spell ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance. </p>
+            </p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">35000</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Unique</set>
+        </setters>
+        <rules>
+        </rules>
+    </element>  
+
+    <!-- (Wondrous item, rare, requires attunement) Fang keeper Necklace - from Griffon's Saddlebag
+    A fang keeper is a dark silver necklace that can be adorned with up to 4 monstrous fangs. You can add or replace one or more teeth to the chain up to a total of 4, with 1 hour of work, which can be done over a short rest. While wearing the necklace, you gain the following benefits. 
+    Bite. Your teeth lengthen and sharpen slightly; your bite becomes a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d8 + your Strength modifier. Instead of the bludgeoning damage normal for an unarmed strike. If you bite a target in this way, you can immediately use your bonus action to clamp down even harder, dealing an extra 1d4 piercing damage to the target as part of the same attack. 
+    Spectral Maw. As a bonus action, you can choose a tooth on the necklace. If the tooth came from a creature that had the Bite action, it summons the spectral maw in front of you of that creature, which is instantaneous. Make a melee spell attack with the spectral maw; the spell attack bonus and damage depends on the challenge rating of the creature the tooth came from. The tooth then rots immediately after the attack, and it can’t be used again to summon the maw. 
+
+    Challenge rating	Spell Attack Bonus	Damage
+    1 or lower		+5 to hit		1d10+2 piercing damage
+    2-5			+7 to hit		2d10+3 piercing damage
+    6-9			+8 to hit		3d10+4 piercing damage
+    10 or higher		+9 to hit		4d10 +5 piercing damage
+
+    Once a creature’s tooth has been used to summon a maw, that same creature’s maw can’t be summoned again. If another tooth on the necklace is from a creature whose maw has already been summoned in this way, it immediately rots.  -->
+
+    <element name="Fang Keeper Necklace" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_007">
+        <description>
+            <p> A fang keeper is a dark silver necklace that can be adorned with up to 4 monstrous fangs. You can add or replace one or more teeth to the chain up to a total of 4, with 1 hour of work, which can be done over a short rest. While wearing the necklace, you gain the following benefits. 
+            <p class="indent"> Bite. Your teeth lengthen and sharpen slightly; your bite becomes a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d8 + your Strength modifier. Instead of the bludgeoning damage normal for an unarmed strike. If you bite a target in this way, you can immediately use your bonus action to clamp down even harder, dealing an extra 1d4 piercing damage to the target as part of the same attack. </p>
+            <p class="indent"> Spectral Maw. As a bonus action, you can choose a tooth on the necklace. If the tooth came from a creature that had the Bite action, it summons the spectral maw in front of you of that creature, which is instantaneous. Make a melee spell attack with the spectral maw; the spell attack bonus and damage depends on the challenge rating of the creature the tooth came from. The tooth then rots immediately after the attack, and it can’t be used again to summon the maw. </p>
+
+            Challenge rating	Spell Attack Bonus	Damage
+            1 or lower		+5 to hit		1d10+2 piercing damage
+            2-5			+7 to hit		2d10+3 piercing damage
+            6-9			+8 to hit		3d10+4 piercing damage
+            10 or higher		+9 to hit		4d10 +5 piercing damage
+            </p>
+            <p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>test1</td>
+                            <td>test2</td>
+                        </tr>
+                        <tr>
+                            <td>test3</td>
+                            <td>test4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">6000</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+        </rules>
+    </element>    
+
+    <!-- (Wondrous item, rare) Uzor's Fire Loss Prevention Measure 
+    A large red cylinder with gold filigree that can be kept as a decorative object.
+    Fireproofing. Any flammable object within a 30-foot radius sphere of this cylinder cannot be caught on fire unless deliberately set alight with an open flame (e.g., it’s protected from area-of-effect spells that inflict fire damage). 
+    *Does not affect fire damage to creatures.  -->
+    <element name="Uzors Fire Loss Prevention Measure" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_008">
+        <description>
+            <p> A large red cylinder with gold filigree that can be kept as a decorative object.
+            <p class="indent">Fireproofing: Any flammable object within a 30-foot radius sphere of this cylinder cannot be caught on fire unless deliberately set alight with an open flame (e.g., it’s protected from area-of-effect spells that inflict fire damage). </p>
+            <p class="indent"> *Does not affect fire damage to creatures. </p>
+            </p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">3000</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+        </rules>
+    </element>  
+
+    <!-- (Wondrous item, rare) Sentinel Chime 
+    A simple but lovely wind chime made from clay and metal in a shape resembling a pine cone.
+    Always Watching. This chime makes no sound because of wind like its non-magical cousins. However, it does chime whenever a creature that is disguised through illusory magic or is invisible is within 30' of it (60’ diameter). The chiming can be heard by any creature within 60' of it (120’ radius). The creature that is trying to veil its true form is not revealed, but anyone that understands the chime's true nature will understand that something is not as it seems. 
+    The chimes must be hung in a stationary location to work. -->
+    <element name="Sentinel Chime" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_009">
+        <description>
+            <p> A simple but lovely wind chime made from clay and metal in a shape resembling a pine cone.
+            <p class="indent">Always Watching. This chime makes no sound because of wind like its non-magical cousins. However, it does chime whenever a creature that is disguised through illusory magic or is invisible is within 30' of it (60’ diameter). The chiming can be heard by any creature within 60' of it (120’ radius). The creature that is trying to veil its true form is not revealed, but anyone that understands the chime's true nature will understand that something is not as it seems. </p>
+            <p class="indent">The chimes must be hung in a stationary location to work. </p>
+            </p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">4000</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+        </rules>
+    </element>     
+
+    <!-- (Wondrous item, Very Rare, Requires Attunement) The Circlet of Concentration 
+    This circlet is a magical item that allows the wearer to maintain two concentration spells simultaneously for two rounds, or twelve seconds outside of initiative. It can be used twice per long rest.  -->
+    <element name="Circlet of Concentration" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_011">
+        <description>
+            <p> This circlet is a magical item that allows the wearer to maintain two concentration spells simultaneously for two rounds, or twelve seconds outside of initiative. It can be used twice per long rest.  </p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">12000</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+        </setters>
+        <rules>
+        </rules>
+    </element>           
+
+    <!-- Weapons -->
+    <!-- (Magic Weapon, very rare, requires attunement) Dragon’s Wrath Halberd, Wakened - Fizban's Treasury of Dragons
+    1d10 + strength +2
+    This weapon is decorated with dragon heads, claws, wings, scales, or Draconic letters. When it steeps in a dragon’s hoard, it absorbs the energy of the dragon’s breath weapon and deals damage of that type with its special properties.
+    Whenever you roll a 20 on your attack roll with this weapon, each creature of your choice within 5 feet of the target takes 5 damage of the type dealt by the dragon’s breath weapon (cold).
+    +2 weapon, On your first hit, the weapon deals an extra 2d6 damage of the type dealt by the dragon’s breath weapon (cold).
+    Blast Attack (1/day): As an action, you can unleash a 30-foot cone of destructive energy from the weapon. Each creature in that area must make a DC 16 Dexterity saving throw, taking 8d6 damage of the type dealt by the dragon’s breath weapon (cold) on a failed save, or half as much damage on a successful one. Once this action is used, it can’t be used again until the next dawn.
+    http://dnd5e.wikidot.com/wondrous-items:dragons-wrath-weapon -->
+    <element name="Dragons Wrath Halberd, Wakened" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_WEAPONS_012">
+        <description>
+            <p> This weapon is decorated with dragon heads, claws, wings, scales, or Draconic letters. When it steeps in a dragon’s hoard, it absorbs the energy of the dragon’s breath weapon and deals damage of that type with its special properties. </p>
+            <p class="indent">Whenever you roll a 20 on your attack roll with this weapon, each creature of your choice within 5 feet of the target takes 5 damage of the type dealt by the dragon’s breath weapon (Cold). </p>
+            <p class="indent">+2 weapon, On your first hit, the weapon deals an extra 2d6 damage of the type dealt by the dragon’s breath weapon (cold). </p>
+            <p class="indent">Blast Attack (1/day): As an action, you can unleash a 30-foot cone of destructive energy from the weapon. Each creature in that area must make a DC 16 Dexterity saving throw, taking 8d6 damage of the type dealt by the dragon’s breath weapon (cold) on a failed save, or half as much damage on a successful one. Once this action is used, it can’t be used again until the next dawn. </p>
+            <p class="indent">http://dnd5e.wikidot.com/wondrous-items:dragons-wrath-weapon </p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">20000</set>
+            <set name="weight" lb="5">0 lb.</set>
+            <set name="type" addition="halberd">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="enhancement">2</set>
+            <set name="weapon">Halberd</set>
+        </setters>
+    </element>  
+
+    <!-- (Magic Weapon, very rare, requires attunement) Twin Moons
+    These chakrams return to the wielder after lacerating their target. Equally lethal in both melee and ranged combat. 
+
+    This magic weapon grants a +2 bonus to attack and damage rolls made with it (1d8+dex+2), and it returns to your hand immediately after it is used to make a ranged attack. On your first hit, the weapon deals an extra 1d8 radiant damage.
+
+    Shifting Light Step. Once per turn, when you use this weapon to make an attack against a creature, you can move up to 10 feet immediately after the attack without spending movement and without triggering opportunity attacks. You cannot move in this way if your speed is 0. 
+
+    Moonbeam Burst. As an action, you can clash the chakrams together to create a burst effect. Each hostile creature within 15 feet of you must succeed on a DC 16 Constitution saving throw, or be engulfed in ghostly white flames, taking 2d10 radiant damage on a failed save, or half as much on a successful one. 
+    A shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can’t assume a different form until it leaves the spell’s light. 
+    MAKE IT A D8 FOR ME.  -->
+    <element name="Twin Moons" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_WEAPONS_015">
+        <description>
+            <p> These chakrams return to the wielder after lacerating their target. Equally lethal in both melee and ranged combat. </p>
+            <p class="indent">This magic weapon grants a +2 bonus to attack and damage rolls made with it (1d8+dex+2), and it returns to your hand immediately after it is used to make a ranged attack. On your first hit, the weapon deals an extra 1d8 radiant damage. </p>
+            <p class="indent">Shifting Light Step. Once per turn, when you use this weapon to make an attack against a creature, you can move up to 10 feet immediately after the attack without spending movement and without triggering opportunity attacks. You cannot move in this way if your speed is 0. </p> 
+            <p class="indent">Moonbeam Burst. As an action, you can clash the chakrams together to create a burst effect. Each hostile creature within 15 feet of you must succeed on a DC 16 Constitution saving throw, or be engulfed in ghostly white flames, taking 2d10 radiant damage on a failed save, or half as much on a successful one. </p>
+            <p class="indent">A shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can’t assume a different form until it leaves the spell’s light. </p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">20000</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="type" addition="Heavy Chakram">Weapon</set>
+            <set name="weapon">Heavy Chakram</set>			
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="enhancement">2</set>
+        </setters>
+    </element>      
+
+    <!-- Armor -->
+    <!-- (Wondrous item, Unique, requires Attunement by a Sorcerer or Wizard)
+    Mottled Robe of Wild Magic 
+    A robe with a swirling almost marbled pattern in splotches of white, grey, and black. 
+    You gain these benefits while wearing the robe:
+    If you aren't wearing armor, your base Armor Class is 15 + your Dex modifier.
+    You have advantage on Saving Throws against spells. On a successful save, roll a d100 on the Wild Magic Surge table assigned to your current alignment.
+    Good: Feyblood Wild Surge Table
+    Neutral: Pyromancer Wild Surge Table
+    Evil: Necromantic Wild Surge Table
+    Your spell save DC and spell Attack bonus each increase by 1. -->
+    <element name="Mottled Robe of Wild Magic" type="Magic Item" source="Kwil" id="ID_EXAMPLE_KWIL_MAGIC_ITEM_010">
+        <description>
+            <p> A robe with a swirling almost marbled pattern in splotches of white, grey, and black. You gain these benefits while wearing the robe: If you aren't wearing armor, your base Armor Class is 15 + your Dex modifier. You have advantage on Saving Throws against spells. On a successful save, roll a d100 on the Wild Magic Surge table assigned to your current alignment. </p>
+            <p class="indent">Good: Feyblood Wild Surge Table </p>
+            <p class="indent">Neutral: Pyromancer Wild Surge Table </p>
+            <p class="indent">Evil: Necromantic Wild Surge Table </p>
+            <p class="indent">Your spell save DC and spell Attack bonus each increase by 1. </p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="slot">body</set>
+            <set name="type" addition="light">Armor</set>
+            <set name="rarity">Unique</set>
+            <set name="enhancement">1</set>
+            <set name="weight" lb="30">30 lb.</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER</set>
+            <set name="attunement by Sorceror or Wizard">true</set>
+        </setters>
+        <rules>
+            <!--  Armor is supposed to have a base AC of 15, but was having trouble getting that working, so added +3 here as a hack over the armor's normal +1  -->
+            <stat name="ac:armored:enhancement" value="4" bonus="enhancement"/>
+            <stat name="Spell save DC" value="1"/>
+            <stat name="Spell attack bonus" value="1"/>
+        </rules>
+    </element>  
+
+    <!-- (Magic Armor, very rare, requires attunement) Shield of the Eldritch Maw - Griffon's Saddlebag
+    The face of this shield is seemingly made of teeth, with a clear, fang-like line through its center. While holding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield’s normal bonus to AC. 
+    While holding the shield, whenever a creature makes a melee attack roll against you and misses, you can use your reaction to make a special melee attack with the shield against that target, with an attack bonus of +8. When you do, the shield splits apart to form a toothy maw, which opens wide and bites down on the target. On a hit, the target takes 1d6 piercing damage plus 1d6 psychic damage. If you roll a 20 on the attack roll, the target is magically shunted to a special demiplane within the shield. The creature remains in the demiplane until you end the effect (no action required), to a maximum of 1 minute, during which time it takes 1d4 acid damage plus 3d6 psychic damage at the start of each of its turns. A creature reduced to 0 hit points in the demiplane is devoured. At the end of each of its turns, the shunted creature can make a DC 16 Charisma saving throw. On a success, it escapes the demiplane and reappears in the nearest unoccupied space. Only one creature can be in the demiplane at a time.  -->
+    <element name="Shield of the Edlritch Maw" type="Magic Item" source="Kwil" id="ID_KWIL_ARMOR_014">
+        <description>
+            <p> The face of this shield is seemingly made of teeth, with a clear, fang-like line through its center. While holding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield’s normal bonus to AC. </p>
+            <p class="indent"> While holding the shield, whenever a creature makes a melee attack roll against you and misses, you can use your reaction to make a special melee attack with the shield against that target, with an attack bonus of +8. When you do, the shield splits apart to form a toothy maw, which opens wide and bites down on the target. On a hit, the target takes 1d6 piercing damage plus 1d6 psychic damage. If you roll a 20 on the attack roll, the target is magically shunted to a special demiplane within the shield. The creature remains in the demiplane until you end the effect (no action required), to a maximum of 1 minute, during which time it takes 1d4 acid damage plus 3d6 psychic damage at the start of each of its turns. A creature reduced to 0 hit points in the demiplane is devoured. At the end of each of its turns, the shunted creature can make a DC 16 Charisma saving throw. On a success, it escapes the demiplane and reappears in the nearest unoccupied space. Only one creature can be in the demiplane at a time. </p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="slot">body</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Unique</set>
+            <set name="enhancement">1</set>
+            <set name="weight" lb="15">15 lb.</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+        </setters>
+        <rules>
+        </rules>
+    </element>      
+
+
+    <!-- Rings -->
+    <!-- (Ring, very rare, requires attunement) Ring of Spell Splitting
+    When the wearer casts a spell that targets a single creature, the wearer can target one additional creature (1/Day). If this spell requires concentration, the wearer makes one concentration check at a time to maintain both spells while taking damage. 
+    The ring is composed of a gold and a silver band spiraling around each other in a single loop, simple but beautiful in its simplicity. -->
+
+    <element name="Ring of Spell Splitting" type="Magic Item" source="Kwil" id="ID_Kwil_MAGIC_ITEM_006">
+        <description>
+            <p> When the wearer casts a spell that targets a single creature, the wearer can target one additional creature (1/Day). If this spell requires concentration, the wearer makes one concentration check at a time to maintain both spells while taking damage. 
+            <p class="indent"> The ring is composed of a gold and a silver band spiraling around each other in a single loop, simple but beautiful in its simplicity. </p>
+            </p>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="cost" currency="gp">10000</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+        </rules>
+    </element>   
+
+    <!-- (Ring, unique, requires attunement) Raven’s Ring of Spell Storing 
+    This ring is shaped like a coiled feather and stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 5 levels worth of spells at a time. 
+    Any creature can cast a spell of 1st through 5th level into the ring by touching the ring as the spell is cast. The spell has no effect, other than to be stored in the ring. If the ring can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.
+    While wearing this ring, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the ring is no longer stored in it, freeing up space.
+    If the wearer is a cleric, they can choose to burn all the stored spells in the ring to boost their chance at divine intervention by 1-5%, depending on how many levels worth of spells are stored in the ring at that time.  -->
+    <element name="Raven’s Ring of Spell Storing" type="Magic Item" source="Kwil" id="ID_KWIL_MAGIC_ITEM_013">
+        <description>
+            <p> This ring is shaped like a coiled feather and stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 5 levels worth of spells at a time. </p>
+            <p class="indent"> Any creature can cast a spell of 1st through 5th level into the ring by touching the ring as the spell is cast. The spell has no effect, other than to be stored in the ring. If the ring can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses. </p>
+            <p class="indent"> While wearing this ring, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the ring is no longer stored in it, freeing up space. </p>
+            <p class="indent"> If the wearer is a cleric, they can choose to burn all the stored spells in the ring to boost their chance at divine intervention by 1-5%, depending on how many levels worth of spells are stored in the ring at that time. </p>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="cost" currency="cp">1874</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Unique</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+        </rules>
+    </element>     
+ 
 
 </elements>       
